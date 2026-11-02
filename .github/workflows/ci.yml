@@ -30,3 +30,5 @@ jobs:
         run: python -m pipeline.extrair --fixtures
       - name: dbt build
         run: dbt build --project-dir transform
+      - name: dbt docs
+        run: dbt docs generate --project-dir transform --static

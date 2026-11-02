@@ -105,9 +105,15 @@ Grão: ente × ano. Ente = cada município (`esfera = municipal`) e o Estado
 | `despesa_ensino_medio` | decimal(18,2) | Subfunção 362 (R$) |
 | `despesa_educacao_infantil` | decimal(18,2) | Subfunção 365 (R$) |
 | `percentual_educacao` | double | `despesa_educacao / despesa_total` × 100 |
-| `populacao` | integer | População de referência do ano |
+| `populacao` | integer | População de referência do ano (ver nota abaixo) |
 | `origem_populacao` | varchar | `censo`, `estimativa` ou `ultima_disponivel` |
 | `despesa_educacao_per_capita` | decimal(18,2) | `despesa_educacao / populacao` (R$) |
+| `dca_inconsistente` | boolean | Educação < 5% da despesa total: sinal de DCA declarado parcialmente; a linha fica fora do investimento por aluno |
+
+População de referência (`int_populacao_anual`): Censo 2022 no próprio ano,
+estimativa do IBGE quando existe e, nos anos sem publicação (2022–2023 para
+estimativas), o último valor disponível. A do Estado é a soma dos municípios
+(nula se faltar algum).
 
 ### `mart_investimento_aluno`
 Grão: município × ano (rede municipal). Junta despesa municipal em Educação,

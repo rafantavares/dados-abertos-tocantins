@@ -53,7 +53,7 @@ Python 3.12 · httpx · DuckDB · dbt-duckdb · pandas · Streamlit · pytest ·
 |---|---|---|
 | **M1 – Descoberta** | Inventário das fontes, licenças e dicionário de dados | ✅ |
 | **M2 – Ingestão** | Extratores com carga incremental e camada bruta | ✅ |
-| **M3 – Modelagem** | Modelos dbt (staging → marts) com testes | ⏳ |
+| **M3 – Modelagem** | Modelos dbt (staging → marts) com testes | ✅ |
 | **M4 – Painel** | Painel público com mapas e comparativos por município | ⏳ |
 | **M5 – Automação** | Atualização agendada, monitoramento e documentação | ⏳ |
 
