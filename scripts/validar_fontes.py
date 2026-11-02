@@ -159,7 +159,7 @@ def baixar(url: str, tentativas: int = 3, timeout: int = 40) -> tuple[int, dict,
                 contexto = contexto_com_intermediario(url)
                 continue
             time.sleep(2**tentativa)
-        except Exception as erro:  # noqa: BLE001 - registramos qualquer falha de rede
+        except Exception as erro:
             ultimo_erro = erro
             time.sleep(2**tentativa)
     raise RuntimeError(f"falha após {tentativas} tentativas: {ultimo_erro!r}")
@@ -264,7 +264,7 @@ def main(saida: str) -> None:
                 registro["resumo"] = amostrar(fonte["id"], corpo, amostras)
             else:
                 registro["inicio_resposta"] = corpo[:300].decode("utf-8", errors="replace")
-        except Exception as erro:  # noqa: BLE001
+        except Exception as erro:
             registro["erro"] = repr(erro)
         print(json.dumps(registro, ensure_ascii=False, default=str)[:4000], flush=True)
         relatorio.append(registro)

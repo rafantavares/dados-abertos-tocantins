@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      DUCKDB_PATH: ${{ github.workspace }}/data/ci.duckdb
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Instalar dependências
+        run: pip install -e ".[dev,painel]"
+      - name: Lint (Ruff)
+        run: ruff check . && ruff format --check .
+      - name: Testes (pytest)
+        run: pytest
+      - name: Carregar fixtures na camada bruta (offline)
+        run: python -m pipeline.extrair --fixtures
+      - name: dbt build
+        run: dbt build --project-dir transform

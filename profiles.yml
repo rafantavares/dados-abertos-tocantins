@@ -1,0 +1,10 @@
+# Perfil do dbt. Fica na raiz para que `dbt build --project-dir transform`
+# funcione a partir da raiz do repositório (o dbt procura profiles.yml no
+# diretório atual). O caminho do banco vem de DUCKDB_PATH.
+tocantins:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('DUCKDB_PATH', 'data/tocantins.duckdb') }}"
+      threads: 4
