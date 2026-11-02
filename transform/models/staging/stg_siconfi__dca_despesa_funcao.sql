@@ -1,5 +1,5 @@
 -- DCA Anexo I-E normalizado: uma linha por ente, ano, estágio da despesa e conta.
--- Os rótulos mudam entre exercícios (ex.: 'Despesas (Exceto Intraorçamentárias)'
+-- Os rótulos de contas e colunas mudam entre exercícios (ex.: 'Despesas (Exceto Intraorçamentárias)'
 -- e 'Despesas Exceto Intraorçamentárias'; 'FU12 - Demais Subfunções' e
 -- '12.999 - Demais Subfunções Educação'), então a conta é classificada por padrão.
 with fonte as (
@@ -12,12 +12,13 @@ classificado as (
         cast(cod_ibge as integer) as cod_ente,
         trim(coluna) as coluna_origem,
         trim(conta) as conta_origem,
+        -- em 2015-2016 as colunas de restos a pagar vêm abreviadas ("Inscrição de RP ...")
         case
             when trim(coluna) = 'Despesas Empenhadas' then 'empenhada'
             when trim(coluna) = 'Despesas Liquidadas' then 'liquidada'
             when trim(coluna) = 'Despesas Pagas' then 'paga'
-            when trim(coluna) = 'Inscrição de Restos a Pagar Processados' then 'restos_a_pagar_processados'
-            when trim(coluna) = 'Inscrição de Restos a Pagar Não Processados' then 'restos_a_pagar_nao_processados'
+            when coluna ilike 'Inscrição de R%P%Não Processados' then 'restos_a_pagar_nao_processados'
+            when coluna ilike 'Inscrição de R%P%Processados' then 'restos_a_pagar_processados'
         end as estagio,
         case
             when conta ilike 'Despesas%Exceto%Intra%' then 'total_exceto_intra'
