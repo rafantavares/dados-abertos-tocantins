@@ -27,7 +27,7 @@ e as amostras filtradas para o Tocantins foram publicadas na branch
 | Despesa por função/subfunção (DCA – Anexo I-E) do Estado e dos municípios | Tesouro Nacional (SICONFI) | `https://apidatalake.tesouro.gov.br/ords/siconfi/tt/dca?an_exercicio={ano}&no_anexo=DCA-Anexo%20I-E&id_ente={cod_ibge}` | API REST JSON paginada (`items`, `hasMore`, limite 5.000) | Anual (declaração até 30/04 do ano seguinte) | Dados abertos (Decreto 8.777/2016); citar Tesouro Nacional/SICONFI | ✅ 200 – Palmas 426 itens; Estado 579 itens |
 | Lista de entes (código IBGE, população, CNPJ) | Tesouro Nacional (SICONFI) | `https://apidatalake.tesouro.gov.br/ords/siconfi/tt/entes` | API REST JSON | Anual | idem | ✅ 200 – 5.598 entes |
 | População residente – Censo 2022 (tabela 4709) | IBGE (SIDRA) | `https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2017/v/93/p/all` | API REST JSON (1ª linha = cabeçalho) | Decenal | Termos do IBGE: reprodução permitida citando a fonte | ✅ 200 – 139 municípios |
-| População residente estimada (tabela 6579) | IBGE (SIDRA) | `https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2017/v/9324/p/all` | API REST JSON | Anual | idem | ✅ 200 – 3.058 registros (2001–2025, sem anos de censo) |
+| População residente estimada (tabela 6579) | IBGE (SIDRA) | `https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2017/v/9324/p/all` | API REST JSON | Anual | idem | ✅ 200 – 3.058 registros (2001–2026, sem estimativa em 2007, 2010, 2022 e 2023) |
 | Divisão Territorial Brasileira 2022 (municípios, regiões geográficas) | IBGE (geoftp) | `https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2022/DTB_2022.zip` | ZIP com XLS/ODS | Anual | idem | ✅ 200 – 139 municípios do TO |
 | Malha municipal 2022 do Tocantins | IBGE (geoftp) | `https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/TO/TO_Municipios_2022.zip` | ZIP com Shapefile (SIRGAS 2000) | Anual | idem | ✅ 200 – 26 MB |
 
@@ -67,3 +67,18 @@ e as amostras filtradas para o Tocantins foram publicadas na branch
   `12.999 - Demais Subfunções Educação`. O staging normaliza os dois formatos.
 - **SICONFI/entes:** o Estado do Tocantins (código 17) vem com `uf = "BR"`;
   o extrator o seleciona pelo código.
+
+## Cobertura observada na primeira carga real (02/11/2026)
+
+| Fonte | Cobertura carregada |
+|---|---|
+| IDEB (INEP) | **Edição 2025** (publicada após a validação inicial), série 2005–2025; 400 linhas (anos iniciais), 359 (anos finais), 283 (ensino médio) |
+| Censo Escolar (INEP) | 2019–2024 (2.258 a 2.667 escolas por ano); o Censo 2025 ainda não foi publicado em microdados |
+| DCA Anexo I-E (SICONFI) | Exercícios 2015–2025 do Estado e dos municípios |
+| DTB / malha (IBGE) | 139 municípios, referência 2022 |
+| População (SIDRA) | Censo 2022 + estimativas 2001–2026 (sem estimativa em 2007, 2010, 2022 e 2023) |
+
+- **Instabilidade do INEP:** em uma das execuções o `download.inep.gov.br`
+  deu timeout em todas as tentativas. Desde então, a falha de uma fonte é
+  registrada em `raw._cargas` e a carga anterior dela é mantida, sem interromper
+  as demais.

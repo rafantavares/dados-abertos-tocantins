@@ -19,3 +19,10 @@ Municípios incluídos: **Palmas** (1721000), **Abreulândia** (1700251) e
 As amostras do SICONFI vieram da execução do workflow `pipeline.yml` na branch
 `feat/5-extrator-despesas` (exportadas por `scripts/exportar_amostras.py` para a
 branch `amostras-feat-5-extrator-despesas`).
+| `ibge/ibge_dtb_municipios.csv` | IBGE geoftp, `DTB_2022.zip` (`RELATORIO_DTB_BRASIL_MUNICIPIO.xls`) | Os 139 municípios do Tocantins; todas as colunas |
+| `ibge/ibge_sidra_populacao.csv` | IBGE SIDRA, tabelas 4709 (Censo 2022) e 6579 (estimativas) | Linhas dos 3 municípios |
+| `ibge/ibge_malha_municipios.csv` | IBGE geoftp, `TO_Municipios_2022.zip` | 3 municípios; geometria simplificada pelo extrator (tolerância de 0,001°) |
+
+As amostras do IBGE vieram da execução do `pipeline.yml` na branch
+`feat/6-municipios-ibge` (branch `amostras-feat-6-municipios-ibge`). A coluna
+`_referencia` identifica a partição (ano da DTB/malha ou número da tabela SIDRA).
