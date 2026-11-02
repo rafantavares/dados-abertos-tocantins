@@ -15,7 +15,7 @@ from collections.abc import Callable
 import duckdb
 
 from pipeline.config import caminho_banco
-from pipeline.fontes import inep_censo_escolar, inep_ideb, siconfi_dca
+from pipeline.fontes import ibge, inep_censo_escolar, inep_ideb, siconfi_dca
 
 log = logging.getLogger("pipeline")
 
@@ -23,6 +23,7 @@ Extrator = Callable[[duckdb.DuckDBPyConnection, bool], int]
 
 #: Extratores na ordem de execução: nome -> função(conexão, usar_fixtures) -> linhas.
 EXTRATORES: dict[str, Extrator] = {
+    "ibge": ibge.extrair,
     "inep_ideb": inep_ideb.extrair,
     "inep_censo_escolar": inep_censo_escolar.extrair,
     "siconfi_dca": siconfi_dca.extrair,
