@@ -64,7 +64,8 @@ def extrair(con: duckdb.DuckDBPyConnection, usar_fixtures: bool = False) -> int:
     for etapa in ETAPAS:
         if usar_fixtures:
             arquivo = PASTA_FIXTURES / "inep" / f"ideb_{etapa}.csv"
-            df, url, edicao = pd.read_csv(arquivo, dtype=str), f"fixture:{arquivo.name}", 2023
+            df = pd.read_csv(arquivo, dtype=str)
+            url, edicao = f"fixture:{arquivo.name}", df.pop("_edicao").iloc[0]
         else:
             conteudo, url, edicao = _baixar_edicao_recente(etapa)
             df = filtrar_tocantins(ler_planilha(conteudo))

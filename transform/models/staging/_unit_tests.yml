@@ -1,0 +1,61 @@
+version: 2
+
+# Testes unitários do dbt: entradas pequenas e conhecidas, saída esperada.
+# Os textos de conta/coluna abaixo são rótulos reais do DCA observados na carga
+# de 02/11/2026; os valores são ilustrativos.
+unit_tests:
+  - name: dca_classifica_rotulos_de_todos_os_exercicios
+    description: >
+      Os rótulos do DCA mudam entre exercícios (2015-2016 abreviam "Restos a
+      Pagar" como "RP"; o total aparece com e sem parênteses; "demais
+      subfunções" aparece como FU12 ou 12.999). Todos precisam cair na mesma
+      classificação.
+    model: stg_siconfi__dca_despesa_funcao
+    given:
+      - input: source('raw', 'siconfi_dca_despesa_funcao')
+        rows:
+          - {exercicio: "2015", cod_ibge: "17", coluna: "Inscrição de RP Processados", conta: "12 - Educação", valor: "1.00"}
+          - {exercicio: "2015", cod_ibge: "17", coluna: "Inscrição de RP Não Processados", conta: "12 - Educação", valor: "2.00"}
+          - {exercicio: "2024", cod_ibge: "17", coluna: "Inscrição de Restos a Pagar Não Processados", conta: "12 - Educação", valor: "3.00"}
+          - {exercicio: "2015", cod_ibge: "1721000", coluna: "Despesas Liquidadas", conta: "Despesas (Exceto Intraorçamentárias)", valor: "4.00"}
+          - {exercicio: "2024", cod_ibge: "1721000", coluna: "Despesas Liquidadas", conta: "Despesas Exceto Intraorçamentárias", valor: "5.00"}
+          - {exercicio: "2024", cod_ibge: "1721000", coluna: "Despesas Liquidadas", conta: "Despesas Intraorçamentárias", valor: "6.00"}
+          - {exercicio: "2015", cod_ibge: "1721000", coluna: "Despesas Pagas", conta: "12.999 - Demais Subfunções Educação", valor: "7.00"}
+          - {exercicio: "2024", cod_ibge: "1721000", coluna: "Despesas Pagas", conta: "FU12 - Demais Subfunções", valor: "8.00"}
+          - {exercicio: "2024", cod_ibge: "1721000", coluna: "Despesas Empenhadas", conta: "12.361 - Ensino Fundamental", valor: "9.00"}
+    expect:
+      rows:
+        - {ano: 2015, cod_ente: 17, esfera: estadual, estagio: restos_a_pagar_processados, tipo_conta: funcao_educacao, cod_subfuncao: null}
+        - {ano: 2015, cod_ente: 17, esfera: estadual, estagio: restos_a_pagar_nao_processados, tipo_conta: funcao_educacao, cod_subfuncao: null}
+        - {ano: 2024, cod_ente: 17, esfera: estadual, estagio: restos_a_pagar_nao_processados, tipo_conta: funcao_educacao, cod_subfuncao: null}
+        - {ano: 2015, cod_ente: 1721000, esfera: municipal, estagio: liquidada, tipo_conta: total_exceto_intra, cod_subfuncao: null}
+        - {ano: 2024, cod_ente: 1721000, esfera: municipal, estagio: liquidada, tipo_conta: total_exceto_intra, cod_subfuncao: null}
+        - {ano: 2024, cod_ente: 1721000, esfera: municipal, estagio: liquidada, tipo_conta: total_intra, cod_subfuncao: null}
+        - {ano: 2015, cod_ente: 1721000, esfera: municipal, estagio: paga, tipo_conta: subfuncao, cod_subfuncao: 999}
+        - {ano: 2024, cod_ente: 1721000, esfera: municipal, estagio: paga, tipo_conta: subfuncao, cod_subfuncao: 999}
+        - {ano: 2024, cod_ente: 1721000, esfera: municipal, estagio: empenhada, tipo_conta: subfuncao, cod_subfuncao: 361}
+
+  - name: ideb_trata_marcadores_e_virgula_decimal
+    description: >
+      '-' e 'ND' viram nulo; as notas do SAEB 2015 vêm com vírgula decimal.
+    model: stg_inep__ideb
+    given:
+      - input: source('raw', 'inep_ideb_anos_iniciais')
+        format: sql
+        rows: |
+          select '1721000' as "CO_MUNICIPIO", 'Municipal' as "REDE",
+                 '96.1' as "VL_APROVACAO_2015_SI_4", '211,37' as "VL_NOTA_MATEMATICA_2015",
+                 '5.9' as "VL_OBSERVADO_2015", '-' as "VL_OBSERVADO_2017", 'ND' as "VL_NOTA_MATEMATICA_2017"
+      - input: source('raw', 'inep_ideb_anos_finais')
+        format: sql
+        rows: |
+          select null::varchar as "CO_MUNICIPIO", null::varchar as "REDE", null::varchar as "VL_OBSERVADO_2015"
+          where false
+      - input: source('raw', 'inep_ideb_ensino_medio')
+        format: sql
+        rows: |
+          select null::varchar as "CO_MUNICIPIO", null::varchar as "REDE", null::varchar as "VL_OBSERVADO_2017"
+          where false
+    expect:
+      rows:
+        - {cod_municipio: 1721000, ano: 2015, etapa: anos_iniciais, rede: municipal, taxa_aprovacao: 96.1, nota_saeb_matematica: 211.37, ideb: 5.9}

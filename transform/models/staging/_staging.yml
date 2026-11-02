@@ -1,0 +1,392 @@
+version: 2
+models:
+  - name: stg_inep__ideb
+    description: >
+      IDEB e seus componentes por município, ano, etapa e rede, em formato longo. Fonte: planilhas
+      de divulgação do IDEB por município (INEP), edição mais recente. Marcadores '-' e 'ND'
+      viram nulo.
+    tests:
+      - combinacao_unica:
+          arguments:
+            colunas:
+              - cod_municipio
+              - ano
+              - etapa
+              - rede
+    columns:
+      - name: cod_municipio
+        description: Código IBGE do município (7 dígitos).
+        tests:
+          - not_null
+      - name: ano
+        description: Ano de referência do SAEB/IDEB (anos ímpares).
+        tests:
+          - not_null
+          - entre:
+              arguments:
+                minimo: 2005
+                maximo: 2100
+      - name: etapa
+        description: Etapa de ensino.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - anos_iniciais
+                  - anos_finais
+                  - ensino_medio
+      - name: rede
+        description: Rede de ensino (publica = federal + estadual + municipal).
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - estadual
+                  - municipal
+                  - publica
+                  - federal
+      - name: taxa_aprovacao
+        description: Taxa de aprovação da etapa inteira (%).
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+                maximo: 100
+      - name: indicador_rendimento
+        description: Indicador de rendimento (P), entre 0 e 1.
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+                maximo: 1
+      - name: nota_saeb_matematica
+        description: Proficiência média em Matemática no SAEB.
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+                maximo: 500
+      - name: nota_saeb_portugues
+        description: Proficiência média em Língua Portuguesa no SAEB.
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+                maximo: 500
+      - name: nota_saeb_padronizada
+        description: Nota média padronizada (N), entre 0 e 10.
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+                maximo: 10
+      - name: ideb
+        description: IDEB observado (N x P), entre 0 e 10.
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+                maximo: 10
+      - name: meta_ideb
+        description: Meta projetada pelo INEP (1º ciclo, até 2021).
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+                maximo: 10
+  - name: stg_inep__censo_escolas
+    description: >
+      Escolas do Tocantins no Censo Escolar (INEP), com rede, situação de funcionamento e
+      matrículas por etapa. Escolas paralisadas ou extintas têm matrículas nulas.
+    tests:
+      - combinacao_unica:
+          arguments:
+            colunas:
+              - ano
+              - cod_escola
+    columns:
+      - name: ano
+        description: Ano do Censo Escolar.
+        tests:
+          - not_null
+      - name: cod_escola
+        description: Código INEP da escola.
+        tests:
+          - not_null
+      - name: nome_escola
+        description: Nome da escola.
+      - name: cod_municipio
+        description: Código IBGE do município da escola.
+        tests:
+          - not_null
+      - name: rede
+        description: Dependência administrativa.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - federal
+                  - estadual
+                  - municipal
+                  - privada
+      - name: localizacao
+        description: Localização (urbana ou rural).
+        tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - urbana
+                  - rural
+      - name: situacao
+        description: Situação de funcionamento no ano.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - em_atividade
+                  - paralisada
+                  - extinta
+                  - extinta_ano_anterior
+      - name: em_atividade
+        description: Verdadeiro se a escola estava em atividade.
+        tests:
+          - not_null
+      - name: matriculas_educacao_basica
+        description: Matrículas na educação básica.
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+      - name: matriculas_infantil
+        description: Matrículas na educação infantil.
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+      - name: matriculas_fundamental
+        description: Matrículas no ensino fundamental.
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+      - name: matriculas_medio
+        description: Matrículas no ensino médio.
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+      - name: matriculas_profissional
+        description: Matrículas na educação profissional.
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+      - name: matriculas_eja
+        description: Matrículas na educação de jovens e adultos.
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+      - name: matriculas_especial
+        description: Matrículas na educação especial.
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+  - name: stg_siconfi__entes
+    description: Estado e municípios do Tocantins na lista de entes do SICONFI.
+    columns:
+      - name: cod_ente
+        description: Código IBGE do município ou 17 para o Estado.
+        tests:
+          - unique
+          - not_null
+      - name: nome_ente
+        description: Nome do ente.
+        tests:
+          - not_null
+      - name: esfera
+        description: estadual ou municipal.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - estadual
+                  - municipal
+      - name: eh_capital
+        description: Verdadeiro para a capital (Palmas).
+        tests:
+          - not_null
+      - name: exercicio_referencia
+        description: Exercício a que se refere a lista de entes.
+      - name: populacao_siconfi
+        description: População informada pelo SICONFI para o exercício de referência.
+      - name: cnpj
+        description: CNPJ do ente.
+  - name: stg_siconfi__dca_despesa_funcao
+    description: >
+      Despesa por função (DCA Anexo I-E, SICONFI) normalizada: uma linha por ente, ano, estágio
+      da despesa e conta (totais, função 12 - Educação e suas subfunções). Valores em reais
+      correntes.
+    tests:
+      - combinacao_unica:
+          arguments:
+            colunas:
+              - ano
+              - cod_ente
+              - estagio
+              - tipo_conta
+              - cod_subfuncao
+    columns:
+      - name: ano
+        description: Exercício.
+        tests:
+          - not_null
+      - name: cod_ente
+        description: Código IBGE do município ou 17 para o Estado.
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_siconfi__entes')
+                field: cod_ente
+      - name: esfera
+        description: estadual ou municipal.
+        tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - estadual
+                  - municipal
+      - name: estagio
+        description: Estágio da despesa ou inscrição de restos a pagar.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - empenhada
+                  - liquidada
+                  - paga
+                  - restos_a_pagar_processados
+                  - restos_a_pagar_nao_processados
+      - name: tipo_conta
+        description: Classificação da conta.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - total_exceto_intra
+                  - total_intra
+                  - funcao_educacao
+                  - subfuncao
+      - name: cod_subfuncao
+        description: >
+          Código da subfunção (999 = demais subfunções); nulo para totais e função.
+      - name: nome_subfuncao
+        description: Nome da subfunção.
+      - name: valor
+        description: Valor em reais correntes.
+        tests:
+          - not_null
+      - name: coluna_origem
+        description: Texto original da coluna no DCA.
+      - name: conta_origem
+        description: Texto original da conta no DCA.
+  - name: stg_ibge__municipios
+    description: Municípios do Tocantins na DTB 2022 do IBGE, com regiões geográficas.
+    columns:
+      - name: cod_municipio
+        description: Código IBGE de 7 dígitos.
+        tests:
+          - unique
+          - not_null
+      - name: nome_municipio
+        description: Nome oficial do município.
+        tests:
+          - not_null
+      - name: cod_regiao_intermediaria
+        description: Código da região geográfica intermediária.
+      - name: regiao_intermediaria
+        description: Nome da região geográfica intermediária.
+        tests:
+          - not_null
+      - name: cod_regiao_imediata
+        description: Código da região geográfica imediata.
+      - name: regiao_imediata
+        description: Nome da região geográfica imediata.
+        tests:
+          - not_null
+      - name: ano_referencia
+        description: Ano da DTB usada.
+  - name: stg_ibge__populacao
+    description: >
+      População residente por município e ano, do Censo 2022 (origem = censo) e das estimativas
+      anuais (origem = estimativa).
+    tests:
+      - combinacao_unica:
+          arguments:
+            colunas:
+              - cod_municipio
+              - ano
+              - origem
+    columns:
+      - name: cod_municipio
+        description: Código IBGE do município.
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_ibge__municipios')
+                field: cod_municipio
+      - name: ano
+        description: Ano de referência.
+        tests:
+          - not_null
+      - name: populacao
+        description: Pessoas.
+        tests:
+          - not_null
+          - entre:
+              arguments:
+                minimo: 1
+      - name: origem
+        description: censo ou estimativa.
+        tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - censo
+                  - estimativa
+      - name: tabela_sidra
+        description: Número da tabela no SIDRA.
+  - name: stg_ibge__malha_municipios
+    description: Contorno simplificado de cada município em GeoJSON (malha 2022).
+    columns:
+      - name: cod_municipio
+        description: Código IBGE do município.
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_ibge__municipios')
+                field: cod_municipio
+      - name: nome_municipio
+        description: Nome do município na malha.
+      - name: area_km2
+        description: Área em km² informada pelo IBGE.
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+      - name: geojson
+        description: Geometria (Polygon ou MultiPolygon) em GeoJSON, coordenadas em graus.
+        tests:
+          - not_null
