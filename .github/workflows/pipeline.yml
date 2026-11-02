@@ -64,6 +64,19 @@ jobs:
       - name: Resumo da carga
         run: python scripts/resumo_banco.py data/tocantins.duckdb data/contagens.json
 
+      - name: Exportar amostras para fixtures (branches de desenvolvimento)
+        if: github.ref != 'refs/heads/main'
+        run: |
+          python scripts/exportar_amostras.py data/tocantins.duckdb amostras
+          cd amostras
+          ramo="amostras-${GITHUB_REF_NAME//\//-}"
+          git init -q -b "$ramo"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "chore: amostras da camada bruta (${GITHUB_SHA::7})"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" "$ramo"
+
       - uses: actions/upload-artifact@v4
         with:
           name: banco-duckdb

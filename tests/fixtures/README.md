@@ -13,3 +13,9 @@ Municípios incluídos: **Palmas** (1721000), **Abreulândia** (1700251) e
 |---|---|---|
 | `inep/ideb_anos_iniciais.csv`, `inep/ideb_anos_finais.csv`, `inep/ideb_ensino_medio.csv` | INEP, `divulgacao_<etapa>_municipios_2023.zip` | Linhas dos 3 municípios; todas as colunas |
 | `inep/censo_escolas.csv` | INEP, `microdados_censo_escolar_{2023,2024}.zip` (`microdados_ed_basica_<ano>.csv`) | Escolas dos 3 municípios; colunas de identificação, situação e matrículas |
+| `siconfi/siconfi_entes.csv` | SICONFI, `/tt/entes` (02/11/2026) | Os 3 municípios e o Estado (cod. 17); a coluna técnica `_uf_consulta` é recriada na carga |
+| `siconfi/siconfi_dca_despesa_funcao.csv` | SICONFI, `/tt/dca` Anexo I-E | Exercícios 2019–2025 dos 3 municípios e do Estado, só as contas guardadas pelo extrator (totais e função 12) |
+
+As amostras do SICONFI vieram da execução do workflow `pipeline.yml` na branch
+`feat/5-extrator-despesas` (exportadas por `scripts/exportar_amostras.py` para a
+branch `amostras-feat-5-extrator-despesas`).

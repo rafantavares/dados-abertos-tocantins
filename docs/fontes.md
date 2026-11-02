@@ -60,3 +60,10 @@ e as amostras filtradas para o Tocantins foram publicadas na branch
   subfunção como `122 - Administração Geral` se repetem entre funções. Há cinco
   colunas por conta (empenhadas, liquidadas, pagas e inscrições de restos a
   pagar). O projeto usa **despesas liquidadas**.
+- **SICONFI/DCA — rótulos variam entre exercícios** (carga real de 02/11/2026,
+  exercícios 2015–2025): o total aparece como `Despesas Exceto
+  Intraorçamentárias` ou `Despesas (Exceto Intraorçamentárias)`, e as
+  "demais subfunções" da Educação como `FU12 - Demais Subfunções` ou
+  `12.999 - Demais Subfunções Educação`. O staging normaliza os dois formatos.
+- **SICONFI/entes:** o Estado do Tocantins (código 17) vem com `uf = "BR"`;
+  o extrator o seleciona pelo código.
