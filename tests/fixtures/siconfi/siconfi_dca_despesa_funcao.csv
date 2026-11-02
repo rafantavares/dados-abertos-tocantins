@@ -1,0 +1,940 @@
+exercicio,instituicao,cod_ibge,uf,anexo,rotulo,coluna,cod_conta,conta,valor,populacao
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,8592727837.33,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,1254730474.1,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.363 - Ensino Profissional,4120630.84,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.364 - Ensino Superior,4191047.61,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.368 - Educação Básica,1083644312.92,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,107355972.5,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,55418510.23,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,536614033.99,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,8392270767.41,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,1229512539.24,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.363 - Ensino Profissional,3949793.01,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.364 - Ensino Superior,3020890.73,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.368 - Educação Básica,1065160717.01,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,102555460.75,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,54825677.74,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,536087271.03,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,8024158254.79,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,1155114886.67,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.363 - Ensino Profissional,3942287.36,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.364 - Ensino Superior,3020890.73,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.368 - Educação Básica,997366251.13,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,95962336.31,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,54823121.14,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,410830468.13,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,200457069.92,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,25217934.86,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.363 - Ensino Profissional,170837.83,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.364 - Ensino Superior,1170156.88,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.368 - Educação Básica,18483595.91,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,4800511.75,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,FU12 - Demais Subfunções,592832.49,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Intraorçamentárias,526762.96,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,368112512.62,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,74397652.57,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.363 - Ensino Profissional,7505.65,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.368 - Educação Básica,67794465.88,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,6593124.44,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,FU12 - Demais Subfunções,2556.6,1555229
+2019,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Intraorçamentárias,125256802.9,1555229
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,13668536.29,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,4071390.75,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,3326125.08,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.365 - Educação Infantil,469388.24,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,275877.43,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,13555459.25,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,4066197.45,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,3325645.08,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.365 - Educação Infantil,469388.24,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,271164.13,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,12570637.9,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,3543561.03,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,2893991.15,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.365 - Educação Infantil,431193.3,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,218376.58,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,113077.04,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,5193.3,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.361 - Ensino Fundamental,480.0,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,4713.3,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,984821.35,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,522636.42,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,431653.93,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.365 - Educação Infantil,38194.94,2564
+2019,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,52787.55,2564
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,23733711.19,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,8273969.66,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,7266688.12,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.365 - Educação Infantil,22927.15,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,859734.6,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,124619.79,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,23730788.79,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,8273129.66,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,7266688.12,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.365 - Educação Infantil,22927.15,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,858894.6,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,124619.79,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,23005808.77,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,8231450.3,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,7225008.76,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.365 - Educação Infantil,22927.15,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,858894.6,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,124619.79,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,2922.4,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,840.0,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,840.0,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,724980.02,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,41679.36,9607
+2019,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,41679.36,9607
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,1063740503.79,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,309376070.78,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,192314522.95,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.365 - Educação Infantil,84305378.68,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,153523.6,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.367 - Educação Especial,517491.98,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,21369590.32,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,10715563.25,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,47616087.83,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,1037623650.18,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,306475588.35,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,192314522.95,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.365 - Educação Infantil,81595576.0,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,153523.6,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.367 - Educação Especial,517491.98,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,21178910.57,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,10715563.25,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,47616087.83,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,997513339.64,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,285274215.72,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,175522380.93,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.365 - Educação Infantil,77711090.87,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.366 - Educação de Jovens e Adultos,94981.12,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.367 - Educação Especial,383151.98,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,20847799.57,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,10714811.25,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,46761254.26,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,26116853.61,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,2900482.43,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.365 - Educação Infantil,2709802.68,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,190679.75,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,40110310.54,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,21201372.63,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,16792142.02,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.365 - Educação Infantil,3884485.13,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.366 - Educação de Jovens e Adultos,58542.48,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.367 - Educação Especial,134340.0,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,331111.0,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,FU12 - Demais Subfunções,752.0,291855
+2019,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Intraorçamentárias,854833.57,291855
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,9340288124.44,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,1252145601.17,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.363 - Ensino Profissional,1473341.22,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.364 - Ensino Superior,7589891.41,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.368 - Educação Básica,1081643790.99,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,112503011.27,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,48935566.28,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,1106750555.09,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,8954349888.53,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,1137075138.89,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.363 - Ensino Profissional,1406829.22,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.364 - Ensino Superior,1020042.75,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.368 - Educação Básica,1001269199.28,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,89942349.68,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,43436717.96,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,1106650555.09,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,8751806723.76,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,1105360584.13,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.363 - Ensino Profissional,1180121.78,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.364 - Ensino Superior,1019093.32,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.368 - Educação Básica,973731102.34,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,87577179.17,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,41853087.52,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,846437471.71,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,385938235.91,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,115070462.28,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.363 - Ensino Profissional,66512.0,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.364 - Ensino Superior,6569848.66,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.368 - Educação Básica,80374591.71,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,22560661.59,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,FU12 - Demais Subfunções,5498848.32,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Intraorçamentárias,100000.0,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,202543164.77,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,31714554.76,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.363 - Ensino Profissional,226707.44,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.364 - Ensino Superior,949.43,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.368 - Educação Básica,27538096.94,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,2365170.51,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,FU12 - Demais Subfunções,1583630.44,1572866
+2020,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Intraorçamentárias,260213083.38,1572866
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,15210286.47,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,4133319.64,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,3236388.07,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.365 - Educação Infantil,554159.68,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,342771.89,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,452484.19,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,15177584.39,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,4133319.64,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,3236388.07,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.365 - Educação Infantil,554159.68,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,342771.89,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,452484.19,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,14367579.95,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,3890043.08,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,3096435.44,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.365 - Educação Infantil,497870.49,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,295737.15,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,353715.92,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,32702.08,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,810004.44,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,243276.56,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,139952.63,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.365 - Educação Infantil,56289.19,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,47034.74,2579
+2020,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Intraorçamentárias,98768.27,2579
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,26334280.83,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,7758865.29,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,7060583.6,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,672924.66,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,25357.03,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,26284622.56,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,7722729.87,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,7026443.91,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,670928.93,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,25357.03,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,25873005.12,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,7534791.29,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,6838867.83,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,670566.43,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,25357.03,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,49658.27,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,36135.42,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.361 - Ensino Fundamental,34139.69,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,1995.73,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,411617.44,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,187938.58,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,187576.08,9549
+2020,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,362.5,9549
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,1206593759.43,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,319644309.74,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,191946044.14,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.365 - Educação Infantil,94584777.47,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,103638.7,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.367 - Educação Especial,39213.29,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,24936731.89,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,8033904.25,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,54528937.36,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,1171344885.43,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,318992669.19,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,191946044.14,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.365 - Educação Infantil,94539820.47,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,103638.7,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.367 - Educação Especial,39213.29,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,24330048.34,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,8033904.25,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,54528937.36,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,1132250833.89,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,307318520.94,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,183553743.72,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.365 - Educação Infantil,91858648.24,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.366 - Educação de Jovens e Adultos,33844.44,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.367 - Educação Especial,39213.29,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,23799167.0,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,8033904.25,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,54354219.8,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,35248874.0,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,651640.55,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.365 - Educação Infantil,44957.0,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,606683.55,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,39094051.54,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,11674148.25,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,8392300.42,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.365 - Educação Infantil,2681172.23,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.366 - Educação de Jovens e Adultos,69794.26,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,530881.34,299127
+2020,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Intraorçamentárias,174717.56,299127
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,10670311552.26,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,1653650219.76,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.363 - Ensino Profissional,1028622.13,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.364 - Ensino Superior,6168548.14,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.368 - Educação Básica,1466112081.06,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,110027002.31,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,70313966.12,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,963976477.73,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,10090157530.49,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,1514704147.0,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.363 - Ensino Profissional,1013254.13,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.364 - Ensino Superior,3235349.21,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.368 - Educação Básica,1348846920.83,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,100179923.85,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,61428698.98,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,963976477.73,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,9854156804.33,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,1424113618.62,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.363 - Ensino Profissional,1000019.93,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.364 - Ensino Superior,3235349.21,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.368 - Educação Básica,1265227008.14,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,94958054.36,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,59693186.98,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,920473506.05,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,580154021.77,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,138946072.76,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.363 - Ensino Profissional,15368.0,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.364 - Ensino Superior,2933198.93,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.368 - Educação Básica,117265160.23,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,9847078.46,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,FU12 - Demais Subfunções,8885267.14,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,236000726.16,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,90590528.38,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.363 - Ensino Profissional,13234.2,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.368 - Educação Básica,83619912.69,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,5221869.49,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,FU12 - Demais Subfunções,1735512.0,1590248
+2021,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Intraorçamentárias,43502971.68,1590248
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,16198661.33,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,4246863.04,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,2974202.23,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.365 - Educação Infantil,743984.83,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,517465.98,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,11210.0,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,466212.55,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,16134488.33,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,4240683.04,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,2974202.23,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.365 - Educação Infantil,743984.83,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,511285.98,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,11210.0,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,466212.55,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,15510508.2,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,4098524.69,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,2878150.48,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.365 - Educação Infantil,724434.89,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,484729.32,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,11210.0,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,441190.01,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,64173.0,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,6180.0,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,6180.0,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,623980.13,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,142158.35,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,96051.75,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.365 - Educação Infantil,19549.94,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,26556.66,2594
+2021,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Intraorçamentárias,25022.54,2594
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,28535810.45,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,9090556.95,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,7769247.4,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.365 - Educação Infantil,23728.77,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,1180269.3,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,117311.48,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,28535810.45,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,9090556.95,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,7769247.4,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.365 - Educação Infantil,23728.77,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,1180269.3,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,117311.48,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,27617121.82,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,8906936.85,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,7595627.3,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.365 - Educação Infantil,23728.77,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,1170269.3,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,117311.48,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,918688.63,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,183620.1,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,173620.1,9492
+2021,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,10000.0,9492
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,1355928362.18,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,399271030.16,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,243877061.62,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.365 - Educação Infantil,113408161.76,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,43679.41,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,29543850.52,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,12398276.85,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,64525789.22,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,1288100007.58,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,368392851.11,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,228202938.9,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.365 - Educação Infantil,104767366.45,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,43679.41,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,22980589.5,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,12398276.85,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,60732778.79,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,1212247911.22,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,339863349.76,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,210096215.42,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.365 - Educação Infantil,94410747.69,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.366 - Educação de Jovens e Adultos,43679.41,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,22914430.39,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,12398276.85,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,60728773.45,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,67828354.6,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,30878179.05,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.361 - Ensino Fundamental,15674122.72,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.365 - Educação Infantil,8640795.31,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,6563261.02,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Intraorçamentárias,3793010.43,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,75852096.36,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,28529501.35,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,18106723.48,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.365 - Educação Infantil,10356618.76,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,66159.11,306296
+2021,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Intraorçamentárias,4005.34,306296
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,12823742406.07,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,2064485649.79,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.363 - Ensino Profissional,7762517.63,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.364 - Ensino Superior,19998650.63,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,100000.0,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.368 - Educação Básica,1769074945.75,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,150402874.53,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,117146661.25,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,1738663500.58,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,12196684645.11,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,1830994554.89,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.363 - Ensino Profissional,5831514.88,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.364 - Ensino Superior,13123780.07,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,100000.0,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.368 - Educação Básica,1553515416.05,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,141996684.79,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,116427159.1,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,1738500301.14,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,12043060104.74,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,1769086687.3,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.363 - Ensino Profissional,5817723.54,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.364 - Ensino Superior,13117688.02,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.366 - Educação de Jovens e Adultos,100000.0,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.368 - Educação Básica,1493250828.47,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,140582112.51,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,116218334.76,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,1737174644.66,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,627057760.96,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,233491094.9,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.363 - Ensino Profissional,1931002.75,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.364 - Ensino Superior,6874870.56,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.368 - Educação Básica,215559529.7,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,8406189.74,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,FU12 - Demais Subfunções,719502.15,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Intraorçamentárias,163199.44,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,153624540.37,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,61907867.59,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.363 - Ensino Profissional,13791.34,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.364 - Ensino Superior,6092.05,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.368 - Educação Básica,60264587.58,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,1414572.28,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,FU12 - Demais Subfunções,208824.34,1607363
+2022,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Intraorçamentárias,1325656.48,1607363
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,27051245.48,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,5984795.69,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,4351687.36,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.365 - Educação Infantil,986242.11,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,646866.22,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,708749.29,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,25767737.28,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,5982433.44,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,4351197.36,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.365 - Educação Infantil,986242.11,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,644993.97,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,708749.29,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,25226338.36,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,5944497.34,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,4345595.36,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.365 - Educação Infantil,986242.11,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,612659.87,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,551272.37,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,1283508.2,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,2362.25,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.361 - Ensino Fundamental,490.0,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,1872.25,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,541398.92,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,37936.1,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,5602.0,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,32334.1,2609
+2022,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Intraorçamentárias,157476.92,2609
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,39571287.93,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,11504023.25,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,10201517.03,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,1163583.41,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,138922.81,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,39401977.89,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,11492317.31,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,10193530.39,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,1159864.11,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,138922.81,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,39070058.1,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,11413582.76,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,10168100.39,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,1106559.56,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,138922.81,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,169310.04,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,11705.94,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.361 - Ensino Fundamental,7986.64,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,3719.3,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,331919.79,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,78734.55,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,25430.0,9435
+2022,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,53304.55,9435
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,1703224310.2,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,491885146.21,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,302223908.4,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.363 - Ensino Profissional,296568.95,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.365 - Educação Infantil,138166555.33,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,226652.97,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.367 - Educação Especial,82033.87,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,34921737.76,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,15967688.93,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,76127081.46,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,1646659777.25,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,490694498.55,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,301671865.05,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.363 - Ensino Profissional,245568.95,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.365 - Educação Infantil,137785303.07,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,226652.97,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.367 - Educação Especial,82033.87,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,34715385.71,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,15967688.93,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,76127081.46,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,1577338765.25,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,475408387.67,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,290843123.3,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.363 - Ensino Profissional,245568.95,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.365 - Educação Infantil,134434989.11,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.366 - Educação de Jovens e Adultos,226652.97,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.367 - Educação Especial,82033.87,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,33638924.89,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,15937094.58,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,76127081.46,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,56564532.95,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,1190647.66,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.361 - Ensino Fundamental,552043.35,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.363 - Ensino Profissional,51000.0,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.365 - Educação Infantil,381252.26,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,206352.05,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,69321012.0,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,15286110.88,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,10828741.75,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.365 - Educação Infantil,3350313.96,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,1076460.82,313349
+2022,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,FU12 - Demais Subfunções,30594.35,313349
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,14517702633.59,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,2269943705.75,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.363 - Ensino Profissional,2332960.8,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.364 - Ensino Superior,31402237.56,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.368 - Educação Básica,1984874065.67,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,148738408.95,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,102596032.77,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,1355812292.84,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,13827024056.58,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,2013248297.81,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.363 - Ensino Profissional,2311354.61,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.364 - Ensino Superior,24801940.25,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.368 - Educação Básica,1751946299.79,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,132661122.3,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,101527580.86,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,1355812280.58,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,13725263759.62,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,1984132341.57,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.363 - Ensino Profissional,2298387.99,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.364 - Ensino Superior,24801940.25,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.368 - Educação Básica,1724931606.26,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,130572974.9,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,101527432.17,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,1355718921.44,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,690678577.01,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,256695407.94,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.363 - Ensino Profissional,21606.19,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.364 - Ensino Superior,6600297.31,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.368 - Educação Básica,232927765.88,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,16077286.65,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,FU12 - Demais Subfunções,1068451.91,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Intraorçamentárias,12.26,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,101760296.96,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,29115956.24,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.363 - Ensino Profissional,12966.62,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.368 - Educação Básica,27014693.53,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,2088147.4,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,FU12 - Demais Subfunções,148.69,1607363
+2023,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Intraorçamentárias,93359.14,1607363
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,26101619.66,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,6573724.8,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,3752957.48,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.365 - Educação Infantil,1179340.61,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,63633.62,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,1337090.69,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,240702.4,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,1026760.41,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,25983342.07,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,6572307.8,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,3752957.48,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.365 - Educação Infantil,1179340.61,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,63633.62,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,1335673.69,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,240702.4,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,1026760.41,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,24997917.18,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,6387595.83,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,3695381.43,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.365 - Educação Infantil,1151292.82,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.366 - Educação de Jovens e Adultos,63633.62,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,1256194.13,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,221093.83,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,782565.56,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,118277.59,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,1417.0,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,1417.0,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,985424.89,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,184711.97,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,57576.05,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.365 - Educação Infantil,28047.79,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,79479.56,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,FU12 - Demais Subfunções,19608.57,2609
+2023,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Intraorçamentárias,244194.85,2609
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,51319819.26,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,17113244.18,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,14460108.33,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,2361958.38,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,291177.47,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,51317419.26,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,17110844.18,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,14460108.33,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,2361958.38,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,288777.47,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,48329420.71,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,16016921.21,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,14449537.13,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,1281352.71,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,286031.37,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,2400.0,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,2400.0,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,FU12 - Demais Subfunções,2400.0,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,2987998.55,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,1093922.97,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,10571.2,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,1080605.67,9435
+2023,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,FU12 - Demais Subfunções,2746.1,9435
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,1999518484.72,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,546156118.57,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,325896794.7,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.365 - Educação Infantil,153586729.12,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,100000.0,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.367 - Educação Especial,100000.0,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,47150128.23,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,19322466.52,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,76265486.87,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,1936342598.82,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,539202711.54,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,321332460.72,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.365 - Educação Infantil,152564308.08,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,100000.0,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.367 - Educação Especial,100000.0,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,45783476.22,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,19322466.52,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,76258095.96,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,1818963956.08,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,514873071.62,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,303059136.61,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.365 - Educação Infantil,148023046.32,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.366 - Educação de Jovens e Adultos,100000.0,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.367 - Educação Especial,100000.0,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,44547545.17,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,19043343.52,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,76258095.96,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,63175885.9,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,6953407.03,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.361 - Ensino Fundamental,4564333.98,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.365 - Educação Infantil,1022421.04,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,1366652.01,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Intraorçamentárias,7390.91,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,117378642.74,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,24329639.92,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,18273324.11,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.365 - Educação Infantil,4541261.76,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,1235931.05,313349
+2023,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,FU12 - Demais Subfunções,279123.0,313349
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,16285356130.72,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,2481374124.79,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,775866928.0,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.362 - Ensino Médio,762311553.22,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.363 - Ensino Profissional,15619113.97,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.364 - Ensino Superior,41917528.14,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,27639.0,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.367 - Educação Especial,50000.0,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.368 - Educação Básica,470463331.82,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,285810201.83,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,129307828.81,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,1459588102.32,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,15609747328.55,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,2138466178.45,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,692674978.62,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.362 - Ensino Médio,720951304.43,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.363 - Ensino Profissional,14881135.39,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.364 - Ensino Superior,36412350.46,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,27639.0,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.368 - Educação Básica,309071266.55,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,236804604.52,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,127642899.48,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,1459535839.78,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,15340068793.46,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,2065941719.83,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,674849362.79,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.362 - Ensino Médio,705531033.68,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.363 - Ensino Profissional,14702629.62,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.364 - Ensino Superior,36396832.48,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.366 - Educação de Jovens e Adultos,27639.0,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.368 - Educação Básica,280607188.82,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,232643630.08,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,121183403.36,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,1364884605.76,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,675608802.17,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,342907946.34,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.361 - Ensino Fundamental,83191949.38,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.362 - Ensino Médio,41360248.79,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.363 - Ensino Profissional,737978.58,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.364 - Ensino Superior,5505177.68,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.367 - Educação Especial,50000.0,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.368 - Educação Básica,161392065.27,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,49005597.31,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,FU12 - Demais Subfunções,1664929.33,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Intraorçamentárias,52262.54,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,269678535.09,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,72524458.62,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,17825615.83,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.362 - Ensino Médio,15420270.75,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.363 - Ensino Profissional,178505.77,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.364 - Ensino Superior,15517.98,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.368 - Educação Básica,28464077.73,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,4160974.44,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,FU12 - Demais Subfunções,6459496.12,1584306
+2024,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Intraorçamentárias,94651234.02,1584306
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,31456370.38,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,8918121.48,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,5132553.91,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.365 - Educação Infantil,1929095.13,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,125797.69,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.367 - Educação Especial,23373.58,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,1406191.27,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,301109.9,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,2308847.91,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,31359361.37,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,8917721.48,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,5132553.91,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.365 - Educação Infantil,1929095.13,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,125797.69,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.367 - Educação Especial,23373.58,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,1405791.27,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,301109.9,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,2308847.91,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,29866990.79,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,8508236.89,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,4904893.04,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.365 - Educação Infantil,1835450.82,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.366 - Educação de Jovens e Adultos,122998.47,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.367 - Educação Especial,23373.58,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,1324660.94,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,296860.04,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,1488754.96,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,97009.01,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,400.0,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,400.0,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,1492370.58,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,409484.59,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,227660.87,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.365 - Educação Infantil,93644.31,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.366 - Educação de Jovens e Adultos,2799.22,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,81130.33,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,FU12 - Demais Subfunções,4249.86,2463
+2024,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Intraorçamentárias,820092.95,2463
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,58396741.8,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,19636764.33,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,17153991.47,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.365 - Educação Infantil,928757.71,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,1247159.14,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,306856.01,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,58396740.46,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,19636762.99,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,17153990.13,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.365 - Educação Infantil,928757.71,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,1247159.14,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,306856.01,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,57722053.03,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,19427171.16,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,16958415.4,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.365 - Educação Infantil,928757.71,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,1233142.04,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,306856.01,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,1.34,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,1.34,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.361 - Ensino Fundamental,1.34,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,674687.43,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,209591.83,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,195574.73,10368
+2024,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,14017.1,10368
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,2149999077.21,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,618624512.44,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,374498639.68,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.365 - Educação Infantil,191860688.08,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,52265184.68,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,121490449.31,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,2126460143.58,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,611175059.22,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,369049647.8,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.365 - Educação Infantil,190207269.16,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,51918142.26,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,121490449.31,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,2100444945.18,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,605359691.88,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,366156047.96,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.365 - Educação Infantil,187371632.56,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,51832011.36,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,115288387.16,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,23538933.63,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,7449453.22,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.361 - Ensino Fundamental,5448991.88,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.365 - Educação Infantil,1653418.92,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,347042.42,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,26015198.4,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,5815367.34,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,2893599.84,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.365 - Educação Infantil,2835636.6,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,86130.9,334454
+2024,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Intraorçamentárias,6202062.15,334454
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,17341884251.55,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,2553325557.55,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,826984866.0,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.362 - Ensino Médio,825553913.23,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.363 - Ensino Profissional,24919721.59,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.364 - Ensino Superior,44688140.51,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,48735.0,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.367 - Educação Especial,300000.0,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.368 - Educação Básica,466230303.71,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,235534030.88,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,129065846.63,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,1394002262.84,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,16550943898.76,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,2305132331.39,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,775613123.78,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.362 - Ensino Médio,773258204.48,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.363 - Ensino Profissional,14412552.51,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.364 - Ensino Superior,43513387.98,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,48735.0,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.368 - Educação Básica,380435041.0,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,195158271.98,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,122693014.66,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,1387935257.75,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,16294884638.82,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,2216321096.34,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,736895022.23,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.362 - Ensino Médio,764229424.3,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.363 - Ensino Profissional,12078974.89,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.364 - Ensino Superior,43481241.98,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.366 - Educação de Jovens e Adultos,48546.0,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.368 - Educação Básica,354383588.78,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,189377224.85,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,115827073.31,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,1329539773.18,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,790940352.79,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,248193226.16,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.361 - Ensino Fundamental,51371742.22,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.362 - Ensino Médio,52295708.75,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.363 - Ensino Profissional,10507169.08,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.364 - Ensino Superior,1174752.53,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.367 - Educação Especial,300000.0,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.368 - Educação Básica,85795262.71,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,40375758.9,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,FU12 - Demais Subfunções,6372831.97,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Intraorçamentárias,6067005.09,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,256059259.94,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,88811235.05,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,38718101.55,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.362 - Ensino Médio,9028780.18,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.363 - Ensino Profissional,2333577.62,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.364 - Ensino Superior,32146.0,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.366 - Educação de Jovens e Adultos,189.0,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.368 - Educação Básica,26051452.22,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,5781047.13,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,FU12 - Demais Subfunções,6865941.35,1584306
+2025,Governo do Estado do Tocantins,17,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Intraorçamentárias,58395484.57,1584306
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,37432990.87,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,10084179.82,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,5667593.29,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.365 - Educação Infantil,2256284.43,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,245836.27,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.367 - Educação Especial,6674.48,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,1590403.07,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,317388.28,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,2009931.97,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,36538340.75,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,10080041.82,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,5665524.29,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.365 - Educação Infantil,2254215.43,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.366 - Educação de Jovens e Adultos,245836.27,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.367 - Educação Especial,6674.48,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,1590403.07,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,317388.28,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,2009931.97,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,35491597.94,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,9929401.74,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,5586361.33,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.365 - Educação Infantil,2216728.51,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.366 - Educação de Jovens e Adultos,241033.71,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.367 - Educação Especial,6674.48,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,1561215.43,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,317388.28,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,1813105.09,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,894650.12,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,4138.0,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.361 - Ensino Fundamental,2069.0,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.365 - Educação Infantil,2069.0,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,1046742.81,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,150640.08,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,79162.96,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.365 - Educação Infantil,37486.92,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.366 - Educação de Jovens e Adultos,4802.56,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,29187.64,2463
+2025,Prefeitura Municipal de Abreulândia - TO,1700251,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Intraorçamentárias,196826.88,2463
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,76147876.94,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,22637203.78,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,17696244.64,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.365 - Educação Infantil,2144207.72,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,1877574.83,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,FU12 - Demais Subfunções,919176.59,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,76143176.94,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,22637203.78,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,17696244.64,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.365 - Educação Infantil,2144207.72,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,1877574.83,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,FU12 - Demais Subfunções,919176.59,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,75947945.43,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,22637203.78,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,17696244.64,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.365 - Educação Infantil,2144207.72,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,1877574.83,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,FU12 - Demais Subfunções,919176.59,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,4700.0,10368
+2025,Prefeitura Municipal de Ananás - TO,1701002,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,195231.51,10368
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Exceto Intraorçamentárias,2220437546.5,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12 - Educação,647397171.23,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.361 - Ensino Fundamental,379914400.44,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.365 - Educação Infantil,205507150.44,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,12.122 - Administração Geral,61975620.35,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Empenhadas,TotalDespesas,Despesas Intraorçamentárias,140196373.48,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Exceto Intraorçamentárias,2206544635.33,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12 - Educação,644229369.37,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.361 - Ensino Fundamental,379502725.54,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.365 - Educação Infantil,203597867.72,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,12.122 - Administração Geral,61128776.11,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Liquidadas,TotalDespesas,Despesas Intraorçamentárias,140196373.48,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Exceto Intraorçamentárias,2170067145.46,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12 - Educação,631832406.9,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.361 - Ensino Fundamental,371958144.91,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.365 - Educação Infantil,199940287.96,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,12.122 - Administração Geral,59933974.03,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Despesas Pagas,TotalDespesas,Despesas Intraorçamentárias,135330415.2,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,13892911.17,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12 - Educação,3167801.86,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.361 - Ensino Fundamental,411674.9,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.365 - Educação Infantil,1909282.72,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Não Processados,TotalDespesas,12.122 - Administração Geral,846844.24,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Exceto Intraorçamentárias,36477489.87,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12 - Educação,12396962.47,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.361 - Ensino Fundamental,7544580.63,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.365 - Educação Infantil,3657579.76,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,12.122 - Administração Geral,1194802.08,334454
+2025,Prefeitura Municipal de Palmas - TO,1721000,TO,DCA-Anexo I-E,Total Geral da Despesa por Função,Inscrição de Restos a Pagar Processados,TotalDespesas,Despesas Intraorçamentárias,4865958.28,334454

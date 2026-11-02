@@ -54,7 +54,5 @@ def test_extrair_com_fixtures_e_idempotente():
         assert n1 == n2 > 0
         entes = con.execute("select count(*) from raw.siconfi_entes").fetchone()[0]
         assert entes == 4  # 3 municípios de amostra + Estado
-        contas = con.execute(
-            "select distinct conta from raw.siconfi_dca_despesa_funcao"
-        ).fetchall()
+        contas = con.execute("select distinct conta from raw.siconfi_dca_despesa_funcao").fetchall()
         assert all(siconfi_dca.conta_relevante(c) for (c,) in contas)
