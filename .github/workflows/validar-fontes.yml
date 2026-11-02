@@ -1,0 +1,40 @@
+name: Validar fontes
+
+# Baixa cada fonte candidata a partir dos runners do GitHub (que alcançam os
+# sites do governo), salva relatório + amostras como artefato e publica as
+# amostras pequenas na branch "amostras-descoberta" (nunca na main).
+on:
+  workflow_dispatch:
+  push:
+    branches: ["feat/1-**"]
+    paths: ["scripts/validar_fontes.py", ".github/workflows/validar-fontes.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pandas openpyxl xlrd cryptography
+      - run: python scripts/validar_fontes.py saida
+      - uses: actions/upload-artifact@v4
+        with:
+          name: validacao-fontes
+          path: saida/
+          retention-days: 30
+      - name: Publicar amostras na branch amostras-descoberta
+        run: |
+          cd saida
+          git init -q -b amostras-descoberta
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          find . -type f -size +5M -delete
+          git add -A
+          git commit -q -m "chore: amostras da validação de fontes (${GITHUB_SHA::7})"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" amostras-descoberta
