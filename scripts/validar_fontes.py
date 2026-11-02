@@ -12,9 +12,11 @@ from __future__ import annotations
 import hashlib
 import io
 import json
+import ssl
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import zipfile
 from datetime import UTC, datetime
@@ -39,6 +41,16 @@ FONTES: list[dict] = [
         "id": "ibge_malha_municipios_to",
         "url": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/17"
         "?intrarregiao=municipio&formato=application/vnd.geo%2Bjson&qualidade=minima",
+    },
+    {
+        "id": "ibge_geoftp_malha_municipios_to_2022",
+        "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/"
+        "malhas_municipais/municipio_2022/UFs/TO/TO_Municipios_2022.zip",
+    },
+    {
+        "id": "ibge_geoftp_dtb_2022",
+        "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/"
+        "divisao_territorial/2022/DTB_2022.zip",
     },
     {
         "id": "inep_ideb_anos_iniciais_municipios_2023",
@@ -101,18 +113,52 @@ FONTES: list[dict] = [
 LIMITE_BYTES = 600 * 1024 * 1024
 
 
-def baixar(
-    url: str, tentativas: int = 3, timeout: int = 120
-) -> tuple[int, dict, bytes]:
+def contexto_com_intermediario(url: str) -> ssl.SSLContext:
+    """Contexto TLS que completa a cadeia de certificados via AIA.
+
+    Alguns servidores (ex.: download.inep.gov.br) não enviam o certificado
+    intermediário. Buscamos o emissor indicado no campo AIA do certificado do
+    servidor e o adicionamos às ACs confiáveis; a verificação continua ativa e
+    a cadeia precisa terminar em uma raiz confiável do sistema.
+    """
+    from cryptography import x509
+    from cryptography.hazmat.primitives.serialization import Encoding
+    from cryptography.x509.oid import AuthorityInformationAccessOID, ExtensionOID
+
+    host = urllib.parse.urlsplit(url).hostname
+    pem = ssl.get_server_certificate((host, 443), timeout=30)
+    cert = x509.load_pem_x509_certificate(pem.encode())
+    aia = cert.extensions.get_extension_for_oid(ExtensionOID.AUTHORITY_INFORMATION_ACCESS)
+    contexto = ssl.create_default_context()
+    for desc in aia.value:
+        if desc.access_method == AuthorityInformationAccessOID.CA_ISSUERS:
+            with urllib.request.urlopen(desc.access_location.value, timeout=30) as resp:
+                der = resp.read()
+            try:
+                inter = x509.load_der_x509_certificate(der)
+            except ValueError:
+                inter = x509.load_pem_x509_certificate(der)
+            contexto.load_verify_locations(cadata=inter.public_bytes(Encoding.PEM).decode())
+    return contexto
+
+
+def baixar(url: str, tentativas: int = 3, timeout: int = 40) -> tuple[int, dict, bytes]:
     ultimo_erro: Exception | None = None
+    contexto: ssl.SSLContext | None = None
     for tentativa in range(1, tentativas + 1):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA})
-            with urllib.request.urlopen(req, timeout=timeout) as resp:
+            with urllib.request.urlopen(req, timeout=timeout, context=contexto) as resp:
                 corpo = resp.read(LIMITE_BYTES)
                 return resp.status, dict(resp.headers), corpo
         except urllib.error.HTTPError as erro:
             return erro.code, dict(erro.headers or {}), erro.read()[:2000]
+        except urllib.error.URLError as erro:
+            ultimo_erro = erro
+            if isinstance(erro.reason, ssl.SSLCertVerificationError) and contexto is None:
+                contexto = contexto_com_intermediario(url)
+                continue
+            time.sleep(2**tentativa)
         except Exception as erro:  # noqa: BLE001 - registramos qualquer falha de rede
             ultimo_erro = erro
             time.sleep(2**tentativa)
@@ -129,14 +175,16 @@ def amostrar(fonte_id: str, corpo: bytes, destino: Path) -> dict:
         resumo["arquivos_zip"] = [(i.filename, i.file_size) for i in zf.infolist()]
         for info in zf.infolist():
             nome = info.filename.lower()
-            if nome.endswith(".xlsx"):
+            if nome.endswith(".xls") and "municipio" in nome:
+                df = pd.read_excel(zf.open(info), dtype=str)
+                resumo["colunas"] = list(df.columns)
+                df = df[df.iloc[:, 0] == "17"]
+                resumo["linhas_to"] = len(df)
+                df.to_csv(destino / f"{fonte_id}_TO.csv", index=False)
+            elif nome.endswith(".xlsx") and "ideb" in fonte_id:
                 bruto = pd.read_excel(zf.open(info), header=None, dtype=str)
-                resumo["xlsx_primeiras_linhas"] = (
-                    bruto.head(12).fillna("").values.tolist()
-                )
-                linha_cab = next(
-                    i for i, row in bruto.iterrows() if "SG_UF" in row.values
-                )
+                resumo["xlsx_primeiras_linhas"] = bruto.head(12).fillna("").values.tolist()
+                linha_cab = next(i for i, row in bruto.iterrows() if "SG_UF" in row.values)
                 df = bruto.iloc[linha_cab + 1 :].copy()
                 df.columns = bruto.iloc[linha_cab].values
                 df = df[df["SG_UF"] == "TO"]
@@ -215,9 +263,7 @@ def main(saida: str) -> None:
             if status == 200:
                 registro["resumo"] = amostrar(fonte["id"], corpo, amostras)
             else:
-                registro["inicio_resposta"] = corpo[:300].decode(
-                    "utf-8", errors="replace"
-                )
+                registro["inicio_resposta"] = corpo[:300].decode("utf-8", errors="replace")
         except Exception as erro:  # noqa: BLE001
             registro["erro"] = repr(erro)
         print(json.dumps(registro, ensure_ascii=False, default=str)[:4000], flush=True)

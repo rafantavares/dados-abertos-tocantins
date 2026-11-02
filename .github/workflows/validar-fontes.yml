@@ -15,13 +15,13 @@ permissions:
 jobs:
   validar:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install pandas openpyxl
+      - run: pip install pandas openpyxl xlrd cryptography
       - run: python scripts/validar_fontes.py saida
       - uses: actions/upload-artifact@v4
         with:
