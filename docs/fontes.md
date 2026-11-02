@@ -67,3 +67,18 @@ e as amostras filtradas para o Tocantins foram publicadas na branch
   `12.999 - Demais Subfunções Educação`. O staging normaliza os dois formatos.
 - **SICONFI/entes:** o Estado do Tocantins (código 17) vem com `uf = "BR"`;
   o extrator o seleciona pelo código.
+
+## Cobertura observada na primeira carga real (02/11/2026)
+
+| Fonte | Cobertura carregada |
+|---|---|
+| IDEB (INEP) | **Edição 2025** (publicada após a validação inicial), série 2005–2025; 400 linhas (anos iniciais), 359 (anos finais), 283 (ensino médio) |
+| Censo Escolar (INEP) | 2019–2024 (2.258 a 2.667 escolas por ano); o Censo 2025 ainda não foi publicado em microdados |
+| DCA Anexo I-E (SICONFI) | Exercícios 2015–2025 do Estado e dos municípios |
+| DTB / malha (IBGE) | 139 municípios, referência 2022 |
+| População (SIDRA) | Censo 2022 + estimativas 2001–2025 (sem estimativa em 2007, 2010, 2022 e 2023) |
+
+- **Instabilidade do INEP:** em uma das execuções o `download.inep.gov.br`
+  deu timeout em todas as tentativas. Desde então, a falha de uma fonte é
+  registrada em `raw._cargas` e a carga anterior dela é mantida, sem interromper
+  as demais.
