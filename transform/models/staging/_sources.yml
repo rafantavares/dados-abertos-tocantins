@@ -1,0 +1,39 @@
+version: 2
+
+sources:
+  - name: raw
+    description: >
+      Camada bruta gravada pelos extratores de `src/pipeline`. Todas as colunas
+      da fonte são texto, exatamente como vieram; `_fonte_url` e
+      `_carregado_em` registram a origem e o momento da carga.
+    schema: raw
+    tables:
+      - name: inep_ideb_anos_iniciais
+        description: IDEB por município e rede - anos iniciais do ensino fundamental (INEP), Tocantins.
+      - name: inep_ideb_anos_finais
+        description: IDEB por município e rede - anos finais do ensino fundamental (INEP), Tocantins.
+      - name: inep_ideb_ensino_medio
+        description: IDEB por município e rede - ensino médio (INEP), Tocantins.
+      - name: inep_censo_escolas
+        description: Tabela de escolas dos microdados do Censo Escolar (INEP), Tocantins, uma partição por ano.
+        columns:
+          - name: CO_ENTIDADE
+            tests: [not_null]
+          - name: NU_ANO_CENSO
+            tests: [not_null]
+      - name: siconfi_entes
+        description: Entes do Tocantins (Estado e municípios) na lista do SICONFI.
+      - name: siconfi_dca_despesa_funcao
+        description: >
+          DCA Anexo I-E (despesa por função) do SICONFI. Só os totais da despesa
+          e as contas da função 12 - Educação, para o Estado e os municípios.
+      - name: ibge_dtb_municipios
+        description: Divisão Territorial Brasileira 2022 (IBGE), municípios do Tocantins.
+      - name: ibge_sidra_populacao
+        description: >
+          População residente do SIDRA/IBGE por município (tabela 4709, Censo 2022, e
+          tabela 6579, estimativas). `_referencia` é o número da tabela.
+      - name: ibge_malha_municipios
+        description: Malha municipal 2022 do Tocantins (IBGE) com geometria em GeoJSON simplificado.
+      - name: _cargas
+        description: Registro de cada execução de extrator (sucesso, linhas e erro).
