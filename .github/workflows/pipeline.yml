@@ -1,0 +1,96 @@
+name: Pipeline de dados
+
+# Roda os extratores reais e o dbt nos runners do GitHub (que alcançam os
+# sites do governo) e publica o banco DuckDB na branch "dados" (nunca na main).
+# - schedule / workflow_dispatch na main: extrai, transforma e publica.
+# - push em branches feat/**: extrai e transforma para validar, sem publicar.
+on:
+  workflow_dispatch:
+    inputs:
+      forcar:
+        description: "Ignorar o banco anterior e recarregar tudo"
+        type: boolean
+        default: false
+  schedule:
+    - cron: "17 9 * * 1" # segundas, 06:17 em Brasília
+  push:
+    branches: ["feat/**"]
+    paths:
+      - "src/pipeline/**"
+      - "transform/**"
+      - ".github/workflows/pipeline.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pipeline-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  DUCKDB_PATH: ${{ github.workspace }}/data/tocantins.duckdb
+  PIPELINE_CACHE: ${{ github.workspace }}/data/cache
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Instalar dependências
+        run: pip install -e ".[dev]"
+
+      - name: Restaurar banco anterior (carga incremental)
+        if: ${{ !inputs.forcar }}
+        run: |
+          mkdir -p data
+          if git fetch --depth 1 origin dados 2>/dev/null; then
+            git show FETCH_HEAD:tocantins.duckdb > data/tocantins.duckdb && echo "banco anterior restaurado"
+            git show FETCH_HEAD:contagens.json > data/contagens_anteriores.json 2>/dev/null || true
+          else
+            echo "branch dados ainda não existe; carga completa"
+          fi
+
+      - name: Extrair fontes
+        run: python -m pipeline.extrair
+
+      - name: dbt build
+        run: dbt build --project-dir transform
+
+      - name: Resumo da carga
+        run: python scripts/resumo_banco.py data/tocantins.duckdb data/contagens.json
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: banco-duckdb
+          path: |
+            data/tocantins.duckdb
+            data/contagens.json
+          retention-days: 14
+
+      - name: Publicar na branch dados
+        if: github.ref == 'refs/heads/main'
+        run: |
+          mkdir publicar && cd publicar
+          cp ../data/tocantins.duckdb ../data/contagens.json .
+          cat > README.md <<'MD'
+          # Branch de dados
+
+          Gerada automaticamente pelo workflow **Pipeline de dados**. Não edite à mão.
+
+          - `tocantins.duckdb`: banco com as camadas `raw`, `staging`, `intermediate` e `marts`.
+          - `contagens.json`: linhas por tabela nesta carga.
+
+          URL para o painel: `https://raw.githubusercontent.com/${{ github.repository }}/dados/tocantins.duckdb`
+          MD
+          sed -i 's/^          //' README.md
+          git init -q -b dados
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "dados: carga de $(date -u +%Y-%m-%dT%H:%MZ) (${GITHUB_SHA::7})"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" dados
