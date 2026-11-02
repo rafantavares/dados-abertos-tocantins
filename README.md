@@ -26,16 +26,16 @@ Fontes públicas (APIs / CSV)
 
 Arquitetura em camadas (medalhão): **bruta** guarda o dado como veio; **staging** padroniza nomes e tipos; **marts** entrega tabelas prontas para análise.
 
-## Fontes candidatas
+## Fontes
 
-A validação de disponibilidade e licença de cada fonte é a primeira tarefa do projeto (issue #1).
+Validadas em 02/11/2026 (issue #1). Detalhes, licenças e evidências em [`docs/fontes.md`](docs/fontes.md); perguntas de negócio e dicionário em [`docs/dicionario.md`](docs/dicionario.md).
 
-| Tema | Fonte candidata |
-|---|---|
-| Indicadores educacionais | INEP (Censo Escolar, IDEB) |
-| Gastos públicos | Portal da Transparência do Tocantins |
-| Dados municipais | IBGE (população, códigos de municípios) |
-| Catálogo federal | Portal Brasileiro de Dados Abertos |
+| Tema | Fonte adotada | Observação |
+|---|---|---|
+| Indicadores educacionais | INEP – IDEB por município (2005–2023) e microdados do Censo Escolar | Download direto do INEP |
+| Gastos públicos | Tesouro Nacional – SICONFI, DCA Anexo I-E (despesa por função) | Substitui o Portal da Transparência TO, inacessível |
+| Dados municipais | IBGE – DTB 2022, malha municipal 2022, SIDRA (Censo 2022 e estimativas) | Substitui a API `servicodados`, inacessível |
+| Catálogo federal | Portal Brasileiro de Dados Abertos | Apenas referência (API exige token) |
 
 ## Stack
 
@@ -51,7 +51,7 @@ Python 3.12 · httpx · DuckDB · dbt-duckdb · pandas · Streamlit · pytest ·
 
 | Milestone | Entrega | Status |
 |---|---|---|
-| **M1 – Descoberta** | Inventário das fontes, licenças e dicionário de dados | ⏳ |
+| **M1 – Descoberta** | Inventário das fontes, licenças e dicionário de dados | ✅ |
 | **M2 – Ingestão** | Extratores com carga incremental e camada bruta | ⏳ |
 | **M3 – Modelagem** | Modelos dbt (staging → marts) com testes | ⏳ |
 | **M4 – Painel** | Painel público com mapas e comparativos por município | ⏳ |
