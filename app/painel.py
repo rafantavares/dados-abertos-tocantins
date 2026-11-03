@@ -17,14 +17,21 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 import dados
 import indicadores as ind
+import tema
 
 st.set_page_config(page_title="Educação no Tocantins", page_icon="📊", layout="wide")
 
-# Paleta: sequencial azul para magnitude; categóricas em ordem fixa.
-AZUL_SEQUENCIAL = ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"]
-SERIE_1, SERIE_2, SERIE_3, SERIE_4 = "#2a78d6", "#eb6834", "#1baf7a", "#eda100"
-CINZA = "#b9b8b2"
-CORES_REDE = {"federal": SERIE_1, "estadual": SERIE_2, "municipal": SERIE_3, "privada": SERIE_4}
+# Cores do modo ativo (claro/escuro), validadas em app/tema.py.
+T = tema.para(getattr(st.context.theme, "type", None))
+SERIE_1, SERIE_2, SERIE_3, SERIE_4 = T.serie
+CINZA = T.neutro
+CORES_REDE = T.cores_rede
+#: Estilo MapLibre só com fundo na cor da superfície (sem tiles externos).
+ESTILO_MAPA = {
+    "version": 8,
+    "sources": {},
+    "layers": [{"id": "fundo", "type": "background", "paint": {"background-color": T.superficie}}],
+}
 
 
 def layout(fig: go.Figure, altura: int = 420) -> go.Figure:
@@ -32,8 +39,10 @@ def layout(fig: go.Figure, altura: int = 420) -> go.Figure:
         height=altura,
         margin={"l": 8, "r": 8, "t": 48, "b": 8},
         separators=",.",
-        font={"family": "Inter, system-ui, sans-serif", "size": 13},
+        font={"family": "Inter, system-ui, sans-serif", "size": 13, "color": T.texto},
         hoverlabel={"font_size": 13},
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
         legend={
             "orientation": "h",
             "y": 1.02,
@@ -41,10 +50,15 @@ def layout(fig: go.Figure, altura: int = 420) -> go.Figure:
             "x": 0,
             "title": None,
             "traceorder": "normal",
+            "font": {"color": T.texto_secundario},
         },
     )
-    fig.update_xaxes(showgrid=False, linewidth=1, linecolor="rgba(128,128,128,.35)")
-    fig.update_yaxes(gridcolor="rgba(128,128,128,.18)", gridwidth=1, zeroline=False)
+    fig.update_xaxes(
+        showgrid=False, linewidth=1, linecolor=T.eixo, tickfont={"color": T.texto_secundario}
+    )
+    fig.update_yaxes(
+        gridcolor=T.grade, gridwidth=1, zeroline=False, tickfont={"color": T.texto_secundario}
+    )
     return fig
 
 
@@ -147,17 +161,24 @@ with abas[0]:
         geojson=d["geojson"],
         locations="cod_municipio",
         color="valor",
-        color_continuous_scale=AZUL_SEQUENCIAL,
+        color_continuous_scale=list(T.sequencial),
         hover_name="nome_municipio",
         hover_data={"cod_municipio": False, "valor": definicao.formato_hover},
         labels={"valor": definicao.rotulo_curto},
-        map_style="white-bg",  # sem mapa de fundo: nenhum serviço externo de tiles
+        map_style="white-bg",  # trocado abaixo pelo fundo do tema; sem tiles externos
         center={"lat": -10.2, "lon": -48.3},
         zoom=5.6,
         opacity=0.95,
     )
-    fig.update_traces(marker_line_width=0.6, marker_line_color="white")
-    fig.update_layout(coloraxis_colorbar={"title": None, "thickness": 12})
+    fig.update_traces(marker_line_width=0.6, marker_line_color=T.superficie)
+    fig.update_layout(map_style=ESTILO_MAPA)
+    fig.update_layout(
+        coloraxis_colorbar={
+            "title": None,
+            "thickness": 12,
+            "tickfont": {"color": T.texto_secundario},
+        }
+    )
     sufixo = f" — valores corrigidos pelo IPCA, R$ de {ano_base}" if valores_reais else ""
     st.subheader(f"{indicador} em {ano}{sufixo}")
     st.plotly_chart(layout(fig, 760), width="stretch")
@@ -189,7 +210,7 @@ with abas[1]:
         abaixo = int((ordenado["valor"] < definicao.referencia).sum())
         fig.add_vline(
             x=definicao.referencia,
-            line={"color": "#52514e", "width": 1.5},
+            line={"color": T.texto_secundario, "width": 1.5},
             annotation_text=f"mínimo legal: {ind.numero(definicao.referencia, 0)}%",
             annotation_position="top",
         )
@@ -264,7 +285,7 @@ with abas[3]:
                         "color": cor,
                         "size": tamanho,
                         "opacity": 0.85,
-                        "line": {"width": 1.5, "color": "white"},
+                        "line": {"width": 1.5, "color": T.superficie},
                     },
                     hovertemplate=(
                         "%{text}<br>R$ %{x:,.0f} por aluno<br>IDEB %{y:.1f}<extra></extra>"
@@ -306,16 +327,19 @@ with abas[4]:
                 y=[""],
                 orientation="h",
                 name=r.capitalize(),
-                marker={"color": CORES_REDE[r], "line": {"width": 2, "color": "white"}},
+                marker={"color": CORES_REDE[r], "line": {"width": 2, "color": T.superficie}},
                 hovertemplate=(
                     f"{r.capitalize()}: {ind.numero(valor)} matrículas "
                     f"({ind.numero(100 * participacao, 1)}%)<extra></extra>"
                 ),
                 # rótulo direto só nos segmentos largos o bastante para lê-lo
-                text=[f"{ind.numero(100 * participacao, 0)}%" if participacao >= 0.08 else ""],
+                text=[
+                    f"<b>{ind.numero(100 * participacao, 0)}%</b>" if participacao >= 0.08 else ""
+                ],
                 textposition="inside",
                 insidetextanchor="middle",
-                textfont={"color": "#0b0b0b", "size": 14},
+                # texto grande e em negrito: a WCAG exige 3:1, atendido em todas as cores
+                textfont={"color": T.rotulo_em_preenchimento, "size": 19},
             )
         )
     fig.update_layout(

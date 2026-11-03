@@ -4,5 +4,16 @@ toolbarMode = "viewer"
 [browser]
 gatherUsageStats = false
 
-[theme]
+# Superfícies e tintas da paleta validada (ver app/tema.py). O Streamlit segue a
+# preferência do sistema; o usuário pode trocar em ⋮ → Settings.
+[theme.light]
 primaryColor = "#2a78d6"
+backgroundColor = "#fcfcfb"
+secondaryBackgroundColor = "#f0efec"
+textColor = "#0b0b0b"
+
+[theme.dark]
+primaryColor = "#3987e5"
+backgroundColor = "#1a1a19"
+secondaryBackgroundColor = "#262624"
+textColor = "#f0efec"
