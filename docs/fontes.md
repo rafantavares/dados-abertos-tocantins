@@ -35,7 +35,7 @@ e as amostras filtradas para o Tocantins foram publicadas na branch
 
 | Fonte | Órgão | URL (padrão) | Formato | Atualização | Licença / termos | Acesso em 03/11/2026 |
 |---|---|---|---|---|---|---|
-| Indicadores do SIOPE (aplicação em MDE, Fundeb, investimento por aluno) | FNDE (SIOPE) | `https://www.fnde.gov.br/olinda-ide/servico/DADOS_ABERTOS_SIOPE/versao/v1/odata/Indicadores_Siope(Ano_Consulta=@Ano_Consulta,Num_Peri=@Num_Peri,Sig_UF=@Sig_UF)?@Ano_Consulta={ano}&@Num_Peri=6&@Sig_UF='TO'&$format=json` | API OData v4 (JSON), plataforma Olinda | Anual (6º bimestre), com retificações | Dados abertos do FNDE (Decreto 8.777/2016); citar FNDE/SIOPE | ✅ 200 – 4.479 a 5.598 indicadores por ano (140 entes) |
+| Indicadores do SIOPE (aplicação em MDE, Fundeb, investimento por aluno) | FNDE (SIOPE) | `https://www.fnde.gov.br/olinda-ide/servico/DADOS_ABERTOS_SIOPE/versao/v1/odata/Indicadores_Siope(Ano_Consulta=@Ano_Consulta,Num_Peri=@Num_Peri,Sig_UF=@Sig_UF)?@Ano_Consulta={ano}&@Num_Peri=6&@Sig_UF='TO'&$format=json` | API OData v4 (JSON), plataforma Olinda | Anual (6º bimestre), com retificações | Dados abertos do FNDE (Decreto 8.777/2016); citar FNDE/SIOPE | ✅ 200 – 4.479 a 5.598 indicadores por ano (140 entes); a API cobre **2017 em diante** (2015 e 2016 vêm vazios) |
 
 Validação feita com o workflow `validar-fontes.yml` (entrada `fontes`), branch
 `amostras-validacao-feat-22-siope`. O catálogo CKAN do FNDE redireciona para o
