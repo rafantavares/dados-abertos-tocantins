@@ -30,11 +30,18 @@ CORES_REDE = {"federal": SERIE_1, "estadual": SERIE_2, "municipal": SERIE_3, "pr
 def layout(fig: go.Figure, altura: int = 420) -> go.Figure:
     fig.update_layout(
         height=altura,
-        margin={"l": 8, "r": 8, "t": 36, "b": 8},
+        margin={"l": 8, "r": 8, "t": 48, "b": 8},
         separators=",.",
         font={"family": "Inter, system-ui, sans-serif", "size": 13},
         hoverlabel={"font_size": 13},
-        legend={"orientation": "h", "y": -0.15, "title": None},
+        legend={
+            "orientation": "h",
+            "y": 1.02,
+            "yanchor": "bottom",
+            "x": 0,
+            "title": None,
+            "traceorder": "normal",
+        },
     )
     fig.update_xaxes(showgrid=False, linewidth=1, linecolor="rgba(128,128,128,.35)")
     fig.update_yaxes(gridcolor="rgba(128,128,128,.18)", gridwidth=1, zeroline=False)
@@ -261,9 +268,11 @@ with abas[4]:
         base = base[base["nome_municipio"] == escolha_mat]
     por_rede = base.groupby("rede", as_index=False)["matriculas_educacao_basica"].sum()
     ordem = [r for r in CORES_REDE if r in set(por_rede["rede"])]
+    total = int(por_rede["matriculas_educacao_basica"].sum())
     fig = go.Figure()
     for r in ordem:
         valor = int(por_rede.loc[por_rede["rede"] == r, "matriculas_educacao_basica"].iloc[0])
+        participacao = valor / total if total else 0
         fig.add_trace(
             go.Bar(
                 x=[valor],
@@ -271,18 +280,34 @@ with abas[4]:
                 orientation="h",
                 name=r.capitalize(),
                 marker={"color": CORES_REDE[r], "line": {"width": 2, "color": "white"}},
-                hovertemplate=f"{r.capitalize()}: {ind.numero(valor)} matrículas<extra></extra>",
-                text=[ind.numero(valor)],
+                hovertemplate=(
+                    f"{r.capitalize()}: {ind.numero(valor)} matrículas "
+                    f"({ind.numero(100 * participacao, 1)}%)<extra></extra>"
+                ),
+                # rótulo direto só nos segmentos largos o bastante para lê-lo
+                text=[f"{ind.numero(100 * participacao, 0)}%" if participacao >= 0.08 else ""],
                 textposition="inside",
+                insidetextanchor="middle",
+                textfont={"color": "#0b0b0b", "size": 14},
             )
         )
-    fig.update_layout(barmode="stack", showlegend=True, yaxis={"visible": False})
-    st.subheader(f"Matrículas na educação básica por rede — {escolha_mat}, {ano_mat}")
-    st.plotly_chart(layout(fig, 220), use_container_width=True)
-    st.dataframe(
-        por_rede.rename(columns={"rede": "Rede", "matriculas_educacao_basica": "Matrículas"}),
-        hide_index=True,
+    fig.update_layout(
+        barmode="stack",
+        yaxis={"visible": False},
+        xaxis={"tickformat": ",d"},
     )
+    st.subheader(f"Matrículas na educação básica por rede — {escolha_mat}, {ano_mat}")
+    st.plotly_chart(layout(fig, 240), use_container_width=True)
+    valores = dict(zip(por_rede["rede"], por_rede["matriculas_educacao_basica"], strict=True))
+    tabela_redes = [
+        {
+            "Rede": r.capitalize(),
+            "Matrículas": ind.numero(valores[r]),
+            "Participação": f"{ind.numero(100 * valores[r] / total, 1)}%",
+        }
+        for r in ordem
+    ] + [{"Rede": "Total", "Matrículas": ind.numero(total), "Participação": "100%"}]
+    st.dataframe(tabela_redes, hide_index=True)
 
 # --- comparar dois municípios ------------------------------------------------------------
 with abas[5]:
