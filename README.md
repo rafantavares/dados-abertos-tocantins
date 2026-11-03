@@ -2,7 +2,7 @@
 
 > Pipeline de dados que coleta informações públicas do Tocantins (educação e gastos públicos), trata, valida a qualidade e publica um painel aberto para qualquer cidadão consultar.
 
-![status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow) ![python](https://img.shields.io/badge/python-3.12-blue) ![dbt](https://img.shields.io/badge/dbt-duckdb-orange) ![licença](https://img.shields.io/badge/licen%C3%A7a-MIT-green)
+![status](https://img.shields.io/badge/status-MVP%20conclu%C3%ADdo-green) [![CI](https://github.com/rafantavares/dados-abertos-tocantins/actions/workflows/ci.yml/badge.svg)](https://github.com/rafantavares/dados-abertos-tocantins/actions/workflows/ci.yml) [![Pipeline de dados](https://github.com/rafantavares/dados-abertos-tocantins/actions/workflows/pipeline.yml/badge.svg)](https://github.com/rafantavares/dados-abertos-tocantins/actions/workflows/pipeline.yml) ![python](https://img.shields.io/badge/python-3.12-blue) ![dbt](https://img.shields.io/badge/dbt-duckdb-orange) ![licença](https://img.shields.io/badge/licen%C3%A7a-MIT-green)
 
 ## Por que este projeto existe
 
@@ -43,9 +43,11 @@ Python 3.12 · httpx · DuckDB · dbt-duckdb · pandas · Streamlit · pytest ·
 
 ## Qualidade de dados
 
-- Testes do dbt: unicidade, não nulos, integridade referencial, faixas válidas
-- Contagem de linhas por carga e alerta quando houver variação anormal
-- Documentação das tabelas gerada pelo `dbt docs`
+- Testes do dbt: unicidade (inclusive de chaves compostas), não nulos, integridade referencial, valores aceitos e faixas válidas, além de testes unitários das regras de limpeza
+- Sinalização de declarações inconsistentes (ex.: DCA com Educação abaixo de 5% da despesa), com teste em severidade *warn*
+- Contagem de linhas por carga, com **alerta quando a variação é anormal**: o job falha, nada é publicado e uma issue `alerta-carga` é aberta (detalhes em [`docs/operacao.md`](docs/operacao.md))
+- Registro de cada execução de extrator em `raw._cargas`; uma fonte fora do ar mantém a carga anterior sem derrubar as demais
+- Documentação das tabelas gerada pelo `dbt docs` e publicada na branch `dados` (`documentacao_dbt.html`)
 
 ## Roadmap
 
@@ -55,7 +57,7 @@ Python 3.12 · httpx · DuckDB · dbt-duckdb · pandas · Streamlit · pytest ·
 | **M2 – Ingestão** | Extratores com carga incremental e camada bruta | ✅ |
 | **M3 – Modelagem** | Modelos dbt (staging → marts) com testes | ✅ |
 | **M4 – Painel** | Painel com mapas e comparativos por município (roda localmente) | ✅ |
-| **M5 – Automação** | Atualização agendada, monitoramento e documentação | ⏳ |
+| **M5 – Automação** | Atualização agendada, monitoramento e documentação | ✅ |
 
 ## Painel
 
