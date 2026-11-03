@@ -59,6 +59,13 @@ Python 3.12 · httpx · DuckDB · dbt-duckdb · pandas · Streamlit · pytest ·
 | **M4 – Painel** | Painel com mapas e comparativos por município (roda localmente) | ✅ |
 | **M5 – Automação** | Atualização agendada, monitoramento e documentação | ✅ |
 
+## Documentação
+
+- [`docs/fontes.md`](docs/fontes.md): fontes, licenças e validação
+- [`docs/dicionario.md`](docs/dicionario.md): perguntas de negócio e dicionário de dados
+- [`docs/operacao.md`](docs/operacao.md): atualização agendada, alertas e investigação
+- [`docs/retrospectiva.md`](docs/retrospectiva.md): o que foi entregue, decisões, problemas de dados e pendências
+
 ## Painel
 
 O painel roda **localmente** com Streamlit e lê o banco DuckDB publicado pelo
