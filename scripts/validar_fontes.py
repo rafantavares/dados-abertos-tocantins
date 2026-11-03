@@ -122,6 +122,31 @@ FONTES: list[dict] = [
         "url": "https://www.fnde.gov.br/siope/",
     },
     {
+        "id": "siope_indicadores_siope_to_2024",
+        "url": "https://www.fnde.gov.br/olinda-ide/servico/DADOS_ABERTOS_SIOPE/versao/v1/odata/Indicadores_Siope(Ano_Consulta=@Ano_Consulta,Num_Peri=@Num_Peri,Sig_UF=@Sig_UF)"
+        "?@Ano_Consulta=2024&@Num_Peri=6&@Sig_UF='TO'&$format=json",
+    },
+    {
+        "id": "siope_indicadores_siope_to_2019",
+        "url": "https://www.fnde.gov.br/olinda-ide/servico/DADOS_ABERTOS_SIOPE/versao/v1/odata/Indicadores_Siope(Ano_Consulta=@Ano_Consulta,Num_Peri=@Num_Peri,Sig_UF=@Sig_UF)"
+        "?@Ano_Consulta=2019&@Num_Peri=6&@Sig_UF='TO'&$format=json",
+    },
+    {
+        "id": "siope_indicadores_siope_to_2025",
+        "url": "https://www.fnde.gov.br/olinda-ide/servico/DADOS_ABERTOS_SIOPE/versao/v1/odata/Indicadores_Siope(Ano_Consulta=@Ano_Consulta,Num_Peri=@Num_Peri,Sig_UF=@Sig_UF)"
+        "?@Ano_Consulta=2025&@Num_Peri=6&@Sig_UF='TO'&$format=json",
+    },
+    {
+        "id": "siope_dados_gerais_siope_to_2024",
+        "url": "https://www.fnde.gov.br/olinda-ide/servico/DADOS_ABERTOS_SIOPE/versao/v1/odata/Dados_Gerais_Siope(Ano_Consulta=@Ano_Consulta,Num_Peri=@Num_Peri,Sig_UF=@Sig_UF)"
+        "?@Ano_Consulta=2024&@Num_Peri=6&@Sig_UF='TO'&$format=json&$top=200",
+    },
+    {
+        "id": "siope_despesas_funcao_educacao_siope_to_2024",
+        "url": "https://www.fnde.gov.br/olinda-ide/servico/DADOS_ABERTOS_SIOPE/versao/v1/odata/Despesas_Funcao_Educacao_Siope(Ano_Consulta=@Ano_Consulta,Num_Peri=@Num_Peri,Sig_UF=@Sig_UF)"
+        "?@Ano_Consulta=2024&@Num_Peri=6&@Sig_UF='TO'&$format=json&$top=300",
+    },
+    {
         "id": "siconfi_anexos_relatorios",
         "url": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/anexos-relatorios",
     },
@@ -272,7 +297,8 @@ def amostrar(fonte_id: str, corpo: bytes, destino: Path) -> dict:
                 df[colunas].to_csv(destino / f"{fonte_id}_TO.csv", index=False)
     else:
         texto = corpo.decode("utf-8", errors="replace")
-        (destino / f"{fonte_id}.txt").write_text(texto[:200_000], encoding="utf-8")
+        limite = 4_000_000 if fonte_id.startswith("siope_") else 200_000
+        (destino / f"{fonte_id}.txt").write_text(texto[:limite], encoding="utf-8")
         try:
             dado = json.loads(texto)
             if isinstance(dado, dict):
@@ -282,6 +308,12 @@ def amostrar(fonte_id: str, corpo: bytes, destino: Path) -> dict:
                     itens = dado["value"]
                 if itens is None and isinstance(dado.get("result"), dict):  # CKAN
                     itens = dado["result"].get("results") or dado["result"].get("resources")
+                if isinstance(itens, list) and itens and isinstance(itens[0], dict):
+                    # valores distintos de campos categóricos ajudam a entender a fonte
+                    for campo in itens[0]:
+                        distintos = {str(i.get(campo)) for i in itens}
+                        if 1 < len(distintos) <= 60:
+                            resumo.setdefault("distintos", {})[campo] = sorted(distintos)
                 if isinstance(itens, list):
                     resumo["n_items"] = len(itens)
                     resumo["has_more"] = dado.get("hasMore")
