@@ -11,8 +11,8 @@
 | P5 | Quanto cada rede municipal investe por aluno matriculado, e como isso evoluiu? | `mart_investimento_aluno` | Ranking e série temporal |
 | P6 | Existe relação entre investimento por aluno e resultado no IDEB da rede municipal? | `mart_investimento_aluno` | Dispersão (investimento × IDEB) |
 | P7 | Como as matrículas se dividem entre as redes estadual, municipal, federal e privada em cada município? | `fct_matriculas` | Barras empilhadas |
-| P9 | Cada município aplicou o mínimo constitucional de 25% das receitas de impostos em MDE, segundo o SIOPE? | `mart_mde_siope` | Ranking com a linha dos 25% |
 | P8 | Como dois municípios escolhidos se comparam em todos os indicadores acima? | todas | Comparativo lado a lado |
+| P9 | Cada município aplicou o mínimo constitucional de 25% das receitas de impostos em MDE, segundo o SIOPE? | `mart_mde_siope` | Ranking com a linha dos 25% |
 
 ### Limites conhecidos das respostas
 
