@@ -83,7 +83,11 @@ matrículas por rede e comparação entre dois municípios.
 | **Evolução temporal** | **Matrículas por rede** |
 | ![Evolução](docs/img/painel-evolucao.png) | ![Matrículas](docs/img/painel-matriculas.png) |
 
-Capturas geradas com Playwright (`scripts/capturar_telas.cjs`) a partir dos dados reais.
+O painel segue o tema claro/escuro do sistema (ou ⋮ → *Settings*), com cores validadas para cada modo (`app/tema.py`):
+
+![Mapa do IDEB no modo escuro](docs/img/painel-mapa-escuro.png)
+
+Capturas geradas com Playwright (`scripts/capturar_telas.cjs`, com `escuro` como 3º argumento para o modo escuro) a partir dos dados reais.
 
 | Variável | Padrão | Uso |
 |---|---|---|
