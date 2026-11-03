@@ -72,7 +72,8 @@ Python 3.12 · httpx · DuckDB · dbt-duckdb · pandas · Streamlit · pytest ·
 
 O painel roda **localmente** com Streamlit e lê o banco DuckDB publicado pelo
 pipeline na branch [`dados`](https://github.com/rafantavares/dados-abertos-tocantins/tree/dados).
-Ele tem mapa coroplético, ranking, evolução temporal, investimento × IDEB,
+Ele tem mapa coroplético (acompanhado de uma tabela acessível com todos os municípios,
+ordenável e com download em CSV), ranking, evolução temporal, investimento × IDEB,
 matrículas por rede e comparação entre dois municípios.
 
 ![Mapa do IDEB por município](docs/img/painel-mapa.png)

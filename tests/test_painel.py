@@ -182,3 +182,53 @@ def test_ano_base_ipca_em_banco_sem_deflator(tmp_path):
     with duckdb.connect(str(banco)) as con:
         con.execute("create schema marts")
     assert dados.ano_base_ipca(banco) is None
+
+
+def test_tabela_mapa_lista_todos_com_posicao_e_sem_dado():
+    municipios = pd.DataFrame(
+        {
+            "cod_municipio": [1, 2, 3, 4],
+            "nome_municipio": ["A", "B", "C", "D"],
+            "regiao_intermediaria": ["R1", "R1", "R2", "R2"],
+        }
+    )
+    recorte = pd.DataFrame({"cod_municipio": [1, 2, 3], "valor": [5.0, 6.5, 6.5]})
+    tabela = ind.tabela_mapa(recorte, municipios, ind.INDICADORES["IDEB"])
+    assert tabela["nome_municipio"].tolist() == ["B", "C", "A", "D"]
+    assert tabela["posicao"].tolist()[:3] == [1, 1, 3]  # empate na 1ª posição
+    assert pd.isna(tabela["posicao"].iloc[3])
+    assert tabela["valor_formatado"].tolist() == ["6,5", "6,5", "5,0", "sem dado"]
+
+
+def test_csv_tabela_no_padrao_brasileiro():
+    municipios = pd.DataFrame(
+        {
+            "cod_municipio": [1721000],
+            "nome_municipio": ["Palmas"],
+            "regiao_intermediaria": ["Palmas"],
+        }
+    )
+    recorte = pd.DataFrame({"cod_municipio": [1721000], "valor": [13849.74]})
+    nome = "Investimento por aluno (rede municipal)"
+    definicao = ind.INDICADORES[nome]
+    tabela = ind.tabela_mapa(recorte, municipios, definicao)
+    unidade = ind.unidade(definicao, valores_reais=True, ano_base=2025)
+    conteudo = ind.csv_tabela(tabela, nome, 2024, unidade)
+    assert conteudo.startswith("﻿".encode())  # BOM: acentos corretos no Excel
+    linhas = conteudo.decode("utf-8-sig").splitlines()
+    assert (
+        linhas[0]
+        == "indicador;ano;posicao;codigo_ibge;municipio;regiao_intermediaria;valor;unidade"
+    )
+    assert (
+        linhas[1]
+        == f"{nome};2024;1;1721000;Palmas;Palmas;13849,74;R$ de 2025 (corrigido pelo IPCA)"
+    )
+
+
+def test_unidade_por_tipo_de_indicador():
+    assert ind.unidade(ind.INDICADORES["IDEB"]) == "índice"
+    mde = next(i for i in ind.INDICADORES.values() if i.coluna == "percentual_mde")
+    assert ind.unidade(mde) == "%"
+    invest = ind.INDICADORES["Investimento por aluno (rede municipal)"]
+    assert ind.unidade(invest) == "R$ correntes"
