@@ -32,3 +32,5 @@ jobs:
         run: dbt build --project-dir transform
       - name: dbt docs
         run: dbt docs generate --project-dir transform --static
+      - name: Teste de fumaça do painel (banco das fixtures)
+        run: DADOS_DUCKDB_PATH="$DUCKDB_PATH" pytest tests/test_painel.py

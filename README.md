@@ -15,13 +15,13 @@ Os dados públicos do estado existem, mas estão espalhados em portais diferente
 ## Arquitetura
 
 ```
-Fontes públicas (APIs / CSV)
-        │  extração agendada (GitHub Actions)
+Fontes públicas (INEP, SICONFI, IBGE)
+        │  extração agendada (GitHub Actions: pipeline.yml)
         ▼
   camada bruta (raw) ──► dbt: staging → intermediária → marts
                                         │   testes de qualidade
                                         ▼
-                         DuckDB ──► painel público + dados exportados
+          DuckDB publicado na branch `dados` ──► painel Streamlit (local)
 ```
 
 Arquitetura em camadas (medalhão): **bruta** guarda o dado como veio; **staging** padroniza nomes e tipos; **marts** entrega tabelas prontas para análise.
@@ -54,20 +54,58 @@ Python 3.12 · httpx · DuckDB · dbt-duckdb · pandas · Streamlit · pytest ·
 | **M1 – Descoberta** | Inventário das fontes, licenças e dicionário de dados | ✅ |
 | **M2 – Ingestão** | Extratores com carga incremental e camada bruta | ✅ |
 | **M3 – Modelagem** | Modelos dbt (staging → marts) com testes | ✅ |
-| **M4 – Painel** | Painel público com mapas e comparativos por município | ⏳ |
+| **M4 – Painel** | Painel com mapas e comparativos por município (roda localmente) | ✅ |
 | **M5 – Automação** | Atualização agendada, monitoramento e documentação | ⏳ |
 
-## Como rodar (em construção)
+## Painel
+
+O painel roda **localmente** com Streamlit e lê o banco DuckDB publicado pelo
+pipeline na branch [`dados`](https://github.com/rafantavares/dados-abertos-tocantins/tree/dados).
+Ele tem mapa coroplético, ranking, evolução temporal, investimento × IDEB,
+matrículas por rede e comparação entre dois municípios.
+
+![Mapa do IDEB por município](docs/img/painel-mapa.png)
+
+| Investimento por aluno × IDEB | Comparação entre municípios |
+|---|---|
+| ![Investimento × IDEB](docs/img/painel-investimento-ideb.png) | ![Comparar](docs/img/painel-comparar.png) |
+| **Evolução temporal** | **Matrículas por rede** |
+| ![Evolução](docs/img/painel-evolucao.png) | ![Matrículas](docs/img/painel-matriculas.png) |
+
+Capturas geradas com Playwright (`scripts/capturar_telas.cjs`) a partir dos dados reais.
+
+| Variável | Padrão | Uso |
+|---|---|---|
+| `DADOS_DUCKDB_URL` | `https://raw.githubusercontent.com/rafantavares/dados-abertos-tocantins/dados/tocantins.duckdb` | URL do banco; baixado para `~/.cache/dados-tocantins` |
+| `DADOS_CACHE_HORAS` | `6` | Por quanto tempo reaproveitar o banco baixado |
+| `DADOS_DUCKDB_PATH` | — | Banco local (tem prioridade sobre a URL) |
+
+## Como rodar
 
 ```bash
 git clone https://github.com/rafantavares/dados-abertos-tocantins
 cd dados-abertos-tocantins
 python -m venv .venv && source .venv/bin/activate
-pip install -e ".[dev]"
-python -m pipeline.extrair
-dbt build --project-dir transform
+pip install -e ".[dev,painel]"
+```
+
+Painel com os dados publicados (não precisa rodar o pipeline):
+
+```bash
 streamlit run app/painel.py
 ```
+
+Pipeline completo offline, com as amostras reais de `tests/fixtures`:
+
+```bash
+python -m pipeline.extrair --fixtures
+dbt build --project-dir transform
+DADOS_DUCKDB_PATH=data/tocantins.duckdb streamlit run app/painel.py
+```
+
+A extração real (`python -m pipeline.extrair`, sem `--fixtures`) precisa de acesso aos
+sites do INEP, do IBGE e do Tesouro; no projeto ela roda no GitHub Actions
+(workflow **Pipeline de dados**), que publica o banco na branch `dados`.
 
 ## Autor
 
