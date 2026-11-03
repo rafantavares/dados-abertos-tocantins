@@ -15,13 +15,13 @@ Os dados públicos do estado existem, mas estão espalhados em portais diferente
 ## Arquitetura
 
 ```
-Fontes públicas (APIs / CSV)
-        │  extração agendada (GitHub Actions)
+Fontes públicas (INEP, SICONFI, IBGE)
+        │  extração agendada (GitHub Actions: pipeline.yml)
         ▼
   camada bruta (raw) ──► dbt: staging → intermediária → marts
                                         │   testes de qualidade
                                         ▼
-                         DuckDB ──► painel público + dados exportados
+          DuckDB publicado na branch `dados` ──► painel Streamlit (local)
 ```
 
 Arquitetura em camadas (medalhão): **bruta** guarda o dado como veio; **staging** padroniza nomes e tipos; **marts** entrega tabelas prontas para análise.
@@ -54,7 +54,7 @@ Python 3.12 · httpx · DuckDB · dbt-duckdb · pandas · Streamlit · pytest ·
 | **M1 – Descoberta** | Inventário das fontes, licenças e dicionário de dados | ✅ |
 | **M2 – Ingestão** | Extratores com carga incremental e camada bruta | ✅ |
 | **M3 – Modelagem** | Modelos dbt (staging → marts) com testes | ✅ |
-| **M4 – Painel** | Painel público com mapas e comparativos por município | ⏳ |
+| **M4 – Painel** | Painel com mapas e comparativos por município (roda localmente) | ✅ |
 | **M5 – Automação** | Atualização agendada, monitoramento e documentação | ⏳ |
 
 ## Painel
