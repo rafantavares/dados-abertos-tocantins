@@ -23,7 +23,7 @@ from datetime import UTC, datetime
 import duckdb
 
 from pipeline.config import caminho_banco
-from pipeline.fontes import ibge, inep_censo_escolar, inep_ideb, siconfi_dca, siope
+from pipeline.fontes import ibge, ibge_ipca, inep_censo_escolar, inep_ideb, siconfi_dca, siope
 
 log = logging.getLogger("pipeline")
 
@@ -32,6 +32,7 @@ Extrator = Callable[[duckdb.DuckDBPyConnection, bool], int]
 #: Extratores na ordem de execução: nome -> função(conexão, usar_fixtures) -> linhas.
 EXTRATORES: dict[str, Extrator] = {
     "ibge": ibge.extrair,
+    "ibge_ipca": ibge_ipca.extrair,
     "inep_ideb": inep_ideb.extrair,
     "inep_censo_escolar": inep_censo_escolar.extrair,
     "siconfi_dca": siconfi_dca.extrair,
@@ -66,6 +67,7 @@ def _registrar(con: duckdb.DuckDBPyConnection, r: Resultado, inicio: datetime) -
 #: Prefixo das tabelas brutas gravadas por cada extrator.
 PREFIXOS: dict[str, str] = {
     "ibge": "ibge_",
+    "ibge_ipca": "ibge_sidra_ipca",
     "inep_ideb": "inep_ideb_",
     "inep_censo_escolar": "inep_censo_",
     "siconfi_dca": "siconfi_",
