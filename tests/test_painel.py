@@ -232,3 +232,33 @@ def test_unidade_por_tipo_de_indicador():
     assert ind.unidade(mde) == "%"
     invest = ind.INDICADORES["Investimento por aluno (rede municipal)"]
     assert ind.unidade(invest) == "R$ correntes"
+
+
+def test_faixa_populacao():
+    assert ind.faixa_populacao(2576) == "Até 5 mil"
+    assert ind.faixa_populacao(5000) == "5 a 10 mil"
+    assert ind.faixa_populacao(10325) == "10 a 20 mil"
+    assert ind.faixa_populacao(302692) == "Acima de 20 mil"
+    assert ind.faixa_populacao(None) is None
+
+
+def test_filtrar_municipios_por_porte_e_regiao():
+    municipios = pd.DataFrame(
+        {
+            "cod_municipio": [1, 2, 3],
+            "regiao_intermediaria": ["Palmas", "Palmas", "Gurupi"],
+            "populacao_censo_2022": [3000, 300000, 4000],
+        }
+    )
+    base = pd.DataFrame({"cod_municipio": [1, 2, 3], "x": [1, 2, 3]})
+    assert ind.filtrar_municipios(base, municipios)["x"].tolist() == [1, 2, 3]
+    assert ind.filtrar_municipios(base, municipios, ["Até 5 mil"])["x"].tolist() == [1, 3]
+    assert ind.filtrar_municipios(base, municipios, ["Até 5 mil"], ["Palmas"])["x"].tolist() == [1]
+    assert ind.filtrar_municipios(base, municipios, [], ["Gurupi"])["x"].tolist() == [3]
+
+
+def test_spearman():
+    assert ind.spearman(pd.Series([1, 2, 3, 4]), pd.Series([10, 20, 30, 40])) == pytest.approx(1)
+    assert ind.spearman(pd.Series([1, 2, 3]), pd.Series([3, 2, 1])) == pytest.approx(-1)
+    assert ind.spearman(pd.Series([1, 2]), pd.Series([1, 2])) is None
+    assert ind.spearman(pd.Series([1, 2, 3]), pd.Series([1, 2, 3]), minimo=5) is None

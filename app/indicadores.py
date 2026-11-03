@@ -228,3 +228,59 @@ def csv_tabela(tabela: pd.DataFrame, indicador: str, ano: int, unidade_valor: st
     saida.insert(1, "ano", ano)
     saida["unidade"] = unidade_valor
     return saida.to_csv(sep=";", decimal=",", index=False).encode("utf-8-sig")
+
+
+#: Faixas de população (Censo 2022). No Tocantins: 80, 31, 19 e 9 municípios.
+FAIXAS_POPULACAO = (
+    ("Até 5 mil", 0, 5_000),
+    ("5 a 10 mil", 5_000, 10_000),
+    ("10 a 20 mil", 10_000, 20_000),
+    ("Acima de 20 mil", 20_000, None),
+)
+#: Abaixo deste número de municípios a correlação é exibida com alerta.
+MINIMO_CORRELACAO = 15
+#: Abaixo deste número a correlação nem é calculada (seria enganosa).
+MINIMO_CALCULO_CORRELACAO = 5
+
+
+def faixa_populacao(populacao) -> str | None:
+    if ausente(populacao):
+        return None
+    for rotulo, minimo, maximo in FAIXAS_POPULACAO:
+        if populacao >= minimo and (maximo is None or populacao < maximo):
+            return rotulo
+    return None
+
+
+def filtrar_municipios(
+    base: pd.DataFrame,
+    municipios: pd.DataFrame,
+    faixas: list[str] | None = None,
+    regioes: list[str] | None = None,
+) -> pd.DataFrame:
+    """Mantém em ``base`` só os municípios das faixas de população e regiões escolhidas.
+
+    Lista vazia ou ``None`` não filtra aquela dimensão.
+    """
+    atributos = municipios[["cod_municipio", "regiao_intermediaria", "populacao_censo_2022"]].copy()
+    atributos["faixa_populacao"] = atributos["populacao_censo_2022"].map(faixa_populacao)
+    resultado = base.merge(
+        atributos[["cod_municipio", "regiao_intermediaria", "faixa_populacao"]],
+        on="cod_municipio",
+        how="left",
+        suffixes=("", "_dim"),
+    )
+    if faixas:
+        resultado = resultado[resultado["faixa_populacao"].isin(faixas)]
+    if regioes:
+        resultado = resultado[resultado["regiao_intermediaria"].isin(regioes)]
+    return resultado.reset_index(drop=True)
+
+
+def spearman(x: pd.Series, y: pd.Series, minimo: int = 3) -> float | None:
+    """Correlação de Spearman (Pearson sobre os postos); None com menos de ``minimo`` pares."""
+    pares = pd.DataFrame({"x": x, "y": y}).dropna()
+    if len(pares) < minimo:
+        return None
+    valor = pares["x"].rank().corr(pares["y"].rank())
+    return None if ausente(valor) else float(valor)
