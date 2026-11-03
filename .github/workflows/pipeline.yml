@@ -61,6 +61,9 @@ jobs:
       - name: dbt build
         run: dbt build --project-dir transform
 
+      - name: dbt docs (HTML estático)
+        run: dbt docs generate --project-dir transform --static
+
       - name: Resumo da carga
         run: python scripts/resumo_banco.py data/tocantins.duckdb data/contagens.json
 
@@ -83,6 +86,7 @@ jobs:
           path: |
             data/tocantins.duckdb
             data/contagens.json
+            transform/target/static_index.html
           retention-days: 14
 
       - name: Publicar na branch dados
@@ -90,6 +94,7 @@ jobs:
         run: |
           mkdir publicar && cd publicar
           cp ../data/tocantins.duckdb ../data/contagens.json .
+          cp ../transform/target/static_index.html documentacao_dbt.html
           cat > README.md <<'MD'
           # Branch de dados
 
@@ -97,6 +102,7 @@ jobs:
 
           - `tocantins.duckdb`: banco com as camadas `raw`, `staging`, `intermediate` e `marts`.
           - `contagens.json`: linhas por tabela nesta carga.
+          - `documentacao_dbt.html`: documentação do modelo (`dbt docs`), um único HTML para abrir localmente.
 
           URL para o painel: `https://raw.githubusercontent.com/${{ github.repository }}/dados/tocantins.duckdb`
           MD

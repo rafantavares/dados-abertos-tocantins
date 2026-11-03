@@ -1,0 +1,28 @@
+version: 2
+
+unit_tests:
+  - name: populacao_prioriza_censo_e_preenche_anos_sem_estimativa
+    description: >
+      Censo no próprio ano; estimativa quando existe; nos anos sem publicação
+      (ex.: 2023), o último valor disponível. Valores ilustrativos.
+    model: int_populacao_anual
+    given:
+      - input: ref('stg_ibge__municipios')
+        rows:
+          - {cod_municipio: 1721000}
+      - input: ref('stg_siconfi__dca_despesa_funcao')
+        rows:
+          - {ano: 2021}
+          - {ano: 2024}
+      - input: ref('stg_ibge__populacao')
+        rows:
+          - {cod_municipio: 1721000, ano: 2021, populacao: 100, origem: estimativa}
+          - {cod_municipio: 1721000, ano: 2022, populacao: 110, origem: censo}
+          - {cod_municipio: 1721000, ano: 2022, populacao: 999, origem: estimativa}
+          - {cod_municipio: 1721000, ano: 2024, populacao: 130, origem: estimativa}
+    expect:
+      rows:
+        - {cod_municipio: 1721000, ano: 2021, populacao: 100, origem_populacao: estimativa, ano_populacao: 2021}
+        - {cod_municipio: 1721000, ano: 2022, populacao: 110, origem_populacao: censo, ano_populacao: 2022}
+        - {cod_municipio: 1721000, ano: 2023, populacao: 110, origem_populacao: ultima_disponivel, ano_populacao: 2022}
+        - {cod_municipio: 1721000, ano: 2024, populacao: 130, origem_populacao: estimativa, ano_populacao: 2024}

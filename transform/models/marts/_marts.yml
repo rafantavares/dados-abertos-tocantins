@@ -1,0 +1,307 @@
+version: 2
+models:
+  - name: dim_municipio
+    description: >
+      Dimensão com os 139 municípios do Tocantins: códigos e regiões do IBGE, população do
+      Censo 2022 e indicação da capital. Ver docs/dicionario.md.
+    columns:
+      - name: cod_municipio
+        description: Código IBGE de 7 dígitos (chave).
+        tests:
+          - unique
+          - not_null
+      - name: nome_municipio
+        description: Nome oficial.
+        tests:
+          - not_null
+      - name: regiao_intermediaria
+        description: Região geográfica intermediária (IBGE).
+        tests:
+          - not_null
+      - name: regiao_imediata
+        description: Região geográfica imediata (IBGE).
+        tests:
+          - not_null
+      - name: populacao_censo_2022
+        description: População residente no Censo 2022.
+        tests:
+          - entre:
+              arguments:
+                minimo: 1
+      - name: eh_capital
+        description: Verdadeiro para Palmas.
+        tests:
+          - not_null
+  - name: dim_municipio_geometria
+    description: >
+      Contorno simplificado de cada município em GeoJSON (WGS84), para o mapa do painel.
+    columns:
+      - name: cod_municipio
+        description: Código IBGE (chave).
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_municipio')
+                field: cod_municipio
+      - name: area_km2
+        description: Área do município em km².
+      - name: geojson
+        description: Geometria em GeoJSON.
+        tests:
+          - not_null
+  - name: fct_ideb
+    description: >
+      IDEB por município, ano, etapa e rede, com componentes (aprovação, notas do SAEB) e
+      meta. Responde às perguntas P1, P2 e P3.
+    tests:
+      - combinacao_unica:
+          arguments:
+            colunas:
+              - cod_municipio
+              - ano
+              - etapa
+              - rede
+    columns:
+      - name: cod_municipio
+        description: FK para dim_municipio.
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_municipio')
+                field: cod_municipio
+      - name: ano
+        description: Ano de referência (ímpar).
+        tests:
+          - not_null
+      - name: etapa
+        description: anos_iniciais, anos_finais ou ensino_medio.
+        tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - anos_iniciais
+                  - anos_finais
+                  - ensino_medio
+      - name: rede
+        description: estadual, municipal ou publica.
+        tests:
+          - not_null
+      - name: taxa_aprovacao
+        description: Taxa de aprovação da etapa (%).
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+                maximo: 100
+      - name: indicador_rendimento
+        description: Indicador de rendimento (P).
+      - name: nota_saeb_matematica
+        description: Proficiência média em Matemática.
+      - name: nota_saeb_portugues
+        description: Proficiência média em Língua Portuguesa.
+      - name: nota_saeb_padronizada
+        description: Nota média padronizada (N).
+      - name: ideb
+        description: IDEB observado.
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+                maximo: 10
+      - name: meta_ideb
+        description: Meta do INEP (até 2021).
+      - name: atingiu_meta
+        description: ideb >= meta_ideb; nulo sem meta ou sem IDEB.
+  - name: fct_matriculas
+    description: >
+      Escolas em atividade e matrículas por município, ano e rede (Censo Escolar). Responde
+      à pergunta P7.
+    tests:
+      - combinacao_unica:
+          arguments:
+            colunas:
+              - cod_municipio
+              - ano
+              - rede
+    columns:
+      - name: cod_municipio
+        description: FK para dim_municipio.
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_municipio')
+                field: cod_municipio
+      - name: ano
+        description: Ano do Censo Escolar.
+        tests:
+          - not_null
+      - name: rede
+        description: federal, estadual, municipal ou privada.
+        tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - federal
+                  - estadual
+                  - municipal
+                  - privada
+      - name: escolas_em_atividade
+        description: Escolas em atividade.
+        tests:
+          - entre:
+              arguments:
+                minimo: 1
+      - name: matriculas_educacao_basica
+        description: Matrículas na educação básica.
+        tests:
+          - not_null
+          - entre:
+              arguments:
+                minimo: 0
+      - name: matriculas_infantil
+        description: Educação infantil.
+      - name: matriculas_fundamental
+        description: Ensino fundamental.
+      - name: matriculas_medio
+        description: Ensino médio.
+      - name: matriculas_eja
+        description: Educação de jovens e adultos.
+      - name: matriculas_especial
+        description: Educação especial.
+  - name: fct_despesa_educacao
+    description: >
+      Despesa liquidada em Educação por ente (municípios e Estado) e ano, em reais correntes,
+      com percentual da despesa total e valor per capita. Responde à pergunta P4.
+    tests:
+      - combinacao_unica:
+          arguments:
+            colunas:
+              - cod_ente
+              - ano
+    columns:
+      - name: cod_ente
+        description: Código IBGE do município ou 17 para o Estado.
+        tests:
+          - not_null
+      - name: esfera
+        description: municipal ou estadual.
+        tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - municipal
+                  - estadual
+      - name: ano
+        description: Exercício.
+        tests:
+          - not_null
+      - name: despesa_total
+        description: Despesa liquidada total, exceto intraorçamentária (R$).
+        tests:
+          - not_null
+          - entre:
+              arguments:
+                minimo: 0
+      - name: despesa_educacao
+        description: Despesa liquidada na função 12 - Educação (R$).
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+      - name: despesa_ensino_fundamental
+        description: Subfunção 361 (R$).
+      - name: despesa_ensino_medio
+        description: Subfunção 362 (R$).
+      - name: despesa_educacao_infantil
+        description: Subfunção 365 (R$).
+      - name: percentual_educacao
+        description: despesa_educacao / despesa_total x 100.
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+                maximo: 100
+      - name: populacao
+        description: População de referência no ano (Estado = soma dos municípios).
+      - name: origem_populacao
+        description: censo, estimativa ou ultima_disponivel.
+      - name: despesa_educacao_per_capita
+        description: despesa_educacao / populacao (R$).
+      - name: dca_inconsistente
+        description: >
+          Verdadeiro quando a Educação é menos de 5% da despesa total, sinal de DCA
+          declarado de forma parcial. Essas linhas ficam fora do investimento por aluno.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [false]
+              config:
+                severity: warn
+  - name: mart_investimento_aluno
+    description: >
+      Investimento por aluno da rede municipal: despesa municipal liquidada na função Educação
+      dividida pelas matrículas da rede municipal, com o IDEB da rede municipal no ano. É
+      uma aproximação, não o valor oficial de MDE do SIOPE. Responde às perguntas P5 e P6.
+    tests:
+      - combinacao_unica:
+          arguments:
+            colunas:
+              - cod_municipio
+              - ano
+    columns:
+      - name: cod_municipio
+        description: FK para dim_municipio.
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_municipio')
+                field: cod_municipio
+      - name: ano
+        description: Ano (com DCA e Censo Escolar disponíveis).
+        tests:
+          - not_null
+      - name: despesa_educacao
+        description: Despesa municipal liquidada na função Educação (R$).
+      - name: matriculas_rede_municipal
+        description: Matrículas na rede municipal.
+      - name: investimento_por_aluno
+        description: despesa_educacao / matriculas_rede_municipal (R$).
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+      - name: ideb_anos_iniciais
+        description: IDEB anos iniciais da rede municipal (anos ímpares).
+      - name: ideb_anos_finais
+        description: IDEB anos finais da rede municipal (anos ímpares).
+  - name: mart_resumo_estadual
+    description: >
+      Visão anual do Estado: despesa estadual em Educação, matrículas e investimento por aluno
+      da rede estadual, e soma da despesa municipal declarada.
+    columns:
+      - name: ano
+        description: Exercício.
+        tests:
+          - unique
+          - not_null
+      - name: despesa_educacao_estado
+        description: Despesa estadual liquidada na função Educação (R$).
+      - name: matriculas_rede_estadual
+        description: Matrículas da rede estadual no Tocantins.
+      - name: investimento_por_aluno_estado
+        description: despesa_educacao_estado / matriculas_rede_estadual (R$).
+      - name: despesa_educacao_municipios
+        description: Soma da despesa em Educação dos municípios que declararam o DCA (R$).
+      - name: municipios_com_dca
+        description: Número de municípios com DCA declarado no ano.
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+                maximo: 139

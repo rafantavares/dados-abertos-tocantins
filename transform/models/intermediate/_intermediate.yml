@@ -1,0 +1,98 @@
+version: 2
+models:
+  - name: int_populacao_anual
+    description: >
+      População de referência por município e ano. Usa o Censo 2022 no próprio ano, a estimativa
+      do IBGE quando existe e, nos anos sem publicação, o último valor disponível (origem_populacao
+      = ultima_disponivel).
+    tests:
+      - combinacao_unica:
+          arguments:
+            colunas:
+              - cod_municipio
+              - ano
+    columns:
+      - name: cod_municipio
+        description: Código IBGE do município.
+        tests:
+          - not_null
+      - name: ano
+        description: Ano.
+        tests:
+          - not_null
+      - name: populacao
+        description: População de referência.
+      - name: origem_populacao
+        description: censo, estimativa ou ultima_disponivel.
+        tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - censo
+                  - estimativa
+                  - ultima_disponivel
+      - name: ano_populacao
+        description: Ano do dado de população efetivamente usado.
+  - name: int_despesa_educacao_ente_ano
+    description: >
+      Despesa liquidada por ente e ano: total (exceto intraorçamentária), função Educação
+      e subfunções 361, 362 e 365. Só entes que declararam o total.
+    tests:
+      - combinacao_unica:
+          arguments:
+            colunas:
+              - cod_ente
+              - ano
+    columns:
+      - name: cod_ente
+        description: Código IBGE do município ou 17 para o Estado.
+        tests:
+          - not_null
+      - name: esfera
+        description: estadual ou municipal.
+      - name: ano
+        description: Exercício.
+        tests:
+          - not_null
+      - name: despesa_total
+        description: Despesa liquidada total, exceto intraorçamentária (R$).
+        tests:
+          - not_null
+      - name: despesa_educacao
+        description: Despesa liquidada na função 12 - Educação (R$).
+      - name: despesa_ensino_fundamental
+        description: Subfunção 361 (R$).
+      - name: despesa_ensino_medio
+        description: Subfunção 362 (R$).
+      - name: despesa_educacao_infantil
+        description: Subfunção 365 (R$).
+  - name: int_matriculas_municipio_rede_ano
+    description: Escolas em atividade e matrículas somadas por município, rede e ano.
+    tests:
+      - combinacao_unica:
+          arguments:
+            colunas:
+              - cod_municipio
+              - ano
+              - rede
+    columns:
+      - name: cod_municipio
+        description: Código IBGE do município.
+      - name: ano
+        description: Ano do Censo Escolar.
+      - name: rede
+        description: federal, estadual, municipal ou privada.
+      - name: escolas_em_atividade
+        description: Número de escolas em atividade.
+      - name: matriculas_educacao_basica
+        description: Matrículas na educação básica.
+      - name: matriculas_infantil
+        description: Matrículas na educação infantil.
+      - name: matriculas_fundamental
+        description: Matrículas no ensino fundamental.
+      - name: matriculas_medio
+        description: Matrículas no ensino médio.
+      - name: matriculas_eja
+        description: Matrículas na EJA.
+      - name: matriculas_especial
+        description: Matrículas na educação especial.
