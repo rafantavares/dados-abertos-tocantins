@@ -183,3 +183,48 @@ def nota_contexto(definicao: Indicador, ano: int) -> str | None:
     if definicao.coluna == "percentual_mde" and int(ano) in ANOS_EC_119:
         return NOTA_EC_119.format(ano=ano)
     return None
+
+
+def unidade(definicao: Indicador, valores_reais: bool = False, ano_base: int | None = None) -> str:
+    """Unidade do valor exibido, para cabeçalhos e para o CSV."""
+    if definicao.formatar is reais:
+        return f"R$ de {ano_base} (corrigido pelo IPCA)" if valores_reais else "R$ correntes"
+    if definicao.coluna in {"percentual_mde", "percentual_educacao"}:
+        return "%"
+    return "índice"
+
+
+def tabela_mapa(
+    recorte: pd.DataFrame, municipios: pd.DataFrame, definicao: Indicador
+) -> pd.DataFrame:
+    """Tabela acessível do mapa: todos os municípios, com posição e valor formatado.
+
+    A posição 1 é o maior valor (empates recebem a mesma posição). Municípios sem
+    dado no recorte aparecem no fim, com "sem dado", para que a tabela traga as
+    mesmas informações do mapa sem depender de cor.
+    """
+    base = municipios[["cod_municipio", "nome_municipio", "regiao_intermediaria"]].merge(
+        recorte[["cod_municipio", "valor"]], on="cod_municipio", how="left"
+    )
+    base["posicao"] = base["valor"].rank(method="min", ascending=False).astype("Int64")
+    base["valor_formatado"] = [
+        definicao.formatar(v) if not ausente(v) else "sem dado" for v in base["valor"]
+    ]
+    base = base.sort_values(["posicao", "nome_municipio"], na_position="last")
+    return base.reset_index(drop=True)
+
+
+def csv_tabela(tabela: pd.DataFrame, indicador: str, ano: int, unidade_valor: str) -> bytes:
+    """CSV no padrão brasileiro (``;`` e vírgula decimal, UTF-8 com BOM para o Excel)."""
+    saida = tabela.rename(
+        columns={
+            "posicao": "posicao",
+            "cod_municipio": "codigo_ibge",
+            "nome_municipio": "municipio",
+            "regiao_intermediaria": "regiao_intermediaria",
+        }
+    )[["posicao", "codigo_ibge", "municipio", "regiao_intermediaria", "valor"]].copy()
+    saida.insert(0, "indicador", indicador)
+    saida.insert(1, "ano", ano)
+    saida["unidade"] = unidade_valor
+    return saida.to_csv(sep=";", decimal=",", index=False).encode("utf-8-sig")

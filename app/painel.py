@@ -181,10 +181,43 @@ with abas[0]:
     )
     sufixo = f" — valores corrigidos pelo IPCA, R$ de {ano_base}" if valores_reais else ""
     st.subheader(f"{indicador} em {ano}{sufixo}")
-    st.plotly_chart(layout(fig, 760), width="stretch")
-    sem_dado = len(municipios) - recorte["cod_municipio"].nunique()
-    if sem_dado:
-        st.caption(f"{sem_dado} municípios sem dado neste recorte aparecem em branco.")
+    col_mapa, col_tabela = st.columns([3, 2])
+    with col_mapa:
+        st.plotly_chart(layout(fig, 760), width="stretch")
+        sem_dado = len(municipios) - recorte["cod_municipio"].nunique()
+        if sem_dado:
+            st.caption(
+                f"{sem_dado} municípios sem dado neste recorte não aparecem no mapa; "
+                "eles estão no fim da tabela como “sem dado”."
+            )
+    with col_tabela:
+        # Mesma informação do mapa sem depender de cor: leitores de tela, números exatos
+        # e download. Posição 1 = maior valor.
+        tabela = ind.tabela_mapa(recorte, municipios, definicao)
+        unidade_valor = ind.unidade(definicao, valores_reais, ano_base)
+        st.dataframe(
+            tabela[["posicao", "nome_municipio", "regiao_intermediaria", "valor_formatado"]],
+            hide_index=True,
+            height=700,
+            width="stretch",
+            column_config={
+                "posicao": st.column_config.NumberColumn(
+                    "Posição", help="1 = maior valor; empates têm a mesma posição"
+                ),
+                "nome_municipio": st.column_config.TextColumn("Município"),
+                "regiao_intermediaria": st.column_config.TextColumn("Região intermediária"),
+                "valor_formatado": st.column_config.TextColumn(
+                    f"{definicao.rotulo_curto} ({unidade_valor})"
+                ),
+            },
+        )
+        st.download_button(
+            "Baixar tabela (CSV)",
+            data=ind.csv_tabela(tabela, indicador, ano, unidade_valor),
+            file_name=f"tocantins_{definicao.coluna}_{ano}{'_real' if valores_reais else ''}.csv",
+            mime="text/csv",
+            icon=":material/download:",
+        )
 
 # --- ranking ----------------------------------------------------------------------------
 with abas[1]:
