@@ -297,11 +297,24 @@ with abas[3]:
     inv = d["investimento"].dropna(subset=["ideb_anos_iniciais", "investimento_por_aluno"])
     anos_inv = sorted(inv["ano"].unique(), reverse=True)
     if anos_inv:
-        ano_inv = st.selectbox("Ano (anos com IDEB e despesa)", anos_inv, key="ano_inv")
-        base = inv[inv["ano"] == ano_inv]
-        destaque_inv = st.selectbox(
+        f1, f2, f3, f4 = st.columns([1, 1.6, 1.6, 1.4])
+        ano_inv = f1.selectbox("Ano (com IDEB e despesa)", anos_inv, key="ano_inv")
+        faixas = f2.multiselect(
+            "Porte (população no Censo 2022)",
+            [rotulo for rotulo, _, _ in ind.FAIXAS_POPULACAO],
+            placeholder="Todos os portes",
+            key="faixas_inv",
+        )
+        regioes = f3.multiselect(
+            "Região geográfica intermediária",
+            sorted(municipios["regiao_intermediaria"].dropna().unique()),
+            placeholder="Todas as regiões",
+            key="regioes_inv",
+        )
+        destaque_inv = f4.selectbox(
             "Destacar município", nomes, index=indice("Palmas"), key="dest_inv"
         )
+        base = ind.filtrar_municipios(inv[inv["ano"] == ano_inv], municipios, faixas, regioes)
         fig = go.Figure()
         for nome_grupo, grupo, cor, tamanho in [
             ("Municípios", base[base["nome_municipio"] != destaque_inv], SERIE_1, 9),
@@ -325,18 +338,34 @@ with abas[3]:
                     ),
                 )
             )
-        # Spearman = Pearson sobre os postos (evita depender do scipy)
-        correlacao = base["investimento_por_aluno"].rank().corr(base["ideb_anos_iniciais"].rank())
+        correlacao = ind.spearman(
+            base["investimento_por_aluno"],
+            base["ideb_anos_iniciais"],
+            minimo=ind.MINIMO_CALCULO_CORRELACAO,
+        )
         fig.update_layout(
             xaxis_title="Investimento por aluno da rede municipal (R$)",
+            xaxis_tickformat=",.0f",
             yaxis_title="IDEB anos iniciais (rede municipal)",
         )
         st.plotly_chart(layout(fig, 520), width="stretch")
+        recorte_txt = (
+            " · ".join(p for p in (", ".join(faixas), ", ".join(regioes)) if p)
+            or "todos os municípios"
+        )
+        if len(base) < ind.MINIMO_CORRELACAO:
+            st.warning(
+                f"Recorte com {len(base)} municípios ({recorte_txt}): poucos pontos para "
+                "interpretar a correlação.",
+                icon=":material/warning:",
+            )
         st.caption(
-            f"Correlação de Spearman em {ano_inv}: {ind.numero(correlacao, 2)} "
-            f"({len(base)} municípios). Associação não implica causa: renda, porte e "
-            "ruralidade não estão controlados. O investimento é a despesa liquidada na função "
-            "Educação dividida pelas matrículas da rede municipal — não é o valor oficial de MDE."
+            f"Correlação de Spearman em {ano_inv}, {recorte_txt}: "
+            f"{ind.numero(correlacao, 2) if correlacao is not None else 'não calculada'} "
+            f"({len(base)} municípios). Associação não implica "
+            "causa: os filtros por porte e região reduzem, mas não eliminam, diferenças de "
+            "renda e ruralidade. O investimento é a despesa liquidada na função Educação "
+            "dividida pelas matrículas da rede municipal — não é o valor oficial de MDE."
         )
 
 # --- matrículas ---------------------------------------------------------------------------
