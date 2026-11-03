@@ -123,6 +123,10 @@ k4.metric(
     definicao.formatar(recorte["valor"].median()) if len(recorte) else "—",
 )
 
+nota = ind.nota_contexto(definicao, ano)
+if nota:
+    st.info(nota, icon=":material/gavel:")
+
 abas = st.tabs(
     ["Mapa", "Ranking", "Evolução", "Investimento × IDEB", "Matrículas", "Comparar", "Sobre"]
 )
@@ -353,6 +357,11 @@ with abas[6]:
 Censo Escolar; Tesouro Nacional — SICONFI, DCA Anexo I-E (despesa por função);
 FNDE — SIOPE (aplicação em MDE e investimento por aluno declarados pelos entes);
 IBGE — Divisão Territorial, malha municipal e população (SIDRA).
+
+**Mínimo de 25% em MDE em 2020 e 2021:** a Emenda Constitucional nº 119/2022 afastou a
+responsabilização de quem não aplicou o mínimo nesses dois anos, por causa da pandemia,
+desde que a diferença fosse compensada até 2023. Por isso o número de municípios abaixo de
+25% salta em 2021 (43 de 139) e volta a cair em seguida.
 
 **Duas medidas de investimento por aluno:** a *oficial do SIOPE* (FNDE) é a que o
 próprio ente declara, com as regras de Manutenção e Desenvolvimento do Ensino (MDE);

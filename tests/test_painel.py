@@ -154,3 +154,12 @@ def test_mde_siope_aceita_banco_sem_o_mart(tmp_path):
     with duckdb.connect(str(banco)) as con:
         con.execute("create schema marts")
     assert list(dados.mde_siope(banco).columns) == dados.COLUNAS_SIOPE
+
+
+def test_nota_ec_119_so_para_mde_em_2020_e_2021():
+    mde = next(i for i in ind.INDICADORES.values() if i.coluna == "percentual_mde")
+    ideb = ind.INDICADORES["IDEB"]
+    assert "Emenda Constitucional nº 119/2022" in ind.nota_contexto(mde, 2021)
+    assert ind.nota_contexto(mde, 2020) is not None
+    assert ind.nota_contexto(mde, 2022) is None
+    assert ind.nota_contexto(ideb, 2021) is None
