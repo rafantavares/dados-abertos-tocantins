@@ -1,0 +1,455 @@
+TIPO,NUM_ANO,NUM_PERI,COD_UF,SIG_UF,COD_MUNI,NOM_MUNI,COD_INDI,COD_EXIB,NOM_INDI,COD_GRUP,NOM_GRUP_INDI,VAL_INDI
+Estadual,2019,6,17,TO,,,40,1.1,"Percentual de aplicação das receitas de impostos e transferências vinculadas à educação em MDE (mínimo de 25% para estados, DF e municípios)",3,Indicadores de Dispêndio com Pessoal,25.06
+Estadual,2019,6,17,TO,,,42,1.2,Percentual de aplicação do FUNDEF ou FUNDEB na remuneração dos profissionais do magistério (mínimo de 60%),3,Indicadores de Dispêndio com Pessoal,72.44
+Estadual,2019,6,17,TO,,,43,1.3,"Percentual de aplicação do FUNDEF ou FUNDEB em despesas com MDE, que não remuneração do magistério (máximo de 40%)",3,Indicadores de Dispêndio com Pessoal,27.42
+Estadual,2019,6,17,TO,,,44,1.4,Percentual das receitas do FUNDEF ou FUNDEB não aplicadas no exercício (máximo de 5%),3,Indicadores de Dispêndio com Pessoal,0.14
+Estadual,2019,6,17,TO,,,45,2.1,Percentual dos recursos do FUNDEB aplicados na educação infantil,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2019,6,17,TO,,,46,2.2,Percentual dos recursos do FUNDEB aplicados no ensino fundamental,3,Indicadores de Dispêndio com Pessoal,57.92
+Estadual,2019,6,17,TO,,,47,2.3,Percentual dos recursos do FUNDEB aplicados no ensino médio,3,Indicadores de Dispêndio com Pessoal,41.94
+Estadual,2019,6,17,TO,,,48,2.4,Percentual das despesas com educação infantil em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0.02
+Estadual,2019,6,17,TO,,,49,2.5,Percentual das despesas com ensino fundamental em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,52.67
+Estadual,2019,6,17,TO,,,50,2.6,Percentual das despesas com ensino médio em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,36.76
+Estadual,2019,6,17,TO,,,51,2.7,Percentual das despesas com educação superior em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,3.22
+Estadual,2019,6,17,TO,,,52,2.8,Percentual das despesas em educação em relação às despesas de todas as áreas,3,Indicadores de Dispêndio com Pessoal,15.37
+Estadual,2019,6,17,TO,,,53,2.9,Percentual das despesas com alimentação escolar em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2019,6,17,TO,,,54,2.10,Investimento com material didático por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2019,6,17,TO,,,55,2.11,Percentual de despesas correntes em educação em relação à despesa total em MDE,3,Indicadores de Dispêndio com Pessoal,95.98
+Estadual,2019,6,17,TO,,,56,2.12,Percentual de investimentos de capital em educação em relação à despesa total em MDE,3,Indicadores de Dispêndio com Pessoal,4.02
+Estadual,2019,6,17,TO,,,59,3.1,Percentual das despesas com aposentadorias e pensões da área educacional em relação às despesas totais com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2019,6,17,TO,,,60,3.2,Percentual das despesas com pessoal e encargos sociais da área educacional em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,97.41
+Estadual,2019,6,17,TO,,,63,3.5,Percentual das despesas com professores em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,65.6
+Estadual,2019,6,17,TO,,,64,3.6,Percentual das despesas com profissionais não docentes em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,10.13
+Estadual,2019,6,17,TO,,,65,4.1,Investimento educacional por aluno da educação infantil,3,Indicadores de Dispêndio com Pessoal,973.23
+Estadual,2019,6,17,TO,,,66,4.2,Investimento educacional por aluno do ensino fundamental,3,Indicadores de Dispêndio com Pessoal,8184.35
+Estadual,2019,6,17,TO,,,67,4.3,Investimento educacional por aluno do ensino médio,3,Indicadores de Dispêndio com Pessoal,9418.12
+Estadual,2019,6,17,TO,,,68,4.4,Investimento educacional por aluno da educação superior,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2019,6,17,TO,,,69,4.5,Investimento educacional por aluno da educação de jovens e adultos,3,Indicadores de Dispêndio com Pessoal,965.45
+Estadual,2019,6,17,TO,,,70,4.6,Investimento educacional por aluno da educação especial,3,Indicadores de Dispêndio com Pessoal,960.25
+Estadual,2019,6,17,TO,,,71,4.7,Investimento educacional por aluno da educação profissional,3,Indicadores de Dispêndio com Pessoal,983.72
+Estadual,2019,6,17,TO,,,72,4.8,Investimento educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,7926.76
+Estadual,2019,6,17,TO,,,73,4.9,Investimento educacional por aluno,3,Indicadores de Dispêndio com Pessoal,8202.91
+Estadual,2019,6,17,TO,,,74,4.10,Despesa com professores por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,5813.39
+Estadual,2019,6,17,TO,,,75,4.11,Despesas com profissionais não docentes da área educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,897.38
+Estadual,2019,6,17,TO,,,76,4.12,Percentual de investimento por aluno da educação superior em relação ao investimento por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2019,6,17,TO,,,77,4.13,Percentual de investimento por aluno em relação ao PIB per capita,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2019,6,17,TO,,,80,6.1,Percentual das receitas de transferências realizadas pelo FNDE em relação à receita total,3,Indicadores de Dispêndio com Pessoal,0.69
+Estadual,2019,6,17,TO,,,81,6.2,Percentual das receitas de impostos em relação à receita total.,3,Indicadores de Dispêndio com Pessoal,43.56
+Estadual,2019,6,17,TO,,,82,6.3,Percentual das receitas de transferências constitucionais em relação à receita total.,3,Indicadores de Dispêndio com Pessoal,45.57
+Estadual,2019,6,17,TO,,,83,7.1,Superávit/Déficit do ente federado no exercício,3,Indicadores de Dispêndio com Pessoal,-32533001.7
+Estadual,2019,6,17,TO,,,84,7.2,Saldo financeiro do FUNDEB no exercício atual,3,Indicadores de Dispêndio com Pessoal,37708516.72
+Municipal,2019,6,17,TO,170025,Abreulândia,24,1.1,"Percentual de aplicação das receitas de impostos e transferências vinculadas à educação em MDE (mínimo de 25% para estados, DF e municípios)",3,Indicadores de Dispêndio com Pessoal,30.22
+Municipal,2019,6,17,TO,170025,Abreulândia,27,1.4,Percentual das receitas do FUNDEF ou FUNDEB não aplicadas no exercício (máximo de 5%),3,Indicadores de Dispêndio com Pessoal,0.03
+Municipal,2019,6,17,TO,170025,Abreulândia,28,2.1,Percentual dos recursos do FUNDEB aplicados na educação infantil,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170025,Abreulândia,29,2.2,Percentual dos recursos do FUNDEB aplicados no ensino fundamental,3,Indicadores de Dispêndio com Pessoal,76.92
+Municipal,2019,6,17,TO,170025,Abreulândia,30,2.3,Percentual dos recursos do FUNDEB aplicados no ensino médio,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170025,Abreulândia,31,2.4,Percentual das despesas com educação infantil em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,11.1
+Municipal,2019,6,17,TO,170025,Abreulândia,32,2.5,Percentual das despesas com ensino fundamental em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,67.25
+Municipal,2019,6,17,TO,170025,Abreulândia,33,2.6,Percentual das despesas com ensino médio em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170025,Abreulândia,34,2.7,Percentual das despesas com educação superior em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170025,Abreulândia,35,2.8,Percentual das despesas em educação em relação às despesas de todas as áreas,3,Indicadores de Dispêndio com Pessoal,29.79
+Municipal,2019,6,17,TO,170025,Abreulândia,36,2.9,Percentual das despesas com alimentação escolar em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,1.93
+Municipal,2019,6,17,TO,170025,Abreulândia,38,3.1,Percentual das despesas com aposentadorias e pensões da área educacional em relação às despesas totais com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170025,Abreulândia,39,3.2,Percentual das despesas com pessoal e encargos sociais da área educacional em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,97.11
+Municipal,2019,6,17,TO,170025,Abreulândia,42,3.5,Percentual das despesas com professores em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,29.13
+Municipal,2019,6,17,TO,170025,Abreulândia,43,3.6,Percentual das despesas com profissionais não docentes em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,36.32
+Municipal,2019,6,17,TO,170025,Abreulândia,44,4.1,Investimento educacional por aluno da educação infantil,3,Indicadores de Dispêndio com Pessoal,4387.06
+Municipal,2019,6,17,TO,170025,Abreulândia,45,4.2,Investimento educacional por aluno do ensino fundamental,3,Indicadores de Dispêndio com Pessoal,10739.06
+Municipal,2019,6,17,TO,170025,Abreulândia,46,4.3,Investimento educacional por aluno do ensino médio,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170025,Abreulândia,47,2.10,Investimento com material didático por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170025,Abreulândia,48,2.11,Percentual de despesas correntes em educação em relação à despesa total em MDE,3,Indicadores de Dispêndio com Pessoal,99.72
+Municipal,2019,6,17,TO,170025,Abreulândia,49,2.12,Percentual de investimentos de capital em educação em relação à despesa total em MDE,3,Indicadores de Dispêndio com Pessoal,0.28
+Municipal,2019,6,17,TO,170025,Abreulândia,52,4.4,Investimento educacional por aluno da educação superior,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170025,Abreulândia,53,4.5,Investimento educacional por aluno da educação de jovens e adultos,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170025,Abreulândia,54,4.6,Investimento educacional por aluno da educação especial,3,Indicadores de Dispêndio com Pessoal,6632.44
+Municipal,2019,6,17,TO,170025,Abreulândia,55,4.7,Investimento educacional por aluno da educação profissional,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170025,Abreulândia,56,4.8,Investimento educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,8786.99
+Municipal,2019,6,17,TO,170025,Abreulândia,57,4.9,Investimento educacional por aluno,3,Indicadores de Dispêndio com Pessoal,8786.99
+Municipal,2019,6,17,TO,170025,Abreulândia,58,4.10,Despesa com professores por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,3331.29
+Municipal,2019,6,17,TO,170025,Abreulândia,59,4.11,Despesas com profissionais não docentes da área educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,4153.79
+Municipal,2019,6,17,TO,170025,Abreulândia,60,4.12,Percentual de investimento por aluno da educação superior em relação ao investimento por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170025,Abreulândia,61,4.13,Percentual de investimento por aluno em relação ao PIB per capita,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170025,Abreulândia,62,6.1,Percentual das receitas de transferências realizadas pelo FNDE em relação à receita total,3,Indicadores de Dispêndio com Pessoal,1.1
+Municipal,2019,6,17,TO,170025,Abreulândia,63,6.2,Percentual das receitas de impostos em relação à receita total.,3,Indicadores de Dispêndio com Pessoal,5.09
+Municipal,2019,6,17,TO,170025,Abreulândia,64,6.3,Percentual das receitas de transferências constitucionais em relação à receita total.,3,Indicadores de Dispêndio com Pessoal,69.83
+Municipal,2019,6,17,TO,170025,Abreulândia,67,1.2,Percentual de aplicação do FUNDEF ou FUNDEB na remuneração dos profissionais do magistério (mínimo de 60%),3,Indicadores de Dispêndio com Pessoal,65.3
+Municipal,2019,6,17,TO,170025,Abreulândia,68,1.3,"Percentual de aplicação do FUNDEF ou FUNDEB em despesas com MDE, que não remuneração do magistério (máximo de 40%)",3,Indicadores de Dispêndio com Pessoal,34.67
+Municipal,2019,6,17,TO,170025,Abreulândia,69,7.1,Superávit/Déficit do ente federado no exercício,3,Indicadores de Dispêndio com Pessoal,230001.35
+Municipal,2019,6,17,TO,170025,Abreulândia,70,7.2,Saldo financeiro do FUNDEB no exercício atual,3,Indicadores de Dispêndio com Pessoal,130558.35
+Municipal,2019,6,17,TO,170025,Abreulândia,84,4.14,Investimento educacional por aluno da educação infantil - creche,3,Indicadores de Dispêndio com Pessoal,7961.23
+Municipal,2019,6,17,TO,170025,Abreulândia,85,4.15,Investimento educacional por aluno da educação infantil - pre-escola,3,Indicadores de Dispêndio com Pessoal,2320.75
+Municipal,2019,6,17,TO,172100,Palmas,24,1.1,"Percentual de aplicação das receitas de impostos e transferências vinculadas à educação em MDE (mínimo de 25% para estados, DF e municípios)",3,Indicadores de Dispêndio com Pessoal,26.04
+Municipal,2019,6,17,TO,172100,Palmas,27,1.4,Percentual das receitas do FUNDEF ou FUNDEB não aplicadas no exercício (máximo de 5%),3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,172100,Palmas,28,2.1,Percentual dos recursos do FUNDEB aplicados na educação infantil,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,172100,Palmas,29,2.2,Percentual dos recursos do FUNDEB aplicados no ensino fundamental,3,Indicadores de Dispêndio com Pessoal,69.75
+Municipal,2019,6,17,TO,172100,Palmas,30,2.3,Percentual dos recursos do FUNDEB aplicados no ensino médio,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,172100,Palmas,31,2.4,Percentual das despesas com educação infantil em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,28.14
+Municipal,2019,6,17,TO,172100,Palmas,32,2.5,Percentual das despesas com ensino fundamental em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,65.62
+Municipal,2019,6,17,TO,172100,Palmas,33,2.6,Percentual das despesas com ensino médio em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,172100,Palmas,34,2.7,Percentual das despesas com educação superior em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,172100,Palmas,35,2.8,Percentual das despesas em educação em relação às despesas de todas as áreas,3,Indicadores de Dispêndio com Pessoal,29.94
+Municipal,2019,6,17,TO,172100,Palmas,36,2.9,Percentual das despesas com alimentação escolar em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,1.36
+Municipal,2019,6,17,TO,172100,Palmas,38,3.1,Percentual das despesas com aposentadorias e pensões da área educacional em relação às despesas totais com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,172100,Palmas,39,3.2,Percentual das despesas com pessoal e encargos sociais da área educacional em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,96.96
+Municipal,2019,6,17,TO,172100,Palmas,42,3.5,Percentual das despesas com professores em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,64.73
+Municipal,2019,6,17,TO,172100,Palmas,43,3.6,Percentual das despesas com profissionais não docentes em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,5.51
+Municipal,2019,6,17,TO,172100,Palmas,44,4.1,Investimento educacional por aluno da educação infantil,3,Indicadores de Dispêndio com Pessoal,8136.45
+Municipal,2019,6,17,TO,172100,Palmas,45,4.2,Investimento educacional por aluno do ensino fundamental,3,Indicadores de Dispêndio com Pessoal,8009.52
+Municipal,2019,6,17,TO,170100,Ananás,24,1.1,"Percentual de aplicação das receitas de impostos e transferências vinculadas à educação em MDE (mínimo de 25% para estados, DF e municípios)",3,Indicadores de Dispêndio com Pessoal,25.45
+Municipal,2019,6,17,TO,170100,Ananás,27,1.4,Percentual das receitas do FUNDEF ou FUNDEB não aplicadas no exercício (máximo de 5%),3,Indicadores de Dispêndio com Pessoal,1.09
+Municipal,2019,6,17,TO,170100,Ananás,28,2.1,Percentual dos recursos do FUNDEB aplicados na educação infantil,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170100,Ananás,29,2.2,Percentual dos recursos do FUNDEB aplicados no ensino fundamental,3,Indicadores de Dispêndio com Pessoal,73.74
+Municipal,2019,6,17,TO,170100,Ananás,30,2.3,Percentual dos recursos do FUNDEB aplicados no ensino médio,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170100,Ananás,31,2.4,Percentual das despesas com educação infantil em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,19.24
+Municipal,2019,6,17,TO,170100,Ananás,32,2.5,Percentual das despesas com ensino fundamental em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,72.35
+Municipal,2019,6,17,TO,170100,Ananás,33,2.6,Percentual das despesas com ensino médio em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170100,Ananás,34,2.7,Percentual das despesas com educação superior em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170100,Ananás,35,2.8,Percentual das despesas em educação em relação às despesas de todas as áreas,3,Indicadores de Dispêndio com Pessoal,36.02
+Municipal,2019,6,17,TO,170100,Ananás,36,2.9,Percentual das despesas com alimentação escolar em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170100,Ananás,38,3.1,Percentual das despesas com aposentadorias e pensões da área educacional em relação às despesas totais com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170100,Ananás,39,3.2,Percentual das despesas com pessoal e encargos sociais da área educacional em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,98.57
+Municipal,2019,6,17,TO,170100,Ananás,42,3.5,Percentual das despesas com professores em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,49.25
+Municipal,2019,6,17,TO,170100,Ananás,43,3.6,Percentual das despesas com profissionais não docentes em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,23.57
+Municipal,2019,6,17,TO,170100,Ananás,44,4.1,Investimento educacional por aluno da educação infantil,3,Indicadores de Dispêndio com Pessoal,4030.1
+Municipal,2019,6,17,TO,170100,Ananás,45,4.2,Investimento educacional por aluno do ensino fundamental,3,Indicadores de Dispêndio com Pessoal,6287.3
+Municipal,2019,6,17,TO,170100,Ananás,46,4.3,Investimento educacional por aluno do ensino médio,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170100,Ananás,47,2.10,Investimento com material didático por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170100,Ananás,48,2.11,Percentual de despesas correntes em educação em relação à despesa total em MDE,3,Indicadores de Dispêndio com Pessoal,98.34
+Municipal,2019,6,17,TO,170100,Ananás,49,2.12,Percentual de investimentos de capital em educação em relação à despesa total em MDE,3,Indicadores de Dispêndio com Pessoal,1.66
+Municipal,2019,6,17,TO,170100,Ananás,52,4.4,Investimento educacional por aluno da educação superior,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170100,Ananás,53,4.5,Investimento educacional por aluno da educação de jovens e adultos,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170100,Ananás,54,4.6,Investimento educacional por aluno da educação especial,3,Indicadores de Dispêndio com Pessoal,4478.4
+Municipal,2019,6,17,TO,170100,Ananás,55,4.7,Investimento educacional por aluno da educação profissional,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170100,Ananás,56,4.8,Investimento educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,5580.13
+Municipal,2019,6,17,TO,170100,Ananás,57,4.9,Investimento educacional por aluno,3,Indicadores de Dispêndio com Pessoal,5580.13
+Municipal,2019,6,17,TO,170100,Ananás,58,4.10,Despesa com professores por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,3000.83
+Municipal,2019,6,17,TO,172100,Palmas,46,4.3,Investimento educacional por aluno do ensino médio,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,172100,Palmas,47,2.10,Investimento com material didático por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,1.21
+Municipal,2019,6,17,TO,172100,Palmas,48,2.11,Percentual de despesas correntes em educação em relação à despesa total em MDE,3,Indicadores de Dispêndio com Pessoal,91.02
+Municipal,2019,6,17,TO,172100,Palmas,49,2.12,Percentual de investimentos de capital em educação em relação à despesa total em MDE,3,Indicadores de Dispêndio com Pessoal,8.98
+Municipal,2019,6,17,TO,172100,Palmas,52,4.4,Investimento educacional por aluno da educação superior,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,172100,Palmas,53,4.5,Investimento educacional por aluno da educação de jovens e adultos,3,Indicadores de Dispêndio com Pessoal,3409.6
+Municipal,2019,6,17,TO,172100,Palmas,54,4.6,Investimento educacional por aluno da educação especial,3,Indicadores de Dispêndio com Pessoal,7772.4
+Municipal,2019,6,17,TO,172100,Palmas,55,4.7,Investimento educacional por aluno da educação profissional,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,172100,Palmas,56,4.8,Investimento educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,7926.45
+Municipal,2019,6,17,TO,172100,Palmas,57,4.9,Investimento educacional por aluno,3,Indicadores de Dispêndio com Pessoal,7926.45
+Municipal,2019,6,17,TO,172100,Palmas,58,4.10,Despesa com professores por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,5548.39
+Municipal,2019,6,17,TO,172100,Palmas,59,4.11,Despesas com profissionais não docentes da área educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,472.13
+Municipal,2019,6,17,TO,172100,Palmas,60,4.12,Percentual de investimento por aluno da educação superior em relação ao investimento por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,172100,Palmas,61,4.13,Percentual de investimento por aluno em relação ao PIB per capita,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,172100,Palmas,62,6.1,Percentual das receitas de transferências realizadas pelo FNDE em relação à receita total,3,Indicadores de Dispêndio com Pessoal,1.2
+Municipal,2019,6,17,TO,172100,Palmas,63,6.2,Percentual das receitas de impostos em relação à receita total.,3,Indicadores de Dispêndio com Pessoal,23.62
+Municipal,2019,6,17,TO,172100,Palmas,64,6.3,Percentual das receitas de transferências constitucionais em relação à receita total.,3,Indicadores de Dispêndio com Pessoal,33.98
+Municipal,2019,6,17,TO,172100,Palmas,67,1.2,Percentual de aplicação do FUNDEF ou FUNDEB na remuneração dos profissionais do magistério (mínimo de 60%),3,Indicadores de Dispêndio com Pessoal,82.23
+Municipal,2019,6,17,TO,172100,Palmas,68,1.3,"Percentual de aplicação do FUNDEF ou FUNDEB em despesas com MDE, que não remuneração do magistério (máximo de 40%)",3,Indicadores de Dispêndio com Pessoal,17.77
+Municipal,2019,6,17,TO,172100,Palmas,69,7.1,Superávit/Déficit do ente federado no exercício,3,Indicadores de Dispêndio com Pessoal,135522132.06
+Municipal,2019,6,17,TO,172100,Palmas,70,7.2,Saldo financeiro do FUNDEB no exercício atual,3,Indicadores de Dispêndio com Pessoal,17132373.9
+Municipal,2019,6,17,TO,172100,Palmas,84,4.14,Investimento educacional por aluno da educação infantil - creche,3,Indicadores de Dispêndio com Pessoal,8575.49
+Municipal,2019,6,17,TO,172100,Palmas,85,4.15,Investimento educacional por aluno da educação infantil - pre-escola,3,Indicadores de Dispêndio com Pessoal,8127.55
+Municipal,2019,6,17,TO,170100,Ananás,59,4.11,Despesas com profissionais não docentes da área educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,1435.96
+Municipal,2019,6,17,TO,170100,Ananás,60,4.12,Percentual de investimento por aluno da educação superior em relação ao investimento por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170100,Ananás,61,4.13,Percentual de investimento por aluno em relação ao PIB per capita,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2019,6,17,TO,170100,Ananás,62,6.1,Percentual das receitas de transferências realizadas pelo FNDE em relação à receita total,3,Indicadores de Dispêndio com Pessoal,1.87
+Municipal,2019,6,17,TO,170100,Ananás,63,6.2,Percentual das receitas de impostos em relação à receita total.,3,Indicadores de Dispêndio com Pessoal,5.45
+Municipal,2019,6,17,TO,170100,Ananás,64,6.3,Percentual das receitas de transferências constitucionais em relação à receita total.,3,Indicadores de Dispêndio com Pessoal,49.24
+Municipal,2019,6,17,TO,170100,Ananás,67,1.2,Percentual de aplicação do FUNDEF ou FUNDEB na remuneração dos profissionais do magistério (mínimo de 60%),3,Indicadores de Dispêndio com Pessoal,63.53
+Municipal,2019,6,17,TO,170100,Ananás,68,1.3,"Percentual de aplicação do FUNDEF ou FUNDEB em despesas com MDE, que não remuneração do magistério (máximo de 40%)",3,Indicadores de Dispêndio com Pessoal,35.38
+Municipal,2019,6,17,TO,170100,Ananás,69,7.1,Superávit/Déficit do ente federado no exercício,3,Indicadores de Dispêndio com Pessoal,1268275.7
+Municipal,2019,6,17,TO,170100,Ananás,70,7.2,Saldo financeiro do FUNDEB no exercício atual,3,Indicadores de Dispêndio com Pessoal,1164915.72
+Municipal,2019,6,17,TO,170100,Ananás,84,4.14,Investimento educacional por aluno da educação infantil - creche,3,Indicadores de Dispêndio com Pessoal,4875.19
+Municipal,2019,6,17,TO,170100,Ananás,85,4.15,Investimento educacional por aluno da educação infantil - pre-escola,3,Indicadores de Dispêndio com Pessoal,3732
+Estadual,2024,6,17,TO,,,5,1.5,Percentual de aplicação em Despesas de Capital da complementação da União - VAAT - FUNDEB (Minimo de 15%),3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2024,6,17,TO,,,40,1.1,"Percentual de aplicação das receitas de impostos e transferências vinculadas à educação em MDE (mínimo de 25% para estados, DF e municípios)",3,Indicadores de Dispêndio com Pessoal,25.21
+Estadual,2024,6,17,TO,,,42,1.2,Percentual de aplicação do FUNDEF ou FUNDEB na remuneração dos profissionais da educação (mínimo de 70%),3,Indicadores de Dispêndio com Pessoal,77.64
+Estadual,2024,6,17,TO,,,43,1.3,"Percentual de aplicação do FUNDEF ou FUNDEB em despesas com MDE, que não remuneração do magistério (máximo de 40%)",3,Indicadores de Dispêndio com Pessoal,22.18
+Estadual,2024,6,17,TO,,,44,1.4,Percentual das receitas do  FUNDEB não aplicadas no exercício (máximo de10%),3,Indicadores de Dispêndio com Pessoal,0.19
+Estadual,2024,6,17,TO,,,45,2.1,Percentual dos recursos do FUNDEB aplicados na educação infantil,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2024,6,17,TO,,,46,2.2,Percentual dos recursos do FUNDEB aplicados no ensino fundamental,3,Indicadores de Dispêndio com Pessoal,52
+Estadual,2024,6,17,TO,,,47,2.3,Percentual dos recursos do FUNDEB aplicados no ensino médio,3,Indicadores de Dispêndio com Pessoal,40.95
+Estadual,2024,6,17,TO,,,48,2.4,Percentual das despesas com educação infantil em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2024,6,17,TO,,,49,2.5,Percentual das despesas com ensino fundamental em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,43.72
+Estadual,2024,6,17,TO,,,50,2.6,Percentual das despesas com ensino médio em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,39.68
+Estadual,2024,6,17,TO,,,51,2.7,Percentual das despesas com educação superior em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,5.08
+Estadual,2024,6,17,TO,,,52,2.8,Percentual das despesas em educação em relação às despesas de todas as áreas,3,Indicadores de Dispêndio com Pessoal,14.36
+Estadual,2024,6,17,TO,,,53,2.9,Percentual das despesas com alimentação escolar em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2024,6,17,TO,,,54,2.10,Investimento com material didático por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2024,6,17,TO,,,55,2.11,Percentual de despesas correntes em educação em relação à despesa total em MDE,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2024,6,17,TO,,,56,2.12,Percentual de investimentos de capital em educação em relação à despesa total em MDE,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2024,6,17,TO,,,59,3.1,Percentual das despesas com aposentadorias e pensões da área educacional em relação às despesas totais com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2024,6,17,TO,,,60,3.2,Percentual das despesas com pessoal e encargos sociais da área educacional em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2024,6,17,TO,,,63,3.5,Percentual das despesas com recursos do FUNDEB com professores em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2024,6,17,TO,,,64,3.6,Percentual das despesas com profissionais não docentes em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2024,6,17,TO,,,65,4.1,Investimento educacional por aluno da educação infantil,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2024,6,17,TO,,,66,4.2,Investimento educacional por aluno do ensino fundamental,3,Indicadores de Dispêndio com Pessoal,16599.91
+Estadual,2024,6,17,TO,,,67,4.3,Investimento educacional por aluno do ensino médio,3,Indicadores de Dispêndio com Pessoal,19140.5
+Estadual,2024,6,17,TO,,,68,4.4,Investimento educacional por aluno da educação superior,3,Indicadores de Dispêndio com Pessoal,53139.9
+Estadual,2024,6,17,TO,,,69,4.5,Investimento educacional por aluno da educação de jovens e adultos,3,Indicadores de Dispêndio com Pessoal,9845.99
+Estadual,2024,6,17,TO,,,70,4.6,Investimento educacional por aluno da educação especial,3,Indicadores de Dispêndio com Pessoal,9842.74
+Estadual,2024,6,17,TO,,,71,4.7,Investimento educacional por aluno da educação profissional,3,Indicadores de Dispêndio com Pessoal,1977.61
+Estadual,2024,6,17,TO,,,72,4.8,Investimento educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,19078.82
+Estadual,2024,6,17,TO,,,73,4.9,Investimento educacional por aluno,3,Indicadores de Dispêndio com Pessoal,18423.8
+Estadual,2024,6,17,TO,,,74,4.10,Despesa com professores por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,7750.29
+Estadual,2024,6,17,TO,,,75,4.11,Despesas com profissionais não docentes da área educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,973.16
+Estadual,2024,6,17,TO,,,76,4.12,Percentual de investimento por aluno da educação superior em relação ao investimento por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,2.79
+Estadual,2024,6,17,TO,,,77,4.13,Percentual de investimento por aluno em relação ao PIB per capita,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2024,6,17,TO,,,80,6.1,Percentual das receitas de transferências realizadas pelo FNDE em relação à receita total,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2024,6,17,TO,,,81,6.2,Percentual das receitas de impostos em relação à receita total.,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2024,6,17,TO,,,82,6.3,Percentual das receitas de transferências constitucionais em relação à receita total.,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2024,6,17,TO,,,83,7.1,Superávit/Déficit do ente federado no exercício,3,Indicadores de Dispêndio com Pessoal,4703903585.7
+Estadual,2024,6,17,TO,,,84,7.2,Saldo financeiro do FUNDEB no exercício atual,3,Indicadores de Dispêndio com Pessoal,104447182.31
+Estadual,2024,6,17,TO,,,93,1.6,Percentual de aplicação em Despesas na Educação Infantil da complementação da União - VAAT - FUNDEB (Proporção 50% do VAAT Total)),3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2024,6,17,TO,,,94,7.3,Recursos do FUNDEB do exercício não utilizado,3,Indicadores de Dispêndio com Pessoal,2623307.1
+Estadual,2024,6,17,TO,,,95,1.7,Indicador para Educação Infantil - IEI - Percentual mínimo da complementação VAAT a ser aplicado em educação Infantil,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2024,6,17,TO,,,96,8.1,Valor exigido de aplicação de impostos em MDE (Mínimo de 25%),3,Indicadores de Dispêndio com Pessoal,3296929426.1
+Estadual,2024,6,17,TO,,,97,8.2,Valor aplicado em MDE da receita de impostos,3,Indicadores de Dispêndio com Pessoal,3324883735.25
+Estadual,2024,6,17,TO,,,98,1.8,"Percentual de destinação de recursos de impostos e transferências ao Fundeb (mínimo de 20% para estados e DF - inciso II, art.  212-A, da CF/88). Inciso XXV, art. 29, da PC n° 33/2023",3,Indicadores de Dispêndio com Pessoal,20
+Municipal,2024,6,17,TO,172100,Palmas,24,1.1,"Percentual de aplicação das receitas de impostos e transferências vinculadas à educação em MDE (mínimo de 25% para estados, DF e municípios)",3,Indicadores de Dispêndio com Pessoal,25.11
+Municipal,2024,6,17,TO,172100,Palmas,28,2.1,Percentual dos recursos do FUNDEB aplicados na educação infantil,3,Indicadores de Dispêndio com Pessoal,33.93
+Municipal,2024,6,17,TO,172100,Palmas,29,2.2,Percentual dos recursos do FUNDEB aplicados no ensino fundamental,3,Indicadores de Dispêndio com Pessoal,62.41
+Municipal,2024,6,17,TO,172100,Palmas,31,2.4,Percentual das despesas com educação infantil em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,28.9
+Municipal,2024,6,17,TO,172100,Palmas,32,2.5,Percentual das despesas com ensino fundamental em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,63.69
+Municipal,2024,6,17,TO,172100,Palmas,35,2.8,Percentual das despesas em educação em relação às despesas de todas as áreas,3,Indicadores de Dispêndio com Pessoal,29.57
+Municipal,2024,6,17,TO,172100,Palmas,44,4.1,Investimento educacional por aluno da educação infantil,3,Indicadores de Dispêndio com Pessoal,14590.28
+Municipal,2024,6,17,TO,172100,Palmas,45,4.2,Investimento educacional por aluno do ensino fundamental,3,Indicadores de Dispêndio com Pessoal,14179.64
+Municipal,2024,6,17,TO,172100,Palmas,53,4.5,Investimento educacional por aluno da educação de jovens e adultos,3,Indicadores de Dispêndio com Pessoal,15573.26
+Municipal,2024,6,17,TO,172100,Palmas,54,4.6,Investimento educacional por aluno da educação especial,3,Indicadores de Dispêndio com Pessoal,17255.3
+Municipal,2024,6,17,TO,172100,Palmas,56,4.8,Investimento educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,14880.67
+Municipal,2024,6,17,TO,172100,Palmas,57,4.9,Investimento educacional por aluno,3,Indicadores de Dispêndio com Pessoal,14880.67
+Municipal,2024,6,17,TO,172100,Palmas,58,4.10,Despesa com professores por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,7788.34
+Municipal,2024,6,17,TO,172100,Palmas,67,1.2,"Percentual de aplicação do FUNDEB na remuneração dos profissionais da educação (mínimo de 70%) - Inciso XXII, Portaria Conjunta MGI/MF/CGU Nº 33 de30-08-2023",3,Indicadores de Dispêndio com Pessoal,83.76
+Municipal,2024,6,17,TO,172100,Palmas,68,1.3,"Percentual de aplicação do FUNDEB em despesas com MDE, que não remuneração dos profissionais da educação (máximo de 30%)",3,Indicadores de Dispêndio com Pessoal,16.24
+Municipal,2024,6,17,TO,172100,Palmas,69,7.1,Superávit/Déficit do ente federado no exercício,3,Indicadores de Dispêndio com Pessoal,77356695.93
+Municipal,2024,6,17,TO,172100,Palmas,70,7.2,Saldo financeiro do FUNDEB no exercício atual,3,Indicadores de Dispêndio com Pessoal,11175773.11
+Municipal,2024,6,17,TO,172100,Palmas,85,4.15,Investimento educacional por aluno da educação infantil - pre-escola,3,Indicadores de Dispêndio com Pessoal,18339.94
+Municipal,2024,6,17,TO,172100,Palmas,91,7.3,Recursos do FUNDEB do exercício não utilizado,3,Indicadores de Dispêndio com Pessoal,3795.19
+Municipal,2024,6,17,TO,172100,Palmas,93,8.1,Valor exigido de aplicação de impostos em MDE (Mínimo de 25%),3,Indicadores de Dispêndio com Pessoal,347795608.66
+Municipal,2024,6,17,TO,172100,Palmas,94,8.2,Valor aplicado em MDE da receita de impostos,3,Indicadores de Dispêndio com Pessoal,349372371.69
+Municipal,2024,6,17,TO,170025,Abreulândia,24,1.1,"Percentual de aplicação das receitas de impostos e transferências vinculadas à educação em MDE (mínimo de 25% para estados, DF e municípios)",3,Indicadores de Dispêndio com Pessoal,36.62
+Municipal,2024,6,17,TO,170025,Abreulândia,27,1.4,Percentual das receitas do  FUNDEB não aplicadas no exercício (máximo de 10%),3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,28,2.1,Percentual dos recursos do FUNDEB aplicados na educação infantil,3,Indicadores de Dispêndio com Pessoal,32.66
+Municipal,2024,6,17,TO,170025,Abreulândia,29,2.2,Percentual dos recursos do FUNDEB aplicados no ensino fundamental,3,Indicadores de Dispêndio com Pessoal,63.53
+Municipal,2024,6,17,TO,170025,Abreulândia,30,2.3,Percentual dos recursos do FUNDEB aplicados no ensino médio,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,31,2.4,Percentual das despesas com educação infantil em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,28.53
+Municipal,2024,6,17,TO,170025,Abreulândia,32,2.5,Percentual das despesas com ensino fundamental em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,59.83
+Municipal,2024,6,17,TO,170025,Abreulândia,33,2.6,Percentual das despesas com ensino médio em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,34,2.7,Percentual das despesas com educação superior em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,35,2.8,Percentual das despesas em educação em relação às despesas de todas as áreas,3,Indicadores de Dispêndio com Pessoal,30.3
+Municipal,2024,6,17,TO,170025,Abreulândia,36,2.9,Percentual das despesas com alimentação escolar em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,1.96
+Municipal,2024,6,17,TO,170025,Abreulândia,38,3.1,Percentual das despesas com aposentadorias e pensões da área educacional em relação às despesas totais com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,39,3.2,Percentual das despesas com pessoal e encargos sociais da área educacional em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,42,3.5,Percentual das despesas com recursos do FUNDEB com professores em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,43,3.6,Percentual das despesas com recursos do FUNDEB com profissionais não docentes em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,44,4.1,Investimento educacional por aluno da educação infantil,3,Indicadores de Dispêndio com Pessoal,18654.79
+Municipal,2024,6,17,TO,170025,Abreulândia,45,4.2,Investimento educacional por aluno do ensino fundamental,3,Indicadores de Dispêndio com Pessoal,22100.2
+Municipal,2024,6,17,TO,170025,Abreulândia,46,4.3,Investimento educacional por aluno do ensino médio,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,47,2.10,Investimento com material didático por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,3.69
+Municipal,2024,6,17,TO,170025,Abreulândia,48,2.11,Percentual de despesas correntes em educação em relação à despesa total em MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,49,2.12,Percentual de investimentos de capital em educação em relação à despesa total em MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,52,4.4,Investimento educacional por aluno da educação superior,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,53,4.5,Investimento educacional por aluno da educação de jovens e adultos,3,Indicadores de Dispêndio com Pessoal,14258.37
+Municipal,2024,6,17,TO,170025,Abreulândia,54,4.6,Investimento educacional por aluno da educação especial,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,55,4.7,Investimento educacional por aluno da educação profissional,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,56,4.8,Investimento educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,23137.32
+Municipal,2024,6,17,TO,170025,Abreulândia,57,4.9,Investimento educacional por aluno,3,Indicadores de Dispêndio com Pessoal,23137.32
+Municipal,2024,6,17,TO,170025,Abreulândia,58,4.10,Despesa com professores por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,9644.52
+Municipal,2024,6,17,TO,170025,Abreulândia,59,4.11,Despesas com profissionais não docentes da área educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,308.49
+Municipal,2024,6,17,TO,170025,Abreulândia,60,4.12,Percentual de investimento por aluno da educação superior em relação ao investimento por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,61,4.13,Percentual de investimento por aluno em relação ao PIB per capita,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,62,6.1,Percentual das receitas de transferências realizadas pelo FNDE em relação à receita total,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,63,6.2,Percentual das receitas de impostos em relação à receita total.,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,64,6.3,Percentual das receitas de transferências constitucionais em relação à receita total.,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,67,1.2,"Percentual de aplicação do FUNDEB na remuneração dos profissionais da educação (mínimo de 70%) - Inciso XXII, Portaria Conjunta MGI/MF/CGU Nº 33 de30-08-2023",3,Indicadores de Dispêndio com Pessoal,97.36
+Municipal,2024,6,17,TO,170025,Abreulândia,68,1.3,"Percentual de aplicação do FUNDEB em despesas com MDE, que não remuneração dos profissionais da educação (máximo de 30%)",3,Indicadores de Dispêndio com Pessoal,2.64
+Municipal,2024,6,17,TO,170025,Abreulândia,69,7.1,Superávit/Déficit do ente federado no exercício,3,Indicadores de Dispêndio com Pessoal,3644503.36
+Municipal,2024,6,17,TO,170025,Abreulândia,70,7.2,Saldo financeiro do FUNDEB no exercício atual,3,Indicadores de Dispêndio com Pessoal,60188.89
+Municipal,2024,6,17,TO,170025,Abreulândia,84,4.14,Investimento educacional por aluno da educação infantil - creche,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,85,4.15,Investimento educacional por aluno da educação infantil - pre-escola,3,Indicadores de Dispêndio com Pessoal,17141.88
+Municipal,2024,6,17,TO,170025,Abreulândia,89,1.5,"Percentual de aplicação em Despesas de Capital - VAAT - FUNDEB (Minimo de 15%) - Inciso XXIII, Portaria Conjunta MGI/MF/CGU Nº 33 de30-08-2023",3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,90,1.6,"Percentual de aplicação em Despesas na Educação Infantil  - VAAT - FUNDEB (Proporção 50% do VAAT Total) - Correspondente ao indicador 1.7 - Inciso XXIV, Portaria Conjunta MGI/MF/CGU Nº 33 de30-08-2023",3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,91,7.3,Recursos do FUNDEB do exercício não utilizado,3,Indicadores de Dispêndio com Pessoal,7.88
+Municipal,2024,6,17,TO,170025,Abreulândia,92,1.7,Indicador para Educação Infantil - IEI - Percentual mínimo da complementação VAAT a ser aplicado em educação Infantil,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2024,6,17,TO,170025,Abreulândia,93,8.1,Valor exigido de aplicação de impostos em MDE (Mínimo de 25%),3,Indicadores de Dispêndio com Pessoal,5970870.16
+Municipal,2024,6,17,TO,170025,Abreulândia,94,8.2,Valor aplicado em MDE da receita de impostos,3,Indicadores de Dispêndio com Pessoal,8745002.19
+Municipal,2024,6,17,TO,170100,Ananás,24,1.1,"Percentual de aplicação das receitas de impostos e transferências vinculadas à educação em MDE (mínimo de 25% para estados, DF e municípios)",3,Indicadores de Dispêndio com Pessoal,25.34
+Municipal,2024,6,17,TO,170100,Ananás,27,1.4,Percentual das receitas do  FUNDEB não aplicadas no exercício (máximo de 10%),3,Indicadores de Dispêndio com Pessoal,1.44
+Municipal,2024,6,17,TO,170100,Ananás,28,2.1,Percentual dos recursos do FUNDEB aplicados na educação infantil,3,Indicadores de Dispêndio com Pessoal,42.32
+Municipal,2024,6,17,TO,170100,Ananás,29,2.2,Percentual dos recursos do FUNDEB aplicados no ensino fundamental,3,Indicadores de Dispêndio com Pessoal,56.24
+Municipal,2024,6,17,TO,170100,Ananás,31,2.4,Percentual das despesas com educação infantil em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,31.02
+Municipal,2024,6,17,TO,170100,Ananás,32,2.5,Percentual das despesas com ensino fundamental em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,53.27
+Municipal,2024,6,17,TO,170100,Ananás,35,2.8,Percentual das despesas em educação em relação às despesas de todas as áreas,3,Indicadores de Dispêndio com Pessoal,33.54
+Municipal,2024,6,17,TO,170100,Ananás,44,4.1,Investimento educacional por aluno da educação infantil,3,Indicadores de Dispêndio com Pessoal,12457.82
+Municipal,2024,6,17,TO,170100,Ananás,45,4.2,Investimento educacional por aluno do ensino fundamental,3,Indicadores de Dispêndio com Pessoal,14879.46
+Municipal,2024,6,17,TO,170100,Ananás,56,4.8,Investimento educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,16473.8
+Municipal,2024,6,17,TO,170100,Ananás,57,4.9,Investimento educacional por aluno,3,Indicadores de Dispêndio com Pessoal,16473.8
+Municipal,2024,6,17,TO,170100,Ananás,58,4.10,Despesa com professores por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,9086.4
+Municipal,2024,6,17,TO,170100,Ananás,67,1.2,"Percentual de aplicação do FUNDEB na remuneração dos profissionais da educação (mínimo de 70%) - Inciso XXII, Portaria Conjunta MGI/MF/CGU Nº 33 de30-08-2023",3,Indicadores de Dispêndio com Pessoal,76.47
+Municipal,2024,6,17,TO,170100,Ananás,68,1.3,"Percentual de aplicação do FUNDEB em despesas com MDE, que não remuneração dos profissionais da educação (máximo de 30%)",3,Indicadores de Dispêndio com Pessoal,23.32
+Municipal,2024,6,17,TO,170100,Ananás,69,7.1,Superávit/Déficit do ente federado no exercício,3,Indicadores de Dispêndio com Pessoal,567269.39
+Municipal,2024,6,17,TO,170100,Ananás,70,7.2,Saldo financeiro do FUNDEB no exercício atual,3,Indicadores de Dispêndio com Pessoal,256561.9
+Municipal,2024,6,17,TO,170100,Ananás,85,4.15,Investimento educacional por aluno da educação infantil - pre-escola,3,Indicadores de Dispêndio com Pessoal,9890.77
+Municipal,2024,6,17,TO,170100,Ananás,89,1.5,"Percentual de aplicação em Despesas de Capital - VAAT - FUNDEB (Minimo de 15%) - Inciso XXIII, Portaria Conjunta MGI/MF/CGU Nº 33 de30-08-2023",3,Indicadores de Dispêndio com Pessoal,15.04
+Municipal,2024,6,17,TO,170100,Ananás,90,1.6,"Percentual de aplicação em Despesas na Educação Infantil  - VAAT - FUNDEB (Proporção 50% do VAAT Total) - Correspondente ao indicador 1.7 - Inciso XXIV, Portaria Conjunta MGI/MF/CGU Nº 33 de30-08-2023",3,Indicadores de Dispêndio com Pessoal,68.26
+Municipal,2024,6,17,TO,170100,Ananás,91,7.3,Recursos do FUNDEB do exercício não utilizado,3,Indicadores de Dispêndio com Pessoal,207182.16
+Municipal,2024,6,17,TO,170100,Ananás,92,1.7,Indicador para Educação Infantil - IEI - Percentual mínimo da complementação VAAT a ser aplicado em educação Infantil,3,Indicadores de Dispêndio com Pessoal,53.13
+Municipal,2024,6,17,TO,170100,Ananás,93,8.1,Valor exigido de aplicação de impostos em MDE (Mínimo de 25%),3,Indicadores de Dispêndio com Pessoal,6677142.8
+Municipal,2024,6,17,TO,170100,Ananás,94,8.2,Valor aplicado em MDE da receita de impostos,3,Indicadores de Dispêndio com Pessoal,6769275.89
+Estadual,2025,6,17,TO,,,5,1.5,Percentual de aplicação em Despesas de Capital da complementação da União - VAAT - FUNDEB (Minimo de 15%),3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2025,6,17,TO,,,40,1.1,"Percentual de aplicação das receitas de impostos e transferências vinculadas à educação em MDE (mínimo de 25% para estados, DF e municípios)",3,Indicadores de Dispêndio com Pessoal,25.11
+Estadual,2025,6,17,TO,,,42,1.2,Percentual de aplicação do FUNDEF ou FUNDEB na remuneração dos profissionais da educação (mínimo de 70%),3,Indicadores de Dispêndio com Pessoal,73.42
+Estadual,2025,6,17,TO,,,43,1.3,"Percentual de aplicação do FUNDEF ou FUNDEB em despesas com MDE, que não remuneração do magistério (máximo de 40%)",3,Indicadores de Dispêndio com Pessoal,26.28
+Estadual,2025,6,17,TO,,,44,1.4,Percentual das receitas do  FUNDEB não aplicadas no exercício (máximo de10%),3,Indicadores de Dispêndio com Pessoal,0.66
+Estadual,2025,6,17,TO,,,45,2.1,Percentual dos recursos do FUNDEB aplicados na educação infantil,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2025,6,17,TO,,,46,2.2,Percentual dos recursos do FUNDEB aplicados no ensino fundamental,3,Indicadores de Dispêndio com Pessoal,49.12
+Estadual,2025,6,17,TO,,,47,2.3,Percentual dos recursos do FUNDEB aplicados no ensino médio,3,Indicadores de Dispêndio com Pessoal,43.9
+Estadual,2025,6,17,TO,,,48,2.4,Percentual das despesas com educação infantil em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2025,6,17,TO,,,49,2.5,Percentual das despesas com ensino fundamental em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,42.42
+Estadual,2025,6,17,TO,,,50,2.6,Percentual das despesas com ensino médio em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,42.21
+Estadual,2025,6,17,TO,,,51,2.7,Percentual das despesas com educação superior em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,5.38
+Estadual,2025,6,17,TO,,,52,2.8,Percentual das despesas em educação em relação às despesas de todas as áreas,3,Indicadores de Dispêndio com Pessoal,14.24
+Estadual,2025,6,17,TO,,,53,2.9,Percentual das despesas com alimentação escolar em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2025,6,17,TO,,,54,2.10,Investimento com material didático por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2025,6,17,TO,,,55,2.11,Percentual de despesas correntes em educação em relação à despesa total em MDE,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2025,6,17,TO,,,56,2.12,Percentual de investimentos de capital em educação em relação à despesa total em MDE,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2025,6,17,TO,,,59,3.1,Percentual das despesas com aposentadorias e pensões da área educacional em relação às despesas totais com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2025,6,17,TO,,,60,3.2,Percentual das despesas com pessoal e encargos sociais da área educacional em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2025,6,17,TO,,,63,3.5,Percentual das despesas com recursos do FUNDEB com professores em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2025,6,17,TO,,,64,3.6,Percentual das despesas com profissionais não docentes em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2025,6,17,TO,,,65,4.1,Investimento educacional por aluno da educação infantil,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2025,6,17,TO,,,66,4.2,Investimento educacional por aluno do ensino fundamental,3,Indicadores de Dispêndio com Pessoal,18205.26
+Estadual,2025,6,17,TO,,,67,4.3,Investimento educacional por aluno do ensino médio,3,Indicadores de Dispêndio com Pessoal,20266.29
+Estadual,2025,6,17,TO,,,68,4.4,Investimento educacional por aluno da educação superior,3,Indicadores de Dispêndio com Pessoal,30151.07
+Estadual,2025,6,17,TO,,,69,4.5,Investimento educacional por aluno da educação de jovens e adultos,3,Indicadores de Dispêndio com Pessoal,10525.92
+Estadual,2025,6,17,TO,,,70,4.6,Investimento educacional por aluno da educação especial,3,Indicadores de Dispêndio com Pessoal,10515.79
+Estadual,2025,6,17,TO,,,71,4.7,Investimento educacional por aluno da educação profissional,3,Indicadores de Dispêndio com Pessoal,2851.61
+Estadual,2025,6,17,TO,,,72,4.8,Investimento educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,20741.35
+Estadual,2025,6,17,TO,,,73,4.9,Investimento educacional por aluno,3,Indicadores de Dispêndio com Pessoal,19643.15
+Estadual,2025,6,17,TO,,,74,4.10,Despesa com professores por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,8259.62
+Estadual,2025,6,17,TO,,,75,4.11,Despesas com profissionais não docentes da área educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,1465.25
+Estadual,2025,6,17,TO,,,76,4.12,Percentual de investimento por aluno da educação superior em relação ao investimento por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,1.45
+Estadual,2025,6,17,TO,,,77,4.13,Percentual de investimento por aluno em relação ao PIB per capita,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2025,6,17,TO,,,80,6.1,Percentual das receitas de transferências realizadas pelo FNDE em relação à receita total,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2025,6,17,TO,,,81,6.2,Percentual das receitas de impostos em relação à receita total.,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2025,6,17,TO,,,82,6.3,Percentual das receitas de transferências constitucionais em relação à receita total.,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2025,6,17,TO,,,83,7.1,Superávit/Déficit do ente federado no exercício,3,Indicadores de Dispêndio com Pessoal,5498117020.03
+Estadual,2025,6,17,TO,,,84,7.2,Saldo financeiro do FUNDEB no exercício atual,3,Indicadores de Dispêndio com Pessoal,91948855.71
+Estadual,2025,6,17,TO,,,93,1.6,Percentual de aplicação em Despesas na Educação Infantil da complementação da União - VAAT - FUNDEB (Proporção 50% do VAAT Total)),3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2025,6,17,TO,,,94,7.3,Recursos do FUNDEB do exercício não utilizado,3,Indicadores de Dispêndio com Pessoal,9943959.05
+Estadual,2025,6,17,TO,,,95,1.7,Indicador para Educação Infantil - IEI - Percentual mínimo da complementação VAAT a ser aplicado em educação Infantil,3,Indicadores de Dispêndio com Pessoal,0
+Estadual,2025,6,17,TO,,,96,8.1,Valor exigido de aplicação de impostos em MDE (Mínimo de 25%),3,Indicadores de Dispêndio com Pessoal,3580313738.38
+Estadual,2025,6,17,TO,,,97,8.2,Valor aplicado em MDE da receita de impostos,3,Indicadores de Dispêndio com Pessoal,3596192857.72
+Estadual,2025,6,17,TO,,,98,1.8,"Percentual de destinação de recursos de impostos e transferências ao Fundeb (mínimo de 20% para estados e DF - inciso II, art.  212-A, da CF/88). Inciso XXV, art. 29, da PC n° 33/2023",3,Indicadores de Dispêndio com Pessoal,20
+Municipal,2025,6,17,TO,170025,Abreulândia,24,1.1,"Percentual de aplicação das receitas de impostos e transferências vinculadas à educação em MDE (mínimo de 25% para estados, DF e municípios)",3,Indicadores de Dispêndio com Pessoal,31.6
+Municipal,2025,6,17,TO,170025,Abreulândia,27,1.4,Percentual das receitas do  FUNDEB não aplicadas no exercício (máximo de 10%),3,Indicadores de Dispêndio com Pessoal,0.63
+Municipal,2025,6,17,TO,170025,Abreulândia,28,2.1,Percentual dos recursos do FUNDEB aplicados na educação infantil,3,Indicadores de Dispêndio com Pessoal,36.81
+Municipal,2025,6,17,TO,170025,Abreulândia,29,2.2,Percentual dos recursos do FUNDEB aplicados no ensino fundamental,3,Indicadores de Dispêndio com Pessoal,57.81
+Municipal,2025,6,17,TO,170025,Abreulândia,31,2.4,Percentual das despesas com educação infantil em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,27.92
+Municipal,2025,6,17,TO,170025,Abreulândia,32,2.5,Percentual das despesas com ensino fundamental em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,56.59
+Municipal,2025,6,17,TO,170025,Abreulândia,35,2.8,Percentual das despesas em educação em relação às despesas de todas as áreas,3,Indicadores de Dispêndio com Pessoal,28.49
+Municipal,2025,6,17,TO,170025,Abreulândia,36,2.9,Percentual das despesas com alimentação escolar em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,1.75
+Municipal,2025,6,17,TO,170025,Abreulândia,44,4.1,Investimento educacional por aluno da educação infantil,3,Indicadores de Dispêndio com Pessoal,19764.37
+Municipal,2025,6,17,TO,170025,Abreulândia,45,4.2,Investimento educacional por aluno do ensino fundamental,3,Indicadores de Dispêndio com Pessoal,24550.13
+Municipal,2025,6,17,TO,170025,Abreulândia,47,2.10,Investimento com material didático por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,13.25
+Municipal,2025,6,17,TO,170025,Abreulândia,53,4.5,Investimento educacional por aluno da educação de jovens e adultos,3,Indicadores de Dispêndio com Pessoal,15059.12
+Municipal,2025,6,17,TO,170025,Abreulândia,56,4.8,Investimento educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,26109.4
+Municipal,2025,6,17,TO,170025,Abreulândia,57,4.9,Investimento educacional por aluno,3,Indicadores de Dispêndio com Pessoal,26109.4
+Municipal,2025,6,17,TO,170025,Abreulândia,58,4.10,Despesa com professores por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,11303.71
+Municipal,2025,6,17,TO,170025,Abreulândia,59,4.11,Despesas com profissionais não docentes da área educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,548.46
+Municipal,2025,6,17,TO,170025,Abreulândia,67,1.2,"Percentual de aplicação do FUNDEB na remuneração dos profissionais da educação (mínimo de 70%) - Inciso XXII, Portaria Conjunta MGI/MF/CGU Nº 33 de30-08-2023",3,Indicadores de Dispêndio com Pessoal,96.8
+Municipal,2025,6,17,TO,170025,Abreulândia,68,1.3,"Percentual de aplicação do FUNDEB em despesas com MDE, que não remuneração dos profissionais da educação (máximo de 30%)",3,Indicadores de Dispêndio com Pessoal,6.42
+Municipal,2025,6,17,TO,170025,Abreulândia,69,7.1,Superávit/Déficit do ente federado no exercício,3,Indicadores de Dispêndio com Pessoal,10191701.24
+Municipal,2025,6,17,TO,170025,Abreulândia,70,7.2,Saldo financeiro do FUNDEB no exercício atual,3,Indicadores de Dispêndio com Pessoal,212730.88
+Municipal,2025,6,17,TO,170025,Abreulândia,85,4.15,Investimento educacional por aluno da educação infantil - pre-escola,3,Indicadores de Dispêndio com Pessoal,19793.61
+Municipal,2025,6,17,TO,170025,Abreulândia,91,7.3,Recursos do FUNDEB do exercício não utilizado,3,Indicadores de Dispêndio com Pessoal,34131.38
+Municipal,2025,6,17,TO,170025,Abreulândia,93,8.1,Valor exigido de aplicação de impostos em MDE (Mínimo de 25%),3,Indicadores de Dispêndio com Pessoal,7097079.28
+Municipal,2025,6,17,TO,170025,Abreulândia,94,8.2,Valor aplicado em MDE da receita de impostos,3,Indicadores de Dispêndio com Pessoal,8969295.13
+Municipal,2025,6,17,TO,170100,Ananás,24,1.1,"Percentual de aplicação das receitas de impostos e transferências vinculadas à educação em MDE (mínimo de 25% para estados, DF e municípios)",3,Indicadores de Dispêndio com Pessoal,26.17
+Municipal,2025,6,17,TO,170100,Ananás,27,1.4,Percentual das receitas do  FUNDEB não aplicadas no exercício (máximo de 10%),3,Indicadores de Dispêndio com Pessoal,5.25
+Municipal,2025,6,17,TO,170100,Ananás,28,2.1,Percentual dos recursos do FUNDEB aplicados na educação infantil,3,Indicadores de Dispêndio com Pessoal,12.23
+Municipal,2025,6,17,TO,170100,Ananás,29,2.2,Percentual dos recursos do FUNDEB aplicados no ensino fundamental,3,Indicadores de Dispêndio com Pessoal,82.52
+Municipal,2025,6,17,TO,170100,Ananás,30,2.3,Percentual dos recursos do FUNDEB aplicados no ensino médio,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,31,2.4,Percentual das despesas com educação infantil em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,8.95
+Municipal,2025,6,17,TO,170100,Ananás,32,2.5,Percentual das despesas com ensino fundamental em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,75.01
+Municipal,2025,6,17,TO,170100,Ananás,33,2.6,Percentual das despesas com ensino médio em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,34,2.7,Percentual das despesas com educação superior em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,35,2.8,Percentual das despesas em educação em relação às despesas de todas as áreas,3,Indicadores de Dispêndio com Pessoal,29.64
+Municipal,2025,6,17,TO,170100,Ananás,36,2.9,Percentual das despesas com alimentação escolar em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,38,3.1,Percentual das despesas com aposentadorias e pensões da área educacional em relação às despesas totais com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,39,3.2,Percentual das despesas com pessoal e encargos sociais da área educacional em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,42,3.5,Percentual das despesas com recursos do FUNDEB com professores em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,43,3.6,Percentual das despesas com recursos do FUNDEB com profissionais não docentes em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,44,4.1,Investimento educacional por aluno da educação infantil,3,Indicadores de Dispêndio com Pessoal,3800.69
+Municipal,2025,6,17,TO,170100,Ananás,45,4.2,Investimento educacional por aluno do ensino fundamental,3,Indicadores de Dispêndio com Pessoal,23389.2
+Municipal,2025,6,17,TO,170100,Ananás,46,4.3,Investimento educacional por aluno do ensino médio,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,47,2.10,Investimento com material didático por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,48,2.11,Percentual de despesas correntes em educação em relação à despesa total em MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,49,2.12,Percentual de investimentos de capital em educação em relação à despesa total em MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,52,4.4,Investimento educacional por aluno da educação superior,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,53,4.5,Investimento educacional por aluno da educação de jovens e adultos,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,54,4.6,Investimento educacional por aluno da educação especial,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,55,4.7,Investimento educacional por aluno da educação profissional,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,56,4.8,Investimento educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,17980.3
+Municipal,2025,6,17,TO,170100,Ananás,57,4.9,Investimento educacional por aluno,3,Indicadores de Dispêndio com Pessoal,17980.3
+Municipal,2025,6,17,TO,170100,Ananás,58,4.10,Despesa com professores por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,8834.16
+Municipal,2025,6,17,TO,170100,Ananás,59,4.11,Despesas com profissionais não docentes da área educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,435.07
+Municipal,2025,6,17,TO,170100,Ananás,60,4.12,Percentual de investimento por aluno da educação superior em relação ao investimento por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,61,4.13,Percentual de investimento por aluno em relação ao PIB per capita,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,62,6.1,Percentual das receitas de transferências realizadas pelo FNDE em relação à receita total,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,63,6.2,Percentual das receitas de impostos em relação à receita total.,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,64,6.3,Percentual das receitas de transferências constitucionais em relação à receita total.,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,67,1.2,"Percentual de aplicação do FUNDEB na remuneração dos profissionais da educação (mínimo de 70%) - Inciso XXII, Portaria Conjunta MGI/MF/CGU Nº 33 de30-08-2023",3,Indicadores de Dispêndio com Pessoal,70.73
+Municipal,2025,6,17,TO,170100,Ananás,68,1.3,"Percentual de aplicação do FUNDEB em despesas com MDE, que não remuneração dos profissionais da educação (máximo de 30%)",3,Indicadores de Dispêndio com Pessoal,26.82
+Municipal,2025,6,17,TO,170100,Ananás,69,7.1,Superávit/Déficit do ente federado no exercício,3,Indicadores de Dispêndio com Pessoal,10203291.34
+Municipal,2025,6,17,TO,170100,Ananás,70,7.2,Saldo financeiro do FUNDEB no exercício atual,3,Indicadores de Dispêndio com Pessoal,1114971.91
+Municipal,2025,6,17,TO,170100,Ananás,84,4.14,Investimento educacional por aluno da educação infantil - creche,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,170100,Ananás,85,4.15,Investimento educacional por aluno da educação infantil - pre-escola,3,Indicadores de Dispêndio com Pessoal,2556.71
+Municipal,2025,6,17,TO,170100,Ananás,89,1.5,"Percentual de aplicação em Despesas de Capital - VAAT - FUNDEB (Minimo de 15%) - Inciso XXIII, Portaria Conjunta MGI/MF/CGU Nº 33 de30-08-2023",3,Indicadores de Dispêndio com Pessoal,18.08
+Municipal,2025,6,17,TO,170100,Ananás,90,1.6,"Percentual de aplicação em Despesas na Educação Infantil  - VAAT - FUNDEB (Proporção 50% do VAAT Total) - Correspondente ao indicador 1.7 - Inciso XXIV, Portaria Conjunta MGI/MF/CGU Nº 33 de30-08-2023",3,Indicadores de Dispêndio com Pessoal,52.97
+Municipal,2025,6,17,TO,170100,Ananás,91,7.3,Recursos do FUNDEB do exercício não utilizado,3,Indicadores de Dispêndio com Pessoal,859753.06
+Municipal,2025,6,17,TO,170100,Ananás,92,1.7,Indicador para Educação Infantil - IEI - Percentual mínimo da complementação VAAT a ser aplicado em educação Infantil,3,Indicadores de Dispêndio com Pessoal,50.86
+Municipal,2025,6,17,TO,170100,Ananás,93,8.1,Valor exigido de aplicação de impostos em MDE (Mínimo de 25%),3,Indicadores de Dispêndio com Pessoal,7382515.42
+Municipal,2025,6,17,TO,170100,Ananás,94,8.2,Valor aplicado em MDE da receita de impostos,3,Indicadores de Dispêndio com Pessoal,7727928.32
+Municipal,2025,6,17,TO,172100,Palmas,24,1.1,"Percentual de aplicação das receitas de impostos e transferências vinculadas à educação em MDE (mínimo de 25% para estados, DF e municípios)",3,Indicadores de Dispêndio com Pessoal,25.23
+Municipal,2025,6,17,TO,172100,Palmas,27,1.4,Percentual das receitas do  FUNDEB não aplicadas no exercício (máximo de 10%),3,Indicadores de Dispêndio com Pessoal,0.2
+Municipal,2025,6,17,TO,172100,Palmas,28,2.1,Percentual dos recursos do FUNDEB aplicados na educação infantil,3,Indicadores de Dispêndio com Pessoal,33.69
+Municipal,2025,6,17,TO,172100,Palmas,29,2.2,Percentual dos recursos do FUNDEB aplicados no ensino fundamental,3,Indicadores de Dispêndio com Pessoal,62.48
+Municipal,2025,6,17,TO,172100,Palmas,30,2.3,Percentual dos recursos do FUNDEB aplicados no ensino médio,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,31,2.4,Percentual das despesas com educação infantil em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,29.56
+Municipal,2025,6,17,TO,172100,Palmas,32,2.5,Percentual das despesas com ensino fundamental em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,62.79
+Municipal,2025,6,17,TO,172100,Palmas,33,2.6,Percentual das despesas com ensino médio em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,34,2.7,Percentual das despesas com educação superior em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,35,2.8,Percentual das despesas em educação em relação às despesas de todas as áreas,3,Indicadores de Dispêndio com Pessoal,29.58
+Municipal,2025,6,17,TO,172100,Palmas,36,2.9,Percentual das despesas com alimentação escolar em relação à despesa total com educação,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,38,3.1,Percentual das despesas com aposentadorias e pensões da área educacional em relação às despesas totais com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,39,3.2,Percentual das despesas com pessoal e encargos sociais da área educacional em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,42,3.5,Percentual das despesas com recursos do FUNDEB com professores em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,43,3.6,Percentual das despesas com recursos do FUNDEB com profissionais não docentes em relação à despesa total com MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,44,4.1,Investimento educacional por aluno da educação infantil,3,Indicadores de Dispêndio com Pessoal,16341.77
+Municipal,2025,6,17,TO,172100,Palmas,45,4.2,Investimento educacional por aluno do ensino fundamental,3,Indicadores de Dispêndio com Pessoal,14552.66
+Municipal,2025,6,17,TO,172100,Palmas,46,4.3,Investimento educacional por aluno do ensino médio,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,47,2.10,Investimento com material didático por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,48,2.11,Percentual de despesas correntes em educação em relação à despesa total em MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,49,2.12,Percentual de investimentos de capital em educação em relação à despesa total em MDE,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,52,4.4,Investimento educacional por aluno da educação superior,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,53,4.5,Investimento educacional por aluno da educação de jovens e adultos,3,Indicadores de Dispêndio com Pessoal,8571.3
+Municipal,2025,6,17,TO,172100,Palmas,54,4.6,Investimento educacional por aluno da educação especial,3,Indicadores de Dispêndio com Pessoal,11680.14
+Municipal,2025,6,17,TO,172100,Palmas,55,4.7,Investimento educacional por aluno da educação profissional,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,56,4.8,Investimento educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,15747.9
+Municipal,2025,6,17,TO,172100,Palmas,57,4.9,Investimento educacional por aluno,3,Indicadores de Dispêndio com Pessoal,15747.9
+Municipal,2025,6,17,TO,172100,Palmas,58,4.10,Despesa com professores por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,8289.3
+Municipal,2025,6,17,TO,172100,Palmas,59,4.11,Despesas com profissionais não docentes da área educacional por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,8.32
+Municipal,2025,6,17,TO,172100,Palmas,60,4.12,Percentual de investimento por aluno da educação superior em relação ao investimento por aluno da educação básica,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,61,4.13,Percentual de investimento por aluno em relação ao PIB per capita,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,62,6.1,Percentual das receitas de transferências realizadas pelo FNDE em relação à receita total,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,63,6.2,Percentual das receitas de impostos em relação à receita total.,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,64,6.3,Percentual das receitas de transferências constitucionais em relação à receita total.,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,67,1.2,"Percentual de aplicação do FUNDEB na remuneração dos profissionais da educação (mínimo de 70%) - Inciso XXII, Portaria Conjunta MGI/MF/CGU Nº 33 de30-08-2023",3,Indicadores de Dispêndio com Pessoal,83.04
+Municipal,2025,6,17,TO,172100,Palmas,68,1.3,"Percentual de aplicação do FUNDEB em despesas com MDE, que não remuneração dos profissionais da educação (máximo de 30%)",3,Indicadores de Dispêndio com Pessoal,16.77
+Municipal,2025,6,17,TO,172100,Palmas,69,7.1,Superávit/Déficit do ente federado no exercício,3,Indicadores de Dispêndio com Pessoal,249351372.57
+Municipal,2025,6,17,TO,172100,Palmas,70,7.2,Saldo financeiro do FUNDEB no exercício atual,3,Indicadores de Dispêndio com Pessoal,11646182.18
+Municipal,2025,6,17,TO,172100,Palmas,84,4.14,Investimento educacional por aluno da educação infantil - creche,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,85,4.15,Investimento educacional por aluno da educação infantil - pre-escola,3,Indicadores de Dispêndio com Pessoal,20081.78
+Municipal,2025,6,17,TO,172100,Palmas,89,1.5,"Percentual de aplicação em Despesas de Capital - VAAT - FUNDEB (Minimo de 15%) - Inciso XXIII, Portaria Conjunta MGI/MF/CGU Nº 33 de30-08-2023",3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,90,1.6,"Percentual de aplicação em Despesas na Educação Infantil  - VAAT - FUNDEB (Proporção 50% do VAAT Total) - Correspondente ao indicador 1.7 - Inciso XXIV, Portaria Conjunta MGI/MF/CGU Nº 33 de30-08-2023",3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,91,7.3,Recursos do FUNDEB do exercício não utilizado,3,Indicadores de Dispêndio com Pessoal,888172.2
+Municipal,2025,6,17,TO,172100,Palmas,92,1.7,Indicador para Educação Infantil - IEI - Percentual mínimo da complementação VAAT a ser aplicado em educação Infantil,3,Indicadores de Dispêndio com Pessoal,0
+Municipal,2025,6,17,TO,172100,Palmas,93,8.1,Valor exigido de aplicação de impostos em MDE (Mínimo de 25%),3,Indicadores de Dispêndio com Pessoal,349486342.95
+Municipal,2025,6,17,TO,172100,Palmas,94,8.2,Valor aplicado em MDE da receita de impostos,3,Indicadores de Dispêndio com Pessoal,352717575.64

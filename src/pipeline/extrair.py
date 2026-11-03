@@ -23,7 +23,7 @@ from datetime import UTC, datetime
 import duckdb
 
 from pipeline.config import caminho_banco
-from pipeline.fontes import ibge, inep_censo_escolar, inep_ideb, siconfi_dca
+from pipeline.fontes import ibge, inep_censo_escolar, inep_ideb, siconfi_dca, siope
 
 log = logging.getLogger("pipeline")
 
@@ -35,6 +35,7 @@ EXTRATORES: dict[str, Extrator] = {
     "inep_ideb": inep_ideb.extrair,
     "inep_censo_escolar": inep_censo_escolar.extrair,
     "siconfi_dca": siconfi_dca.extrair,
+    "siope": siope.extrair,
 }
 
 
@@ -68,6 +69,7 @@ PREFIXOS: dict[str, str] = {
     "inep_ideb": "inep_ideb_",
     "inep_censo_escolar": "inep_censo_",
     "siconfi_dca": "siconfi_",
+    "siope": "siope_",
 }
 
 

@@ -57,6 +57,7 @@ def carregar() -> dict:
         "ideb": dados.ideb(banco),
         "despesa": dados.despesa_municipal(banco),
         "investimento": dados.investimento_aluno(banco),
+        "siope": dados.mde_siope(banco),
         "matriculas": dados.matriculas(banco),
         "estado": dados.resumo_estadual(banco),
         "cargas": dados.ultima_carga(banco),
@@ -170,6 +171,18 @@ with abas[1]:
             f"**{destaque}** está em **{posicao.index(destaque) + 1}º** de {len(posicao)} "
             f"municípios em {definicao.rotulo_curto.lower()} ({ano})."
         )
+    if definicao.referencia is not None:
+        abaixo = int((ordenado["valor"] < definicao.referencia).sum())
+        fig.add_vline(
+            x=definicao.referencia,
+            line={"color": "#52514e", "width": 1.5},
+            annotation_text=f"mínimo legal: {ind.numero(definicao.referencia, 0)}%",
+            annotation_position="top",
+        )
+        st.markdown(
+            f"**{abaixo}** de {len(ordenado)} municípios ficaram abaixo do mínimo de "
+            f"{ind.numero(definicao.referencia, 0)}% em {ano}, segundo o que declararam ao SIOPE."
+        )
     fig.update_layout(bargap=0.25, yaxis={"tickfont": {"size": 10}})
     st.plotly_chart(layout(fig, max(500, 14 * len(ordenado))), use_container_width=True)
 
@@ -178,7 +191,7 @@ with abas[2]:
     escolhidos = st.multiselect(
         "Municípios",
         nomes,
-        default=["Palmas", "Araguaína", "Gurupi"][: len(nomes)],
+        default=[n for n in ("Palmas", "Araguaína", "Gurupi") if n in nomes],
         max_selections=3,
     )
     cores_series = [SERIE_1, SERIE_2, SERIE_3]
@@ -338,7 +351,13 @@ with abas[6]:
         """
 **Fontes** (detalhes em `docs/fontes.md`): INEP — IDEB por município e microdados do
 Censo Escolar; Tesouro Nacional — SICONFI, DCA Anexo I-E (despesa por função);
+FNDE — SIOPE (aplicação em MDE e investimento por aluno declarados pelos entes);
 IBGE — Divisão Territorial, malha municipal e população (SIDRA).
+
+**Duas medidas de investimento por aluno:** a *oficial do SIOPE* (FNDE) é a que o
+próprio ente declara, com as regras de Manutenção e Desenvolvimento do Ensino (MDE);
+a *aproximação* do projeto divide a despesa liquidada na função Educação (SICONFI) pelas
+matrículas da rede municipal. As duas são exibidas para comparação.
 
 **Como ler:** a despesa é a **liquidada** na função 12 – Educação, em reais correntes.
 O investimento por aluno usa as matrículas da rede municipal no Censo Escolar do mesmo

@@ -37,3 +37,8 @@ sources:
         description: Malha municipal 2022 do Tocantins (IBGE) com geometria em GeoJSON simplificado.
       - name: _cargas
         description: Registro de cada execução de extrator (sucesso, linhas e erro).
+      - name: siope_indicadores
+        description: >
+          Indicadores do SIOPE (FNDE), 6º bimestre (anual), Estado e municípios do
+          Tocantins. COD_MUNI tem 6 dígitos (código IBGE sem o dígito verificador) e é
+          nulo para o Estado.

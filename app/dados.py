@@ -97,6 +97,34 @@ def investimento_aluno(banco: Path) -> pd.DataFrame:
     )
 
 
+COLUNAS_SIOPE = [
+    "cod_municipio",
+    "nome_municipio",
+    "ano",
+    "percentual_mde",
+    "cumpre_minimo_mde",
+    "investimento_por_aluno_educacao_basica",
+]
+
+
+def mde_siope(banco: Path) -> pd.DataFrame:
+    """Indicadores oficiais do SIOPE dos municípios.
+
+    Devolve uma tabela vazia se o banco ainda não tiver o mart (banco publicado
+    antes da integração do SIOPE).
+    """
+    try:
+        return consultar(
+            banco,
+            "select s.cod_ente as cod_municipio, m.nome_municipio, s.ano, s.percentual_mde, "
+            "s.cumpre_minimo_mde, s.investimento_por_aluno_educacao_basica "
+            "from marts.mart_mde_siope s "
+            "join marts.dim_municipio m on s.cod_ente = m.cod_municipio",
+        )
+    except duckdb.CatalogException:
+        return pd.DataFrame(columns=COLUNAS_SIOPE)
+
+
 def matriculas(banco: Path) -> pd.DataFrame:
     return consultar(
         banco,

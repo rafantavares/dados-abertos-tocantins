@@ -59,3 +59,21 @@ unit_tests:
     expect:
       rows:
         - {cod_municipio: 1721000, ano: 2015, etapa: anos_iniciais, rede: municipal, taxa_aprovacao: 96.1, nota_saeb_matematica: 211.37, ideb: 5.9}
+
+  - name: siope_converte_codigo_de_6_digitos_e_estado
+    description: >
+      O SIOPE usa o código IBGE sem o dígito verificador e deixa o Estado sem código.
+    model: stg_siope__indicadores
+    given:
+      - input: source('raw', 'siope_indicadores')
+        rows:
+          - {NUM_ANO: "2024", TIPO: "Municipal", COD_MUNI: "172100", COD_EXIB: "1.1", COD_INDI: "40", NOM_INDI: "MDE", VAL_INDI: "25.11"}
+          - {NUM_ANO: "2024", TIPO: "Estadual", COD_MUNI: null, COD_EXIB: "1.1", COD_INDI: "40", NOM_INDI: "MDE", VAL_INDI: "25.21"}
+      - input: ref('stg_ibge__municipios')
+        rows:
+          - {cod_municipio: 1721000}
+          - {cod_municipio: 1700251}
+    expect:
+      rows:
+        - {ano: 2024, cod_ente: 1721000, esfera: municipal, cod_indicador: "1.1", valor: 25.11}
+        - {ano: 2024, cod_ente: 17, esfera: estadual, cod_indicador: "1.1", valor: 25.21}

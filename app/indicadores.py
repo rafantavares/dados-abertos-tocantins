@@ -54,6 +54,8 @@ class Indicador:
     formato_plotly: str
     formato_hover: str
     formatar: Callable[[float | None], str]
+    #: Valor de referência legal, desenhado como linha no ranking (ex.: 25% de MDE).
+    referencia: float | None = None
 
 
 INDICADORES: dict[str, Indicador] = {
@@ -62,6 +64,23 @@ INDICADORES: dict[str, Indicador] = {
         "investimento",
         "investimento_por_aluno",
         "Investimento por aluno",
+        ":,.0f",
+        ":,.0f",
+        reais,
+    ),
+    "Aplicação em MDE – oficial SIOPE (% das receitas de impostos; mínimo 25%)": Indicador(
+        "siope",
+        "percentual_mde",
+        "Aplicação em MDE (%)",
+        ":.1f",
+        ":.1f",
+        lambda v: f"{numero(v, 1)}%",
+        referencia=25.0,
+    ),
+    "Investimento por aluno da educação básica – oficial SIOPE": Indicador(
+        "siope",
+        "investimento_por_aluno_educacao_basica",
+        "Investimento por aluno (SIOPE)",
         ":,.0f",
         ":,.0f",
         reais,
@@ -110,7 +129,7 @@ def comparativo(d: dict[str, pd.DataFrame], nomes: list[str]) -> pd.DataFrame:
         s = serie(d, "IDEB", etapa=etapa, rede="publica")
         linhas[f"IDEB {rotulo} – rede pública"] = _mais_recente(s, nomes, lambda v: numero(v, 1))
     for nome, definicao in INDICADORES.items():
-        if definicao.fonte != "ideb":
+        if definicao.fonte != "ideb" and definicao.fonte in d:
             linhas[nome] = _mais_recente(serie(d, nome), nomes, definicao.formatar)
     return pd.DataFrame(linhas).T[nomes]
 

@@ -305,3 +305,61 @@ models:
               arguments:
                 minimo: 0
                 maximo: 139
+  - name: mart_mde_siope
+    description: >
+      Indicadores oficiais do SIOPE (FNDE) por ente e ano: percentual das receitas de
+      impostos aplicado em Manutenção e Desenvolvimento do Ensino (MDE), cumprimento do
+      mínimo constitucional de 25%, uso do Fundeb e investimento por aluno declarado.
+      Complementa a aproximação de mart_investimento_aluno com o dado oficial.
+    tests:
+      - combinacao_unica:
+          arguments:
+            colunas: [cod_ente, ano]
+    columns:
+      - name: cod_ente
+        description: Código IBGE do município ou 17 para o Estado.
+        tests: [not_null]
+      - name: esfera
+        description: estadual ou municipal.
+      - name: ano
+        description: Exercício.
+        tests: [not_null]
+      - name: percentual_mde
+        description: Percentual das receitas de impostos e transferências aplicado em MDE (SIOPE 1.1).
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+                maximo: 100
+      - name: cumpre_minimo_mde
+        description: Verdadeiro se percentual_mde >= 25% (art. 212 da Constituição).
+      - name: percentual_fundeb_remuneracao
+        description: >
+          Percentual do Fundeb aplicado na remuneração dos profissionais da educação (SIOPE
+          1.2; mínimo de 70%). Calculado sobre a receita do Fundeb do exercício, pode passar
+          de 100% (ex.: Araguaína 2024, 100,28%; Miranorte 2025, 101,86%).
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+              config:
+                severity: error
+          - entre:
+              arguments:
+                maximo: 105
+              config:
+                severity: warn
+      - name: percentual_educacao_despesa_total
+        description: Despesa em educação em relação à despesa de todas as áreas (SIOPE 2.8).
+      - name: investimento_por_aluno_educacao_basica
+        description: Investimento educacional por aluno da educação básica, em R$ (SIOPE 4.8).
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+      - name: investimento_por_aluno
+        description: Investimento educacional por aluno, todas as etapas, em R$ (SIOPE 4.9).
+      - name: valor_exigido_mde
+        description: Valor mínimo a aplicar em MDE (25% das receitas de impostos), em R$ (SIOPE 8.1).
+      - name: valor_aplicado_mde
+        description: Valor aplicado em MDE com receita de impostos, em R$ (SIOPE 8.2).
