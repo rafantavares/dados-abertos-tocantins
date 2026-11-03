@@ -398,6 +398,15 @@ def main(saida: str, prefixos: list[str] | None = None) -> None:
             "url": fonte["url"],
             "acessado_em": datetime.now(UTC).isoformat(timespec="seconds"),
         }
+        # Diagnóstico rápido antes do download: se nem o DNS ou a conexão TCP
+        # funcionam, não adianta gastar minutos com novas tentativas.
+        rede = diagnosticar(fonte["url"])
+        if not isinstance(rede.get("dns"), list) or rede.get("tcp") != "conectou":
+            registro["erro"] = "sem conexão de rede com o servidor"
+            registro["diagnostico"] = rede
+            print(json.dumps(registro, ensure_ascii=False, default=str)[:4000], flush=True)
+            relatorio.append(registro)
+            continue
         try:
             status, cabecalhos, corpo = baixar(fonte["url"])
             registro.update(
