@@ -176,6 +176,42 @@ FONTES: list[dict] = [
         "url": "https://www.transparencia.to.gov.br/dados-abertos",
     },
     {
+        "id": "transparencia_to_http",
+        "url": "http://www.transparencia.to.gov.br/",
+    },
+    {
+        "id": "transparencia_to_sem_www",
+        "url": "https://transparencia.to.gov.br/",
+    },
+    {
+        "id": "transparencia_to_despesas",
+        "url": "https://www.transparencia.to.gov.br/despesas",
+    },
+    {
+        "id": "governo_to_portal",
+        "url": "https://www.to.gov.br/",
+    },
+    {
+        "id": "governo_to_transparencia",
+        "url": "https://www.to.gov.br/transparencia",
+    },
+    {
+        "id": "governo_to_sefaz",
+        "url": "https://www.sefaz.to.gov.br/",
+    },
+    {
+        "id": "governo_to_dados_abertos",
+        "url": "https://dadosabertos.to.gov.br/",
+    },
+    {
+        "id": "governo_to_dados",
+        "url": "https://dados.to.gov.br/",
+    },
+    {
+        "id": "governo_to_ckan_api",
+        "url": "https://dados.to.gov.br/api/3/action/package_list",
+    },
+    {
         "id": "dados_gov_br_portal",
         "url": "https://dados.gov.br/",
     },
@@ -326,6 +362,28 @@ def amostrar(fonte_id: str, corpo: bytes, destino: Path) -> dict:
     return resumo
 
 
+def diagnosticar(url: str) -> dict:
+    """Separa falha de DNS, de conexão TCP e de resposta, para registrar o motivo."""
+    import socket
+
+    partes = urllib.parse.urlsplit(url)
+    host = partes.hostname or ""
+    porta = partes.port or (443 if partes.scheme == "https" else 80)
+    resultado: dict = {"host": host, "porta": porta}
+    try:
+        enderecos = sorted({info[4][0] for info in socket.getaddrinfo(host, porta)})
+        resultado["dns"] = enderecos
+    except OSError as erro:
+        resultado["dns"] = f"falhou: {erro!r}"
+        return resultado
+    try:
+        with socket.create_connection((host, porta), timeout=15):
+            resultado["tcp"] = "conectou"
+    except OSError as erro:
+        resultado["tcp"] = f"falhou: {erro!r}"
+    return resultado
+
+
 def main(saida: str, prefixos: list[str] | None = None) -> None:
     """Valida as fontes; ``prefixos`` restringe às fontes cujo id começa por eles."""
     base = Path(saida)
@@ -355,6 +413,7 @@ def main(saida: str, prefixos: list[str] | None = None) -> None:
                 registro["inicio_resposta"] = corpo[:300].decode("utf-8", errors="replace")
         except Exception as erro:
             registro["erro"] = repr(erro)
+            registro["diagnostico"] = diagnosticar(fonte["url"])
         print(json.dumps(registro, ensure_ascii=False, default=str)[:4000], flush=True)
         relatorio.append(registro)
     (base / "relatorio.json").write_text(
