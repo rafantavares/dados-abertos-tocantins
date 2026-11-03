@@ -4,7 +4,7 @@ Roda no GitHub Actions (o ambiente de desenvolvimento não alcança os sites do
 governo). Para cada fonte, registra status HTTP, tipo de conteúdo, tamanho e
 hash, e salva uma amostra filtrada para o Tocantins em ``saida/amostras``.
 
-Uso: python scripts/validar_fontes.py saida
+Uso: python scripts/validar_fontes.py saida [prefixo1,prefixo2,...]
 """
 
 from __future__ import annotations
@@ -91,6 +91,56 @@ FONTES: list[dict] = [
         "url": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo"
         "?an_exercicio=2023&nr_periodo=6&co_tipo_demonstrativo=RREO"
         "&no_anexo=RREO-Anexo%2008&id_ente=17",
+    },
+    # --- SIOPE / FNDE e alternativas para MDE (issue #22) ---------------------
+    {
+        "id": "siope_olinda_metadata",
+        "url": "https://www.fnde.gov.br/olinda-ide/servico/DADOS_ABERTOS_SIOPE/versao/v1/odata/$metadata",
+    },
+    {
+        "id": "siope_olinda_raiz",
+        "url": "https://www.fnde.gov.br/olinda-ide/servico/DADOS_ABERTOS_SIOPE/versao/v1/odata/?$format=json",
+    },
+    {
+        "id": "siope_olinda_catalogo",
+        "url": "https://www.fnde.gov.br/olinda-ide/servico?$format=json",
+    },
+    {
+        "id": "siope_ckan_busca",
+        "url": "https://www.fnde.gov.br/dadosabertos/api/3/action/package_search?q=siope&rows=20",
+    },
+    {
+        "id": "siope_ckan_dataset",
+        "url": "https://www.fnde.gov.br/dadosabertos/api/3/action/package_show?id=siope",
+    },
+    {
+        "id": "siope_portal_gov_br",
+        "url": "https://www.gov.br/fnde/pt-br/acesso-a-informacao/acoes-e-programas/programas/siope",
+    },
+    {
+        "id": "siope_sistema",
+        "url": "https://www.fnde.gov.br/siope/",
+    },
+    {
+        "id": "siconfi_anexos_relatorios",
+        "url": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/anexos-relatorios",
+    },
+    {
+        "id": "siconfi_rreo_anexo08_estado_to_2024_esfera",
+        "url": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo"
+        "?an_exercicio=2024&nr_periodo=6&co_tipo_demonstrativo=RREO"
+        "&no_anexo=RREO-Anexo%2008&co_esfera=E&id_ente=17",
+    },
+    {
+        "id": "siconfi_rreo_anexo08_palmas_2024",
+        "url": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo"
+        "?an_exercicio=2024&nr_periodo=6&co_tipo_demonstrativo=RREO"
+        "&no_anexo=RREO-Anexo%2008&co_esfera=M&id_ente=1721000",
+    },
+    {
+        "id": "siconfi_rreo_estado_to_2024_todos_anexos",
+        "url": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo"
+        "?an_exercicio=2024&nr_periodo=6&co_tipo_demonstrativo=RREO&id_ente=17",
     },
     {
         "id": "transparencia_to_portal",
@@ -228,6 +278,10 @@ def amostrar(fonte_id: str, corpo: bytes, destino: Path) -> dict:
             if isinstance(dado, dict):
                 resumo["chaves"] = list(dado.keys())
                 itens = dado.get("items")
+                if itens is None and isinstance(dado.get("value"), list):  # OData
+                    itens = dado["value"]
+                if itens is None and isinstance(dado.get("result"), dict):  # CKAN
+                    itens = dado["result"].get("results") or dado["result"].get("resources")
                 if isinstance(itens, list):
                     resumo["n_items"] = len(itens)
                     resumo["has_more"] = dado.get("hasMore")
@@ -240,12 +294,15 @@ def amostrar(fonte_id: str, corpo: bytes, destino: Path) -> dict:
     return resumo
 
 
-def main(saida: str) -> None:
+def main(saida: str, prefixos: list[str] | None = None) -> None:
+    """Valida as fontes; ``prefixos`` restringe às fontes cujo id começa por eles."""
     base = Path(saida)
     amostras = base / "amostras"
     amostras.mkdir(parents=True, exist_ok=True)
     relatorio = []
     for fonte in FONTES:
+        if prefixos and not fonte["id"].startswith(tuple(prefixos)):
+            continue
         registro: dict = {
             "id": fonte["id"],
             "url": fonte["url"],
@@ -275,4 +332,7 @@ def main(saida: str) -> None:
 
 
 if __name__ == "__main__":
-    main(sys.argv[1] if len(sys.argv) > 1 else "saida")
+    main(
+        sys.argv[1] if len(sys.argv) > 1 else "saida",
+        [p for p in sys.argv[2].split(",") if p] if len(sys.argv) > 2 else None,
+    )
