@@ -34,8 +34,13 @@ select
     cast(m.matriculas_educacao_basica as integer) as matriculas_rede_municipal,
     cast(round(d.despesa_educacao / nullif(m.matriculas_educacao_basica, 0), 2) as decimal(18, 2))
         as investimento_por_aluno,
+    cast(round(d.despesa_educacao * ipca.fator_correcao
+        / nullif(m.matriculas_educacao_basica, 0), 2) as decimal(18, 2))
+        as investimento_por_aluno_real,
+    ipca.ano_base as ano_base_valores_reais,
     i.ideb_anos_iniciais,
     i.ideb_anos_finais
 from despesa as d
 inner join matriculas as m on d.cod_municipio = m.cod_municipio and d.ano = m.ano
 left join ideb as i on d.cod_municipio = i.cod_municipio and d.ano = i.ano
+left join {{ ref('dim_deflator_ipca') }} as ipca on d.ano = ipca.ano

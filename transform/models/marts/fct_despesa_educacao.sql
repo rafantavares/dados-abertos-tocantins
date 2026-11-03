@@ -46,6 +46,12 @@ select
     p.origem_populacao,
     cast(round(d.despesa_educacao / nullif(p.populacao, 0), 2) as decimal(18, 2))
         as despesa_educacao_per_capita,
+    -- valores corrigidos pelo IPCA médio do ano, em reais do ano-base do deflator
+    cast(round(d.despesa_educacao * ipca.fator_correcao, 2) as decimal(18, 2))
+        as despesa_educacao_real,
+    cast(round(d.despesa_educacao * ipca.fator_correcao / nullif(p.populacao, 0), 2)
+        as decimal(18, 2)) as despesa_educacao_per_capita_real,
+    ipca.ano_base as ano_base_valores_reais,
     -- Menos de 5% da despesa total em Educação é implausível para um ente que
     -- precisa aplicar 25% da receita de impostos em MDE: indica DCA declarado
     -- de forma parcial (ex.: só a Câmara). A linha é mantida e sinalizada.
@@ -53,5 +59,6 @@ select
         as dca_inconsistente
 from despesa as d
 left join populacao as p on d.cod_ente = p.cod_ente and d.ano = p.ano
+left join {{ ref('dim_deflator_ipca') }} as ipca on d.ano = ipca.ano
 where d.esfera = 'estadual'
     or d.cod_ente in (select cod_municipio from {{ ref('dim_municipio') }})

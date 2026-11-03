@@ -231,6 +231,12 @@ models:
         description: censo, estimativa ou ultima_disponivel.
       - name: despesa_educacao_per_capita
         description: despesa_educacao / populacao (R$).
+      - name: despesa_educacao_real
+        description: despesa_educacao corrigida pelo IPCA médio do ano, em R$ de ano_base_valores_reais.
+      - name: despesa_educacao_per_capita_real
+        description: despesa_educacao_per_capita corrigida pelo IPCA, em R$ de ano_base_valores_reais.
+      - name: ano_base_valores_reais
+        description: Ano-base da correção monetária (último ano completo do IPCA; ver dim_deflator_ipca).
       - name: dca_inconsistente
         description: >
           Verdadeiro quando a Educação é menos de 5% da despesa total, sinal de DCA
@@ -276,6 +282,14 @@ models:
           - entre:
               arguments:
                 minimo: 0
+      - name: investimento_por_aluno_real
+        description: investimento_por_aluno corrigido pelo IPCA médio do ano, em R$ de ano_base_valores_reais.
+        tests:
+          - entre:
+              arguments:
+                minimo: 0
+      - name: ano_base_valores_reais
+        description: Ano-base da correção monetária.
       - name: ideb_anos_iniciais
         description: IDEB anos iniciais da rede municipal (anos ímpares).
       - name: ideb_anos_finais
@@ -369,3 +383,31 @@ models:
         description: Valor mínimo a aplicar em MDE (25% das receitas de impostos), em R$ (SIOPE 8.1).
       - name: valor_aplicado_mde
         description: Valor aplicado em MDE com receita de impostos, em R$ (SIOPE 8.2).
+      - name: investimento_por_aluno_educacao_basica_real
+        description: investimento_por_aluno_educacao_basica corrigido pelo IPCA, em R$ de ano_base_valores_reais.
+      - name: ano_base_valores_reais
+        description: Ano-base da correção monetária.
+
+  - name: dim_deflator_ipca
+    description: >
+      Deflator anual pelo IPCA médio do ano (média dos 12 números-índice mensais do SIDRA
+      1737), adequado para fluxos que ocorrem ao longo do ano, como a despesa. Valor real =
+      valor corrente x fator_correcao, em reais do ano_base (último ano com os 12 meses
+      publicados). Anos incompletos ficam de fora.
+    columns:
+      - name: ano
+        description: Ano.
+        tests: [unique, not_null]
+      - name: ipca_medio
+        description: Média dos 12 números-índice mensais do IPCA no ano.
+        tests: [not_null]
+      - name: ano_base
+        description: Ano-base da correção (o mesmo em todas as linhas).
+        tests: [not_null]
+      - name: fator_correcao
+        description: ipca_medio(ano_base) / ipca_medio(ano); igual a 1 no ano-base.
+        tests:
+          - not_null
+          - entre:
+              arguments:
+                minimo: 1

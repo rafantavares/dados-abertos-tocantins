@@ -58,6 +58,7 @@ def carregar() -> dict:
         "despesa": dados.despesa_municipal(banco),
         "investimento": dados.investimento_aluno(banco),
         "siope": dados.mde_siope(banco),
+        "ano_base_ipca": dados.ano_base_ipca(banco),
         "matriculas": dados.matriculas(banco),
         "estado": dados.resumo_estadual(banco),
         "cargas": dados.ultima_carga(banco),
@@ -77,7 +78,8 @@ def indice(nome: str) -> int:
 st.title("Educação e gastos públicos no Tocantins")
 st.caption(
     "Indicadores educacionais (INEP) e despesa com educação (SICONFI/Tesouro Nacional) "
-    "dos 139 municípios. Valores em reais correntes."
+    "dos 139 municípios. Valores em reais correntes, salvo quando a correção pela inflação "
+    "(IPCA) estiver ativada."
 )
 
 # --- filtros, numa linha acima dos gráficos -------------------------------------------
@@ -88,7 +90,14 @@ etapa = rede = None
 if definicao.fonte == "ideb":
     etapa = c2.selectbox("Etapa", list(ind.ETAPAS), format_func=ind.ETAPAS.get)
     rede = c3.selectbox("Rede", list(ind.REDES), format_func=ind.REDES.get)
-serie = ind.serie(d, indicador, etapa=etapa, rede=rede)
+valores_reais = False
+ano_base = d["ano_base_ipca"]
+if ano_base and ind.corrigivel(definicao, d[definicao.fonte]):
+    valores_reais = c2.toggle(
+        f"Corrigir pela inflação (R$ de {ano_base})",
+        help="Valores corrigidos pelo IPCA médio de cada ano (IBGE, SIDRA 1737).",
+    )
+serie = ind.serie(d, indicador, etapa=etapa, rede=rede, valores_reais=valores_reais)
 anos = sorted(serie["ano"].unique(), reverse=True)
 if not anos:
     st.warning("Não há dados para esta combinação de filtros.")
@@ -149,8 +158,9 @@ with abas[0]:
     )
     fig.update_traces(marker_line_width=0.6, marker_line_color="white")
     fig.update_layout(coloraxis_colorbar={"title": None, "thickness": 12})
-    st.subheader(f"{indicador} em {ano}")
-    st.plotly_chart(layout(fig, 760), use_container_width=True)
+    sufixo = f" — valores corrigidos pelo IPCA, R$ de {ano_base}" if valores_reais else ""
+    st.subheader(f"{indicador} em {ano}{sufixo}")
+    st.plotly_chart(layout(fig, 760), width="stretch")
     sem_dado = len(municipios) - recorte["cod_municipio"].nunique()
     if sem_dado:
         st.caption(f"{sem_dado} municípios sem dado neste recorte aparecem em branco.")
@@ -188,7 +198,7 @@ with abas[1]:
             f"{ind.numero(definicao.referencia, 0)}% em {ano}, segundo o que declararam ao SIOPE."
         )
     fig.update_layout(bargap=0.25, yaxis={"tickfont": {"size": 10}})
-    st.plotly_chart(layout(fig, max(500, 14 * len(ordenado))), use_container_width=True)
+    st.plotly_chart(layout(fig, max(500, 14 * len(ordenado))), width="stretch")
 
 # --- evolução ---------------------------------------------------------------------------
 with abas[2]:
@@ -226,7 +236,7 @@ with abas[2]:
     )
     eixo_x = {"dtick": 2, "tick0": 2005} if definicao.fonte == "ideb" else {"dtick": 1}
     fig.update_layout(hovermode="x unified", xaxis=eixo_x)
-    st.plotly_chart(layout(fig), use_container_width=True)
+    st.plotly_chart(layout(fig), width="stretch")
 
 # --- investimento x IDEB ------------------------------------------------------------------
 with abas[3]:
@@ -267,7 +277,7 @@ with abas[3]:
             xaxis_title="Investimento por aluno da rede municipal (R$)",
             yaxis_title="IDEB anos iniciais (rede municipal)",
         )
-        st.plotly_chart(layout(fig, 520), use_container_width=True)
+        st.plotly_chart(layout(fig, 520), width="stretch")
         st.caption(
             f"Correlação de Spearman em {ano_inv}: {ind.numero(correlacao, 2)} "
             f"({len(base)} municípios). Associação não implica causa: renda, porte e "
@@ -314,7 +324,7 @@ with abas[4]:
         xaxis={"tickformat": ",d"},
     )
     st.subheader(f"Matrículas na educação básica por rede — {escolha_mat}, {ano_mat}")
-    st.plotly_chart(layout(fig, 240), use_container_width=True)
+    st.plotly_chart(layout(fig, 240), width="stretch")
     valores = dict(zip(por_rede["rede"], por_rede["matriculas_educacao_basica"], strict=True))
     tabela_redes = [
         {
@@ -332,7 +342,7 @@ with abas[5]:
     m1 = a.selectbox("Município A", nomes, index=indice("Palmas"))
     m2 = b.selectbox("Município B", nomes, index=indice("Araguaína"))
     tabela = ind.comparativo(d, [m1, m2])
-    st.dataframe(tabela, use_container_width=True)
+    st.dataframe(tabela, width="stretch")
     fig = go.Figure()
     for cor, nome in [(SERIE_1, m1), (SERIE_2, m2)]:
         s = serie[serie["nome_municipio"] == nome].sort_values("ano")
@@ -347,7 +357,7 @@ with abas[5]:
             )
         )
     fig.update_layout(title=f"{indicador}: {m1} × {m2}", hovermode="x unified")
-    st.plotly_chart(layout(fig), use_container_width=True)
+    st.plotly_chart(layout(fig), width="stretch")
 
 # --- sobre ------------------------------------------------------------------------------
 with abas[6]:
