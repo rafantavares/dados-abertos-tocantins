@@ -333,6 +333,12 @@ models:
                 maximo: 100
       - name: cumpre_minimo_mde
         description: Verdadeiro se percentual_mde >= 25% (art. 212 da Constituição).
+      - name: excecao_ec_119
+        description: >
+          Verdadeiro em 2020 e 2021: a EC 119/2022 afastou a responsabilização pelo
+          descumprimento do mínimo em MDE nesses anos (pandemia de covid-19), com
+          compensação da diferença até o exercício de 2023.
+        tests: [not_null]
       - name: percentual_fundeb_remuneracao
         description: >
           Percentual do Fundeb aplicado na remuneração dos profissionais da educação (SIOPE

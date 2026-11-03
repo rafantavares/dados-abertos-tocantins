@@ -144,3 +144,21 @@ def _mais_recente(s: pd.DataFrame, nomes: list[str], formatar) -> dict[str, str]
             ultimo = linhas.iloc[-1]
             saida[n] = f"{formatar(ultimo['valor'])} ({int(ultimo['ano'])})"
     return saida
+
+
+#: Anos em que a EC 119/2022 afastou a responsabilização pelo mínimo de 25% em MDE.
+ANOS_EC_119 = (2020, 2021)
+NOTA_EC_119 = (
+    "**Contexto legal ({ano}):** a Emenda Constitucional nº 119/2022 afastou a "
+    "responsabilização de estados, municípios e agentes públicos que, por causa da "
+    "pandemia de covid-19, não aplicaram o mínimo de 25% em MDE em 2020 e 2021. A "
+    "diferença deveria ser compensada até o exercício de 2023. Os percentuais abaixo "
+    "de 25% neste ano não indicam, por si só, irregularidade."
+)
+
+
+def nota_contexto(definicao: Indicador, ano: int) -> str | None:
+    """Nota explicativa a exibir junto do indicador naquele ano, se houver."""
+    if definicao.coluna == "percentual_mde" and int(ano) in ANOS_EC_119:
+        return NOTA_EC_119.format(ano=ano)
+    return None

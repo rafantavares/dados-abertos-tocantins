@@ -153,6 +153,7 @@ declarados ao SIOPE (FNDE), 6º bimestre.
 | `ano` | integer | Exercício |
 | `percentual_mde` | double | % das receitas de impostos e transferências aplicado em MDE (indicador 1.1) |
 | `cumpre_minimo_mde` | boolean | `percentual_mde >= 25` (art. 212 da Constituição) |
+| `excecao_ec_119` | boolean | Anos 2020 e 2021: a EC 119/2022 afastou a responsabilização pelo descumprimento do mínimo (pandemia), com compensação até 2023 |
 | `percentual_fundeb_remuneracao` | double | % do Fundeb na remuneração dos profissionais (1.2; mínimo 70%) |
 | `percentual_educacao_despesa_total` | double | Despesa em educação ÷ despesa de todas as áreas (2.8) |
 | `investimento_por_aluno_educacao_basica` | decimal(18,2) | Investimento por aluno da educação básica, R$ (4.8) |

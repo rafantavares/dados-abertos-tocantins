@@ -11,6 +11,9 @@ select
     ano,
     max(valor) filter (where cod_indicador = '1.1') as percentual_mde,
     max(valor) filter (where cod_indicador = '1.1') >= 25 as cumpre_minimo_mde,
+    -- EC 119/2022: sem responsabilização pelo mínimo de MDE em 2020 e 2021 (pandemia),
+    -- com compensação da diferença até 2023
+    ano in (2020, 2021) as excecao_ec_119,
     max(valor) filter (where cod_indicador = '1.2') as percentual_fundeb_remuneracao,
     max(valor) filter (where cod_indicador = '2.8') as percentual_educacao_despesa_total,
     cast(max(valor) filter (where cod_indicador = '4.8') as decimal(18, 2))
