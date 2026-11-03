@@ -1,0 +1,156 @@
+[
+  {
+    "id": "transparencia_to_portal",
+    "url": "https://www.transparencia.to.gov.br/",
+    "acessado_em": "2026-11-03T15:41:08+00:00",
+    "erro": "RuntimeError(\"falha após 3 tentativas: URLError(TimeoutError('timed out'))\")",
+    "diagnostico": {
+      "host": "www.transparencia.to.gov.br",
+      "porta": 443,
+      "dns": [
+        "128.201.16.168",
+        "191.223.64.251"
+      ],
+      "tcp": "falhou: TimeoutError('timed out')"
+    }
+  },
+  {
+    "id": "transparencia_to_dados_abertos",
+    "url": "https://www.transparencia.to.gov.br/dados-abertos",
+    "acessado_em": "2026-11-03T15:45:54+00:00",
+    "erro": "RuntimeError(\"falha após 3 tentativas: URLError(TimeoutError('timed out'))\")",
+    "diagnostico": {
+      "host": "www.transparencia.to.gov.br",
+      "porta": 443,
+      "dns": [
+        "128.201.16.168",
+        "191.223.64.251"
+      ],
+      "tcp": "falhou: TimeoutError('timed out')"
+    }
+  },
+  {
+    "id": "transparencia_to_http",
+    "url": "http://www.transparencia.to.gov.br/",
+    "acessado_em": "2026-11-03T15:50:40+00:00",
+    "erro": "RuntimeError(\"falha após 3 tentativas: URLError(TimeoutError('timed out'))\")",
+    "diagnostico": {
+      "host": "www.transparencia.to.gov.br",
+      "porta": 80,
+      "dns": [
+        "128.201.16.168",
+        "191.223.64.251"
+      ],
+      "tcp": "falhou: TimeoutError('timed out')"
+    }
+  },
+  {
+    "id": "transparencia_to_sem_www",
+    "url": "https://transparencia.to.gov.br/",
+    "acessado_em": "2026-11-03T15:55:28+00:00",
+    "erro": "RuntimeError(\"falha após 3 tentativas: URLError(TimeoutError('timed out'))\")",
+    "diagnostico": {
+      "host": "transparencia.to.gov.br",
+      "porta": 443,
+      "dns": [
+        "128.201.16.168",
+        "191.223.64.251"
+      ],
+      "tcp": "falhou: TimeoutError('timed out')"
+    }
+  },
+  {
+    "id": "transparencia_to_despesas",
+    "url": "https://www.transparencia.to.gov.br/despesas",
+    "acessado_em": "2026-11-03T16:00:15+00:00",
+    "erro": "RuntimeError(\"falha após 3 tentativas: URLError(TimeoutError('timed out'))\")",
+    "diagnostico": {
+      "host": "www.transparencia.to.gov.br",
+      "porta": 443,
+      "dns": [
+        "128.201.16.168",
+        "191.223.64.251"
+      ],
+      "tcp": "falhou: TimeoutError('timed out')"
+    }
+  },
+  {
+    "id": "governo_to_portal",
+    "url": "https://www.to.gov.br/",
+    "acessado_em": "2026-11-03T16:05:00+00:00",
+    "erro": "RuntimeError(\"falha após 3 tentativas: URLError(TimeoutError('timed out'))\")",
+    "diagnostico": {
+      "host": "www.to.gov.br",
+      "porta": 443,
+      "dns": [
+        "128.201.17.196",
+        "131.72.217.196",
+        "191.223.64.196"
+      ],
+      "tcp": "falhou: TimeoutError('timed out')"
+    }
+  },
+  {
+    "id": "governo_to_transparencia",
+    "url": "https://www.to.gov.br/transparencia",
+    "acessado_em": "2026-11-03T16:12:03+00:00",
+    "erro": "RuntimeError(\"falha após 3 tentativas: URLError(TimeoutError('timed out'))\")",
+    "diagnostico": {
+      "host": "www.to.gov.br",
+      "porta": 443,
+      "dns": [
+        "128.201.17.196",
+        "131.72.217.196",
+        "191.223.64.196"
+      ],
+      "tcp": "falhou: TimeoutError('timed out')"
+    }
+  },
+  {
+    "id": "governo_to_sefaz",
+    "url": "https://www.sefaz.to.gov.br/",
+    "acessado_em": "2026-11-03T16:19:06+00:00",
+    "erro": "RuntimeError(\"falha após 3 tentativas: URLError(TimeoutError('timed out'))\")",
+    "diagnostico": {
+      "host": "www.sefaz.to.gov.br",
+      "porta": 443,
+      "dns": [
+        "128.201.16.168"
+      ],
+      "tcp": "falhou: TimeoutError('timed out')"
+    }
+  },
+  {
+    "id": "governo_to_dados_abertos",
+    "url": "https://dadosabertos.to.gov.br/",
+    "acessado_em": "2026-11-03T16:21:38+00:00",
+    "erro": "RuntimeError(\"falha após 3 tentativas: URLError(gaierror(-2, 'Name or service not known'))\")",
+    "diagnostico": {
+      "host": "dadosabertos.to.gov.br",
+      "porta": 443,
+      "dns": "falhou: gaierror(-2, 'Name or service not known')"
+    }
+  },
+  {
+    "id": "governo_to_dados",
+    "url": "https://dados.to.gov.br/",
+    "acessado_em": "2026-11-03T16:21:54+00:00",
+    "erro": "RuntimeError(\"falha após 3 tentativas: URLError(gaierror(-2, 'Name or service not known'))\")",
+    "diagnostico": {
+      "host": "dados.to.gov.br",
+      "porta": 443,
+      "dns": "falhou: gaierror(-2, 'Name or service not known')"
+    }
+  },
+  {
+    "id": "governo_to_ckan_api",
+    "url": "https://dados.to.gov.br/api/3/action/package_list",
+    "acessado_em": "2026-11-03T16:22:11+00:00",
+    "erro": "RuntimeError(\"falha após 3 tentativas: URLError(gaierror(-2, 'Name or service not known'))\")",
+    "diagnostico": {
+      "host": "dados.to.gov.br",
+      "porta": 443,
+      "dns": "falhou: gaierror(-2, 'Name or service not known')"
+    }
+  }
+]
