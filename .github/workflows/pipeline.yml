@@ -4,11 +4,18 @@ name: Pipeline de dados
 # sites do governo) e publica o banco DuckDB na branch "dados" (nunca na main).
 # - schedule / workflow_dispatch na main: extrai, transforma e publica.
 # - push em branches feat/**: extrai e transforma para validar, sem publicar.
+# Antes de publicar, a contagem de linhas é comparada com a carga anterior
+# (pipeline.monitoramento); se variar fora do esperado o job falha, nada é
+# publicado e uma issue com o rótulo "alerta-carga" é aberta ou atualizada.
 on:
   workflow_dispatch:
     inputs:
       forcar:
         description: "Ignorar o banco anterior e recarregar tudo"
+        type: boolean
+        default: false
+      ignorar_anomalias:
+        description: "Publicar mesmo com anomalias de contagem (após conferir o motivo)"
         type: boolean
         default: false
   schedule:
@@ -22,6 +29,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: pipeline-${{ github.ref }}
@@ -44,13 +52,17 @@ jobs:
       - name: Instalar dependências
         run: pip install -e ".[dev]"
 
-      - name: Restaurar banco anterior (carga incremental)
-        if: ${{ !inputs.forcar }}
+      - name: Restaurar carga anterior (banco incremental, contagens e histórico)
         run: |
           mkdir -p data
           if git fetch --depth 1 origin dados 2>/dev/null; then
-            git show FETCH_HEAD:tocantins.duckdb > data/tocantins.duckdb && echo "banco anterior restaurado"
-            git show FETCH_HEAD:contagens.json > data/contagens_anteriores.json 2>/dev/null || true
+            git show FETCH_HEAD:contagens.json > data/contagens_anteriores.json 2>/dev/null || rm -f data/contagens_anteriores.json
+            git show FETCH_HEAD:historico_contagens.jsonl > data/historico_contagens.jsonl 2>/dev/null || rm -f data/historico_contagens.jsonl
+            if [ "${{ inputs.forcar }}" != "true" ]; then
+              git show FETCH_HEAD:tocantins.duckdb > data/tocantins.duckdb && echo "banco anterior restaurado"
+            else
+              echo "forcar=true: carga completa a partir do zero"
+            fi
           else
             echo "branch dados ainda não existe; carga completa"
           fi
@@ -67,6 +79,16 @@ jobs:
       - name: Resumo da carga
         run: python scripts/resumo_banco.py data/tocantins.duckdb data/contagens.json
 
+      - name: Verificar anomalias de carga
+        run: |
+          python -m pipeline.monitoramento data/contagens.json \
+            --anterior data/contagens_anteriores.json \
+            --banco data/tocantins.duckdb \
+            --historico data/historico_contagens.jsonl \
+            --resumo "$GITHUB_STEP_SUMMARY" \
+          || { echo "::error::contagem de linhas fora do esperado (ver resumo do job)"; \
+               [ "${{ inputs.ignorar_anomalias }}" = "true" ] && echo "::warning::ignorado por ignorar_anomalias=true"; }
+
       - name: Exportar amostras para fixtures (branches de desenvolvimento)
         if: github.ref != 'refs/heads/main'
         run: |
@@ -81,19 +103,22 @@ jobs:
           git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" "$ramo"
 
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: banco-duckdb
           path: |
             data/tocantins.duckdb
             data/contagens.json
+            data/historico_contagens.jsonl
             transform/target/static_index.html
+          if-no-files-found: ignore
           retention-days: 14
 
       - name: Publicar na branch dados
         if: github.ref == 'refs/heads/main'
         run: |
           mkdir publicar && cd publicar
-          cp ../data/tocantins.duckdb ../data/contagens.json .
+          cp ../data/tocantins.duckdb ../data/contagens.json ../data/historico_contagens.jsonl .
           cp ../transform/target/static_index.html documentacao_dbt.html
           cat > README.md <<'MD'
           # Branch de dados
@@ -102,6 +127,7 @@ jobs:
 
           - `tocantins.duckdb`: banco com as camadas `raw`, `staging`, `intermediate` e `marts`.
           - `contagens.json`: linhas por tabela nesta carga.
+          - `historico_contagens.jsonl`: uma linha por carga publicada (contagens, erros e avisos).
           - `documentacao_dbt.html`: documentação do modelo (`dbt docs`), um único HTML para abrir localmente.
 
           URL para o painel: `https://raw.githubusercontent.com/${{ github.repository }}/dados/tocantins.duckdb`
@@ -113,3 +139,18 @@ jobs:
           git add -A
           git commit -q -m "dados: carga de $(date -u +%Y-%m-%dT%H:%MZ) (${GITHUB_SHA::7})"
           git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" dados
+
+      - name: Abrir ou atualizar issue de alerta
+        if: failure() && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          execucao="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          corpo="A execução $execucao do **Pipeline de dados** falhou (${{ github.event_name }}). Nada foi publicado na branch \`dados\`; o painel continua com a carga anterior. Veja o resumo do job para as tabelas afetadas."
+          gh label create alerta-carga --color B60205 --description "Falha ou anomalia na carga de dados" --force
+          aberta=$(gh issue list --label alerta-carga --state open --json number --jq '.[0].number')
+          if [ -n "$aberta" ]; then
+            gh issue comment "$aberta" --body "$corpo"
+          else
+            gh issue create --title "Alerta: falha na carga de dados" --label alerta-carga --body "$corpo"
+          fi
