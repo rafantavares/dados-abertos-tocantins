@@ -60,6 +60,7 @@ Python 3.12 · httpx · DuckDB · dbt-duckdb · pandas · Streamlit · pytest ·
 | **M3 – Modelagem** | Modelos dbt (staging → marts) com testes | ✅ |
 | **M4 – Painel** | Painel com mapas e comparativos por município (roda localmente) | ✅ |
 | **M5 – Automação** | Atualização agendada, monitoramento e documentação | ✅ |
+| **M6 – Evolução** | SIOPE (MDE oficial), correção pelo IPCA, modo escuro, tabela acessível, filtros e actions em Node 24 | 🟡 7 de 9 (#24 aguarda o INEP; #29 depende do dono do repositório) |
 
 ## Documentação
 

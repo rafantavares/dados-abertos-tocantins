@@ -106,3 +106,70 @@ Checagem de sanidade: a soma da população do Censo 2022 em `dim_municipio`
 7. **Branches auxiliares** `amostras-descoberta` e `amostras-feat-*` podem ser
    apagadas quando não forem mais úteis. Elas guardam a origem das fixtures, por
    isso foram mantidas.
+
+---
+
+# M6 – Evolução (03/11/2026)
+
+Backlog criado a partir das pendências do MVP: issues #22 a #30, com rótulo
+`M6`. O milestone M6 em si não pôde ser criado pela sessão; está documentado
+como ação do dono do repositório.
+
+## Entregue
+
+| Issue | PR | Entrega |
+|---|---|---|
+| #22 | [#31](https://github.com/rafantavares/dados-abertos-tocantins/pull/31), [#32](https://github.com/rafantavares/dados-abertos-tocantins/pull/32) | Indicadores oficiais do SIOPE/FNDE (MDE, Fundeb, investimento por aluno); nota da EC 119/2022 |
+| #23 | [#33](https://github.com/rafantavares/dados-abertos-tocantins/pull/33) | Correção monetária pelo IPCA médio do ano (R$ do último ano completo) |
+| #25 | [#34](https://github.com/rafantavares/dados-abertos-tocantins/pull/34) | Revalidação do Portal da Transparência TO com diagnóstico de DNS/TCP |
+| #26 | [#35](https://github.com/rafantavares/dados-abertos-tocantins/pull/35) | Modo escuro com paletas validadas |
+| #27 | [#36](https://github.com/rafantavares/dados-abertos-tocantins/pull/36) | Tabela acessível junto do mapa, com CSV no padrão brasileiro |
+| #28 | [#37](https://github.com/rafantavares/dados-abertos-tocantins/pull/37) | Filtros por porte e região em investimento × IDEB |
+| #30 | [#38](https://github.com/rafantavares/dados-abertos-tocantins/pull/38) | Actions em Node 24 |
+
+## Achados de dados
+
+- **SIOPE:** municípios abaixo do mínimo de 25% em MDE, por ano: 0 (2017),
+  2, 3, 10, **43 (2021)**, 3, 4, 5 e 4 (2025). O pico de 2020–2021 coincide
+  com a pandemia e com a EC 119/2022, que afastou a responsabilização nesses
+  anos; o painel mostra esse contexto.
+- **SIOPE — peculiaridades:** código IBGE de 6 dígitos; Estado sem código;
+  `COD_INDI` muda entre versões da norma (a chave estável é `COD_EXIB`);
+  todos os indicadores no mesmo grupo "Dispêndio com Pessoal" (rotulagem da
+  fonte); API cobre só 2017 em diante.
+- **% do Fundeb na remuneração acima de 100%** (Araguaína 2024, Miranorte e
+  Aguiarnópolis 2025): válido, porque é calculado sobre a receita do ano. A
+  primeira carga real falhou num teste que supunha máximo de 100% — o teste
+  estava errado, não o dado.
+- **IPCA:** IPCA médio acumulado de 2015 a 2025 ≈ 69% (fator 1,694).
+- **Portal da Transparência TO:** DNS resolve, mas TCP 80/443 expira para
+  todos os hosts `*.to.gov.br` a partir do GitHub Actions — bloqueio de rede,
+  não portal fora do ar. `dados.to.gov.br` não existe.
+- **Investimento × IDEB:** a correlação de Spearman fica perto de zero em
+  todos os recortes testados (−0,01 no geral em 2023; 0,09 entre municípios de
+  até 5 mil habitantes).
+
+## Defeitos do próprio trabalho, encontrados e corrigidos
+
+- Contraste: o azul do modo claro tem 4,46:1 com texto preto (abaixo de 4,5:1);
+  rótulos dentro das barras passaram a texto grande em negrito.
+- Correlação com 3 municípios aparecia como "1,00"; agora não é calculada
+  abaixo de 5 e há aviso abaixo de 15.
+- O script de validação levava 42 min contra servidores inalcançáveis; agora
+  testa DNS/TCP antes de baixar.
+- A legenda do mapa dizia "sem dado aparece em branco", falso no modo escuro.
+
+## Pendências
+
+- **#29 – limpeza de branches:** lista conferida (27 branches cuja ponta é
+  idêntica ao merge ou que nenhum documento cita) e comando pronto na issue; a
+  remoção não foi executada porque apagar branches remotas exige a permissão do
+  dono do repositório.
+- **#24 – Censo Escolar 2025:** aguardando o INEP publicar os microdados; o
+  pipeline semanal carrega automaticamente.
+- **Milestone M6:** criar no GitHub e associar as issues com rótulo `M6`.
+- **Branches `amostras-*` citadas na documentação** foram mantidas como origem
+  das fixtures; podem ser apagadas quando essa rastreabilidade não for mais
+  necessária (atualizando `tests/fixtures/README.md`).
+- Configurar "Automatically delete head branches" (Settings → General) para
+  que as próximas branches de trabalho sejam apagadas no merge.

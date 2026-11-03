@@ -72,3 +72,8 @@ Nenhuma é obrigatória para o pipeline funcionar hoje. Mesmo assim, vale confer
 4. **Proteção da branch `dados`** — não proteja a branch `dados` contra
    *force push*: o workflow a recria a cada carga (um único commit, para o
    repositório não crescer com versões antigas do banco).
+5. **Branches de trabalho** — em *Settings → General → Pull Requests*, marque
+   *Automatically delete head branches*. As branches `amostras-*` criadas pelos
+   runs de desenvolvimento podem ser apagadas depois que as fixtures forem
+   copiadas; mantenha as citadas em `tests/fixtures/README.md` e
+   `docs/fontes.md` (ver issue #29).
