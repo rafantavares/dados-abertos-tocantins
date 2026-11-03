@@ -1,0 +1,43 @@
+[
+  {
+    "id": "ibge_sidra_censo2022_populacao",
+    "url": "https://apisidra.ibge.gov.br/values/t/4709/n6/in%20n3%2017/v/93/p/all",
+    "acessado_em": "2026-11-03T21:20:59+00:00",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "last_modified": null,
+    "bytes": 36687,
+    "sha256": "478d0e9a497835631758ea4189d5b58901926f9c0291d47f08e0db9268c0499d",
+    "resumo": {
+      "n_registros": 140,
+      "exemplo": [
+        {
+          "NC": "Nível Territorial (Código)",
+          "NN": "Nível Territorial",
+          "MC": "Unidade de Medida (Código)",
+          "MN": "Unidade de Medida",
+          "V": "Valor",
+          "D1C": "Município (Código)",
+          "D1N": "Município",
+          "D2C": "Variável (Código)",
+          "D2N": "Variável",
+          "D3C": "Ano (Código)",
+          "D3N": "Ano"
+        },
+        {
+          "NC": "6",
+          "NN": "Município",
+          "MC": "45",
+          "MN": "Pessoas",
+          "V": "2576",
+          "D1C": "1700251",
+          "D1N": "Abreulândia - TO",
+          "D2C": "93",
+          "D2N": "População residente",
+          "D3C": "2022",
+          "D3N": "2022"
+        }
+      ]
+    }
+  }
+]
