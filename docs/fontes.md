@@ -100,3 +100,10 @@ acesso estável.
   exibição `COD_EXIB` (1.1), usado como chave — único por ente e ano em 2019,
   2024 e 2025. Todos os indicadores vêm no grupo "Indicadores de Dispêndio com
   Pessoal", aparentemente um erro de rotulagem da fonte (o grupo é ignorado).
+- **SIOPE — percentuais acima de 100%:** o % do Fundeb na remuneração (1.2) é
+  calculado sobre a receita do Fundeb do próprio exercício e passa de 100% quando
+  o ente aplica mais do que recebeu no ano (ex.: Araguaína 2024, 100,28%;
+  Aguiarnópolis 2025, 101,66%; Miranorte 2025, 101,86%). O indicador 1.3 pode
+  ser negativo (Araguaína 2024, −0,95). São tratados como válidos; acima de 105%
+  o dbt emite aviso. A primeira execução real do pipeline falhou justamente por
+  um teste que assumia o máximo de 100%.

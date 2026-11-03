@@ -334,12 +334,21 @@ models:
       - name: cumpre_minimo_mde
         description: Verdadeiro se percentual_mde >= 25% (art. 212 da Constituição).
       - name: percentual_fundeb_remuneracao
-        description: Percentual do Fundeb aplicado na remuneração dos profissionais da educação (SIOPE 1.2; mínimo de 70%).
+        description: >
+          Percentual do Fundeb aplicado na remuneração dos profissionais da educação (SIOPE
+          1.2; mínimo de 70%). Calculado sobre a receita do Fundeb do exercício, pode passar
+          de 100% (ex.: Araguaína 2024, 100,28%; Miranorte 2025, 101,86%).
         tests:
           - entre:
               arguments:
                 minimo: 0
-                maximo: 100
+              config:
+                severity: error
+          - entre:
+              arguments:
+                maximo: 105
+              config:
+                severity: warn
       - name: percentual_educacao_despesa_total
         description: Despesa em educação em relação à despesa de todas as áreas (SIOPE 2.8).
       - name: investimento_por_aluno_educacao_basica
