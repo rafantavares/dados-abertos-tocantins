@@ -422,3 +422,28 @@ models:
       - name: valor
         description: Valor declarado (percentual, R$ ou R$ por aluno, conforme o indicador).
         tests: [not_null]
+  - name: stg_ibge__ipca
+    description: IPCA mensal (número-índice, base dez/1993 = 100), Brasil, SIDRA 1737.
+    tests:
+      - combinacao_unica:
+          arguments:
+            colunas: [ano, mes]
+    columns:
+      - name: ano
+        description: Ano.
+        tests: [not_null]
+      - name: mes
+        description: Mês (1 a 12).
+        tests:
+          - not_null
+          - entre:
+              arguments:
+                minimo: 1
+                maximo: 12
+      - name: numero_indice
+        description: Número-índice do IPCA no mês.
+        tests:
+          - not_null
+          - entre:
+              arguments:
+                minimo: 0

@@ -1,10 +1,13 @@
 -- Indicadores oficiais de financiamento da educação (SIOPE/FNDE) por ente e ano:
 -- aplicação em MDE frente ao mínimo constitucional de 25%, uso do Fundeb e
 -- investimento por aluno. Responde à pergunta P9 e complementa P5.
-with indicadores as (
-    select * from {{ ref('stg_siope__indicadores') }}
-)
+with
 
+indicadores as (
+    select * from {{ ref('stg_siope__indicadores') }}
+),
+
+por_ente as (
 select
     cod_ente,
     any_value(esfera) as esfera,
@@ -28,3 +31,12 @@ from indicadores
 where esfera = 'estadual'
     or cod_ente in (select cod_municipio from {{ ref('dim_municipio') }})
 group by cod_ente, ano
+)
+
+select
+    e.*,
+    cast(round(e.investimento_por_aluno_educacao_basica * ipca.fator_correcao, 2)
+        as decimal(18, 2)) as investimento_por_aluno_educacao_basica_real,
+    ipca.ano_base as ano_base_valores_reais
+from por_ente as e
+left join {{ ref('dim_deflator_ipca') }} as ipca on e.ano = ipca.ano

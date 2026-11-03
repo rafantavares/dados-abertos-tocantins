@@ -30,8 +30,11 @@
 - Camadas: `raw` (como veio da fonte, tudo texto) → `staging` (`stg_*`, nomes e
   tipos padronizados) → `intermediate` (`int_*`, regras de negócio) → `marts`
   (`dim_*`, `fct_*`, `mart_*`).
-- Nomes em português, `snake_case`. Valores monetários em **reais correntes**
-  (sem correção pela inflação), com duas casas decimais.
+- Nomes em português, `snake_case`. Valores monetários em **reais correntes**,
+  com duas casas decimais; as colunas com sufixo `_real` trazem o mesmo valor
+  **corrigido pelo IPCA médio do ano**, em reais do ano-base
+  (`ano_base_valores_reais`, o último ano com os 12 meses do IPCA publicados —
+  ver `dim_deflator_ipca`).
 - `cod_municipio`: código IBGE de 7 dígitos (inteiro). O Estado do Tocantins usa
   o código de UF `17` quando aparece como ente.
 - Redes: `federal`, `estadual`, `municipal`, `privada` e `publica` (agregado de
@@ -109,6 +112,8 @@ Grão: ente × ano. Ente = cada município (`esfera = municipal`) e o Estado
 | `populacao` | integer | População de referência do ano (ver nota abaixo) |
 | `origem_populacao` | varchar | `censo`, `estimativa` ou `ultima_disponivel` |
 | `despesa_educacao_per_capita` | decimal(18,2) | `despesa_educacao / populacao` (R$) |
+| `despesa_educacao_real`, `despesa_educacao_per_capita_real` | decimal(18,2) | Os mesmos valores corrigidos pelo IPCA (R$ do ano-base) |
+| `ano_base_valores_reais` | integer | Ano-base da correção monetária |
 | `dca_inconsistente` | boolean | Educação < 5% da despesa total: sinal de DCA declarado parcialmente; a linha fica fora do investimento por aluno |
 
 População de referência (`int_populacao_anual`): Censo 2022 no próprio ano,
@@ -127,6 +132,7 @@ matrículas da rede municipal e IDEB da rede municipal.
 | `despesa_educacao` | decimal(18,2) | Despesa municipal liquidada na função Educação (R$) |
 | `matriculas_rede_municipal` | integer | Matrículas da rede municipal |
 | `investimento_por_aluno` | decimal(18,2) | `despesa_educacao / matriculas_rede_municipal` (R$) |
+| `investimento_por_aluno_real` | decimal(18,2) | Corrigido pelo IPCA (R$ do ano-base) |
 | `ideb_anos_iniciais` | double | IDEB anos iniciais da rede municipal (anos ímpares) |
 | `ideb_anos_finais` | double | IDEB anos finais da rede municipal (anos ímpares) |
 
@@ -157,6 +163,18 @@ declarados ao SIOPE (FNDE), 6º bimestre.
 | `percentual_fundeb_remuneracao` | double | % do Fundeb na remuneração dos profissionais (1.2; mínimo 70%) |
 | `percentual_educacao_despesa_total` | double | Despesa em educação ÷ despesa de todas as áreas (2.8) |
 | `investimento_por_aluno_educacao_basica` | decimal(18,2) | Investimento por aluno da educação básica, R$ (4.8) |
+| `investimento_por_aluno_educacao_basica_real` | decimal(18,2) | Corrigido pelo IPCA (R$ do ano-base) |
 | `investimento_por_aluno` | decimal(18,2) | Investimento por aluno, todas as etapas, R$ (4.9) |
 | `valor_exigido_mde` | decimal(18,2) | Mínimo a aplicar em MDE, R$ (8.1) |
 | `valor_aplicado_mde` | decimal(18,2) | Valor aplicado em MDE com receita de impostos, R$ (8.2) |
+
+### `dim_deflator_ipca`
+Grão: ano. Deflator pelo **IPCA médio do ano** (média dos 12 números-índice
+mensais, SIDRA 1737), adequado para corrigir fluxos que ocorrem ao longo do ano.
+
+| Coluna | Tipo | Descrição |
+|---|---|---|
+| `ano` | integer | Ano (só anos com os 12 meses publicados) |
+| `ipca_medio` | double | Média dos números-índice mensais do IPCA no ano |
+| `ano_base` | integer | Último ano completo; valores reais ficam em R$ deste ano |
+| `fator_correcao` | double | `ipca_medio(ano_base) / ipca_medio(ano)`; valor real = valor corrente × fator |

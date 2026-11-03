@@ -42,3 +42,7 @@ sources:
           Indicadores do SIOPE (FNDE), 6º bimestre (anual), Estado e municípios do
           Tocantins. COD_MUNI tem 6 dígitos (código IBGE sem o dígito verificador) e é
           nulo para o Estado.
+      - name: ibge_sidra_ipca
+        description: >
+          IPCA mensal, número-índice (base dez/1993 = 100), Brasil — SIDRA tabela 1737,
+          variável 2266. D3C é o mês no formato AAAAMM.

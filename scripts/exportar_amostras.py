@@ -60,6 +60,8 @@ def main(banco: str, saida: str) -> None:
                 # SIOPE usa o código IBGE sem o dígito verificador; Estado vem nulo
                 seis = ", ".join(f"'{c[:6]}'" for c in CODIGOS if len(c) == 7)
                 filtro = f'"COD_MUNI" in ({seis}) or "TIPO" = \'Estadual\''
+            elif tabela == "ibge_sidra_ipca":
+                filtro = "\"D3C\" >= '201501'"  # série nacional: só os anos usados
             elif tabela in COMPLETAS:
                 filtro = "true"
             elif tabela in GEOMETRIA:

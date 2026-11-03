@@ -36,6 +36,7 @@ Validadas em 02/11/2026 (issue #1). Detalhes, licenças e evidências em [`docs/
 | Gastos públicos | Tesouro Nacional – SICONFI, DCA Anexo I-E (despesa por função) | Substitui o Portal da Transparência TO, inacessível |
 | Financiamento da educação | FNDE – SIOPE (aplicação em MDE, Fundeb, investimento por aluno oficial) | API OData do FNDE |
 | Dados municipais | IBGE – DTB 2022, malha municipal 2022, SIDRA (Censo 2022 e estimativas) | Substitui a API `servicodados`, inacessível |
+| Inflação | IBGE – IPCA mensal (SIDRA 1737) | Correção dos valores em reais no painel |
 | Catálogo federal | Portal Brasileiro de Dados Abertos | Apenas referência (API exige token) |
 
 ## Stack

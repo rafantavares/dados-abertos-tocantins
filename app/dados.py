@@ -116,13 +116,22 @@ def mde_siope(banco: Path) -> pd.DataFrame:
     try:
         return consultar(
             banco,
-            "select s.cod_ente as cod_municipio, m.nome_municipio, s.ano, s.percentual_mde, "
-            "s.cumpre_minimo_mde, s.investimento_por_aluno_educacao_basica "
+            "select s.*, s.cod_ente as cod_municipio, m.nome_municipio "
             "from marts.mart_mde_siope s "
             "join marts.dim_municipio m on s.cod_ente = m.cod_municipio",
         )
     except duckdb.CatalogException:
         return pd.DataFrame(columns=COLUNAS_SIOPE)
+
+
+def ano_base_ipca(banco: Path) -> int | None:
+    """Ano-base da correção pelo IPCA, ou None se o banco ainda não tem o deflator."""
+    try:
+        linha = consultar(banco, "select max(ano_base) as ano_base from marts.dim_deflator_ipca")
+    except duckdb.CatalogException:
+        return None
+    valor = linha["ano_base"].iloc[0]
+    return None if pd.isna(valor) else int(valor)
 
 
 def matriculas(banco: Path) -> pd.DataFrame:

@@ -56,6 +56,8 @@ class Indicador:
     formatar: Callable[[float | None], str]
     #: Valor de referência legal, desenhado como linha no ranking (ex.: 25% de MDE).
     referencia: float | None = None
+    #: Coluna com o valor corrigido pelo IPCA (só para indicadores em reais).
+    coluna_real: str | None = None
 
 
 INDICADORES: dict[str, Indicador] = {
@@ -67,6 +69,7 @@ INDICADORES: dict[str, Indicador] = {
         ":,.0f",
         ":,.0f",
         reais,
+        coluna_real="investimento_por_aluno_real",
     ),
     "Aplicação em MDE – oficial SIOPE (% das receitas de impostos; mínimo 25%)": Indicador(
         "siope",
@@ -84,6 +87,7 @@ INDICADORES: dict[str, Indicador] = {
         ":,.0f",
         ":,.0f",
         reais,
+        coluna_real="investimento_por_aluno_educacao_basica_real",
     ),
     "Despesa em Educação por habitante": Indicador(
         "despesa",
@@ -92,6 +96,7 @@ INDICADORES: dict[str, Indicador] = {
         ":,.0f",
         ":,.0f",
         reais,
+        coluna_real="despesa_educacao_per_capita_real",
     ),
     "Parcela da despesa total destinada à Educação (%)": Indicador(
         "despesa",
@@ -104,16 +109,32 @@ INDICADORES: dict[str, Indicador] = {
 }
 
 
+def corrigivel(definicao: Indicador, base: pd.DataFrame) -> bool:
+    """Verdadeiro se o indicador tem versão corrigida pelo IPCA neste banco."""
+    return definicao.coluna_real is not None and definicao.coluna_real in base.columns
+
+
 def serie(
-    d: dict[str, pd.DataFrame], nome: str, etapa: str | None = None, rede: str | None = None
+    d: dict[str, pd.DataFrame],
+    nome: str,
+    etapa: str | None = None,
+    rede: str | None = None,
+    valores_reais: bool = False,
 ) -> pd.DataFrame:
-    """Série (cod_municipio, nome_municipio, ano, valor) do indicador escolhido."""
+    """Série (cod_municipio, nome_municipio, ano, valor) do indicador escolhido.
+
+    Com ``valores_reais``, usa a coluna corrigida pelo IPCA quando ela existe
+    (bancos antigos não a têm; aí o valor corrente é mantido).
+    """
     definicao = INDICADORES[nome]
     base = d[definicao.fonte]
     if definicao.fonte == "ideb":
         base = base[(base["etapa"] == etapa) & (base["rede"] == rede)]
-    resultado = base[["cod_municipio", "nome_municipio", "ano", definicao.coluna]].rename(
-        columns={definicao.coluna: "valor"}
+    coluna = (
+        definicao.coluna_real if valores_reais and corrigivel(definicao, base) else definicao.coluna
+    )
+    resultado = base[["cod_municipio", "nome_municipio", "ano", coluna]].rename(
+        columns={coluna: "valor"}
     )
     resultado = resultado.dropna(subset=["valor"])
     resultado["valor"] = resultado["valor"].astype(float)

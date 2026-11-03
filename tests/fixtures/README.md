@@ -31,3 +31,4 @@ As amostras do IBGE vieram da execução do `pipeline.yml` na branch
 As amostras do SIOPE vieram da execução do `validar-fontes.yml` na branch
 `feat/22-siope` (branch `amostras-validacao-feat-22-siope`), filtradas sem
 alterar valores.
+| `ibge/ibge_sidra_ipca.csv` | IBGE SIDRA, tabela 1737 (IPCA, número-índice), Brasil | Meses de jan/2015 a set/2026, exportados pelo `pipeline.yml` na branch `feat/23-ipca` (branch `amostras-feat-23-ipca`) |

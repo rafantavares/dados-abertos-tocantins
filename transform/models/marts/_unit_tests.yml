@@ -1,0 +1,21 @@
+version: 2
+
+unit_tests:
+  - name: deflator_usa_ultimo_ano_completo_como_base
+    description: >
+      Anos incompletos ficam de fora; o fator é ipca_medio(ano_base) / ipca_medio(ano).
+      Números-índice ilustrativos.
+    model: dim_deflator_ipca
+    given:
+      - input: ref('stg_ibge__ipca')
+        format: sql
+        rows: |
+          select 2024 as ano, m as mes, 100.0 as numero_indice from range(1, 13) t(m)
+          union all
+          select 2025, m, 110.0 from range(1, 13) t(m)
+          union all
+          select 2026, m, 200.0 from range(1, 10) t(m)
+    expect:
+      rows:
+        - {ano: 2024, ipca_medio: 100.0, ano_base: 2025, fator_correcao: 1.1}
+        - {ano: 2025, ipca_medio: 110.0, ano_base: 2025, fator_correcao: 1.0}

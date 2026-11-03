@@ -54,6 +54,7 @@ def _dados_falsos():
             "nome_municipio": ["A"],
             "ano": [2023],
             "investimento_por_aluno": [12000.0],
+            "investimento_por_aluno_real": [13000.0],
         }
     )
     siope = pd.DataFrame(
@@ -163,3 +164,21 @@ def test_nota_ec_119_so_para_mde_em_2020_e_2021():
     assert ind.nota_contexto(mde, 2020) is not None
     assert ind.nota_contexto(mde, 2022) is None
     assert ind.nota_contexto(ideb, 2021) is None
+
+
+def test_serie_em_valores_reais_e_fallback_para_banco_antigo():
+    d = _dados_falsos()
+    nome = "Investimento por aluno (rede municipal)"
+    assert ind.serie(d, nome)["valor"].tolist() == [12000.0]
+    assert ind.serie(d, nome, valores_reais=True)["valor"].tolist() == [13000.0]
+    # banco publicado antes da #23 não tem a coluna corrigida: mantém o valor corrente
+    d["investimento"] = d["investimento"].drop(columns=["investimento_por_aluno_real"])
+    assert not ind.corrigivel(ind.INDICADORES[nome], d["investimento"])
+    assert ind.serie(d, nome, valores_reais=True)["valor"].tolist() == [12000.0]
+
+
+def test_ano_base_ipca_em_banco_sem_deflator(tmp_path):
+    banco = tmp_path / "antigo.duckdb"
+    with duckdb.connect(str(banco)) as con:
+        con.execute("create schema marts")
+    assert dados.ano_base_ipca(banco) is None
