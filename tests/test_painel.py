@@ -56,7 +56,17 @@ def _dados_falsos():
             "investimento_por_aluno": [12000.0],
         }
     )
+    siope = pd.DataFrame(
+        {
+            "cod_municipio": [1, 2],
+            "nome_municipio": ["A", "B"],
+            "ano": [2024, 2024],
+            "percentual_mde": [25.1, 12.4],
+            "investimento_por_aluno_educacao_basica": [15000.0, None],
+        }
+    )
     return {
+        "siope": siope,
         "municipios": municipios,
         "ideb": ideb,
         "despesa": despesa,
@@ -130,3 +140,17 @@ def test_painel_renderiza_todas_as_abas(monkeypatch):
         app.selectbox(key=None)
         app.selectbox[0].set_value(indicador).run(timeout=60)
         assert not app.exception, (indicador, app.exception)
+
+
+def test_indicador_siope_tem_referencia_legal():
+    d = _dados_falsos()
+    nome = next(n for n, i in ind.INDICADORES.items() if i.coluna == "percentual_mde")
+    assert ind.INDICADORES[nome].referencia == 25.0
+    assert ind.serie(d, nome)["valor"].tolist() == [25.1, 12.4]
+
+
+def test_mde_siope_aceita_banco_sem_o_mart(tmp_path):
+    banco = tmp_path / "antigo.duckdb"
+    with duckdb.connect(str(banco)) as con:
+        con.execute("create schema marts")
+    assert list(dados.mde_siope(banco).columns) == dados.COLUNAS_SIOPE

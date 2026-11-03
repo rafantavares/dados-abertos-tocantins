@@ -34,6 +34,7 @@ Validadas em 02/11/2026 (issue #1). Detalhes, licenças e evidências em [`docs/
 |---|---|---|
 | Indicadores educacionais | INEP – IDEB por município (2005–2023) e microdados do Censo Escolar | Download direto do INEP |
 | Gastos públicos | Tesouro Nacional – SICONFI, DCA Anexo I-E (despesa por função) | Substitui o Portal da Transparência TO, inacessível |
+| Financiamento da educação | FNDE – SIOPE (aplicação em MDE, Fundeb, investimento por aluno oficial) | API OData do FNDE |
 | Dados municipais | IBGE – DTB 2022, malha municipal 2022, SIDRA (Censo 2022 e estimativas) | Substitui a API `servicodados`, inacessível |
 | Catálogo federal | Portal Brasileiro de Dados Abertos | Apenas referência (API exige token) |
 

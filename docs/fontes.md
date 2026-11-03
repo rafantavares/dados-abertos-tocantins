@@ -31,6 +31,17 @@ e as amostras filtradas para o Tocantins foram publicadas na branch
 | Divisão Territorial Brasileira 2022 (municípios, regiões geográficas) | IBGE (geoftp) | `https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2022/DTB_2022.zip` | ZIP com XLS/ODS | Anual | idem | ✅ 200 – 139 municípios do TO |
 | Malha municipal 2022 do Tocantins | IBGE (geoftp) | `https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/TO/TO_Municipios_2022.zip` | ZIP com Shapefile (SIRGAS 2000) | Anual | idem | ✅ 200 – 26 MB |
 
+### Adicionada no M6 (issue #22)
+
+| Fonte | Órgão | URL (padrão) | Formato | Atualização | Licença / termos | Acesso em 03/11/2026 |
+|---|---|---|---|---|---|---|
+| Indicadores do SIOPE (aplicação em MDE, Fundeb, investimento por aluno) | FNDE (SIOPE) | `https://www.fnde.gov.br/olinda-ide/servico/DADOS_ABERTOS_SIOPE/versao/v1/odata/Indicadores_Siope(Ano_Consulta=@Ano_Consulta,Num_Peri=@Num_Peri,Sig_UF=@Sig_UF)?@Ano_Consulta={ano}&@Num_Peri=6&@Sig_UF='TO'&$format=json` | API OData v4 (JSON), plataforma Olinda | Anual (6º bimestre), com retificações | Dados abertos do FNDE (Decreto 8.777/2016); citar FNDE/SIOPE | ✅ 200 – 4.479 a 5.598 indicadores por ano (140 entes) |
+
+Validação feita com o workflow `validar-fontes.yml` (entrada `fontes`), branch
+`amostras-validacao-feat-22-siope`. O catálogo CKAN do FNDE redireciona para o
+dados.gov.br, e a página do programa no gov.br retornou 404; a API OData é o
+acesso estável.
+
 ## Fontes inviáveis e alternativas
 
 | Fonte candidata | Resultado da validação | Decisão / alternativa oficial |
@@ -38,7 +49,7 @@ e as amostras filtradas para o Tocantins foram publicadas na branch
 | **Portal da Transparência do Tocantins** (`www.transparencia.to.gov.br`) | ❌ Timeout em todas as tentativas a partir dos runners do GitHub (dois endereços testados, 3 tentativas de 40 s cada). O portal não responde a clientes fora do país/da rede, e não foi possível localizar uma API documentada. | Usar o **SICONFI (DCA – Anexo I-E)** do Tesouro Nacional, que traz a despesa por função/subfunção declarada pelo próprio Estado **e** pelos 139 municípios, em API aberta e padronizada (MCASP). Vantagem extra: permite comparar municípios com a mesma metodologia. |
 | **API de localidades e malhas do IBGE** (`servicodados.ibge.gov.br`) | ❌ Timeout a partir dos runners do GitHub (as APIs SIDRA e o geoftp do mesmo órgão funcionam). | Códigos e nomes de municípios vêm da **DTB 2022** (geoftp) e do SIDRA; o mapa usa a **malha municipal 2022** do geoftp, convertida para GeoJSON simplificado no pipeline. |
 | **Portal Brasileiro de Dados Abertos** (`dados.gov.br`) | ⚠️ Página inicial responde (200), mas a API pública de catálogo retorna **401** — desde 2023 exige token de acesso pessoal. | Usado apenas como catálogo de referência, sem integração. Os conjuntos de interesse (INEP, Tesouro, IBGE) são baixados direto dos órgãos publicadores. |
-| **SICONFI – RREO Anexo 08 (MDE)** | ⚠️ 200, mas sem itens para o Estado em 2023 com os filtros testados. | Não necessário: o DCA Anexo I-E cobre a função 12 – Educação. Fica registrado para investigação futura (indicador constitucional de 25% em MDE). |
+| **SICONFI – RREO Anexo 08 (MDE)** | ⚠️ 200, mas sem itens para o Estado e para Palmas (2023 e 2024, com e sem `co_esfera`), embora o RREO do Estado tenha outros anexos (4.472 itens em 2024). | Substituído pelo **SIOPE** (indicadores oficiais de MDE declarados pelos entes). |
 
 ## Observações técnicas encontradas na validação
 
@@ -82,3 +93,10 @@ e as amostras filtradas para o Tocantins foram publicadas na branch
   deu timeout em todas as tentativas. Desde então, a falha de uma fonte é
   registrada em `raw._cargas` e a carga anterior dela é mantida, sem interromper
   as demais.
+- **SIOPE:** o município é identificado pelo código IBGE de **6 dígitos** (sem
+  o dígito verificador) e o Estado vem com `COD_MUNI` nulo; o staging converte
+  para o código de 7 dígitos pela DTB. O mesmo indicador muda de `COD_INDI`
+  entre versões da norma (ex.: 24 e 40 para o % de MDE), mas mantém o código de
+  exibição `COD_EXIB` (1.1), usado como chave — único por ente e ano em 2019,
+  2024 e 2025. Todos os indicadores vêm no grupo "Indicadores de Dispêndio com
+  Pessoal", aparentemente um erro de rotulagem da fonte (o grupo é ignorado).

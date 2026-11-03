@@ -390,3 +390,35 @@ models:
         description: Geometria (Polygon ou MultiPolygon) em GeoJSON, coordenadas em graus.
         tests:
           - not_null
+  - name: stg_siope__indicadores
+    description: >
+      Indicadores oficiais do SIOPE (FNDE) por ente, ano e indicador: percentual aplicado
+      em MDE, indicadores do Fundeb e investimento por aluno, declarados pelo próprio ente.
+    tests:
+      - combinacao_unica:
+          arguments:
+            colunas: [ano, cod_ente, cod_indicador]
+    columns:
+      - name: ano
+        description: Exercício.
+        tests: [not_null]
+      - name: cod_ente
+        description: Código IBGE de 7 dígitos do município ou 17 para o Estado.
+        tests: [not_null]
+      - name: esfera
+        description: estadual ou municipal.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [estadual, municipal]
+      - name: cod_indicador
+        description: Código de exibição do indicador no SIOPE (ex. 1.1 = % aplicado em MDE).
+        tests: [not_null]
+      - name: cod_indicador_versao
+        description: Código interno do indicador, que muda entre versões da norma.
+      - name: nome_indicador
+        description: Nome do indicador no SIOPE.
+      - name: valor
+        description: Valor declarado (percentual, R$ ou R$ por aluno, conforme o indicador).
+        tests: [not_null]

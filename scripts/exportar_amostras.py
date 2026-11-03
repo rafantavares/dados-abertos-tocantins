@@ -56,7 +56,11 @@ def main(banco: str, saida: str) -> None:
                 if c not in ("_fonte_url", "_carregado_em")
             ]
             selecao = ", ".join(f'"{c}"' for c in colunas)
-            if tabela in COMPLETAS:
+            if tabela == "siope_indicadores":
+                # SIOPE usa o código IBGE sem o dígito verificador; Estado vem nulo
+                seis = ", ".join(f"'{c[:6]}'" for c in CODIGOS if len(c) == 7)
+                filtro = f'"COD_MUNI" in ({seis}) or "TIPO" = \'Estadual\''
+            elif tabela in COMPLETAS:
                 filtro = "true"
             elif tabela in GEOMETRIA:
                 filtro = f'"{GEOMETRIA[tabela]}" in ({lista})'

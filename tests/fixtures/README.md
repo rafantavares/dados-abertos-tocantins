@@ -26,3 +26,8 @@ branch `amostras-feat-5-extrator-despesas`).
 As amostras do IBGE vieram da execução do `pipeline.yml` na branch
 `feat/6-municipios-ibge` (branch `amostras-feat-6-municipios-ibge`). A coluna
 `_referencia` identifica a partição (ano da DTB/malha ou número da tabela SIDRA).
+| `siope/siope_indicadores.csv` | FNDE, API OData `Indicadores_Siope` (6º bimestre, UF TO), anos 2019, 2024 e 2025 | Estado (`TIPO = Estadual`) e os 3 municípios (códigos de 6 dígitos 172100, 170025 e 170100); todas as colunas |
+
+As amostras do SIOPE vieram da execução do `validar-fontes.yml` na branch
+`feat/22-siope` (branch `amostras-validacao-feat-22-siope`), filtradas sem
+alterar valores.

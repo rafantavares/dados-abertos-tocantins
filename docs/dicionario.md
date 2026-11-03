@@ -11,6 +11,7 @@
 | P5 | Quanto cada rede municipal investe por aluno matriculado, e como isso evoluiu? | `mart_investimento_aluno` | Ranking e série temporal |
 | P6 | Existe relação entre investimento por aluno e resultado no IDEB da rede municipal? | `mart_investimento_aluno` | Dispersão (investimento × IDEB) |
 | P7 | Como as matrículas se dividem entre as redes estadual, municipal, federal e privada em cada município? | `fct_matriculas` | Barras empilhadas |
+| P9 | Cada município aplicou o mínimo constitucional de 25% das receitas de impostos em MDE, segundo o SIOPE? | `mart_mde_siope` | Ranking com a linha dos 25% |
 | P8 | Como dois municípios escolhidos se comparam em todos os indicadores acima? | todas | Comparativo lado a lado |
 
 ### Limites conhecidos das respostas
@@ -140,3 +141,21 @@ Grão: ano. Visão do Estado (rede estadual).
 | `investimento_por_aluno_estado` | decimal(18,2) | Razão entre as duas colunas anteriores (R$) |
 | `despesa_educacao_municipios` | decimal(18,2) | Soma da despesa em Educação dos municípios que declararam o DCA (R$) |
 | `municipios_com_dca` | integer | Quantos municípios declararam o DCA no ano |
+
+### `mart_mde_siope`
+Grão: ente × ano (municípios e Estado, `cod_ente = 17`). Indicadores oficiais
+declarados ao SIOPE (FNDE), 6º bimestre.
+
+| Coluna | Tipo | Descrição |
+|---|---|---|
+| `cod_ente` | integer | Código IBGE do município ou `17` para o Estado |
+| `esfera` | varchar | `municipal` ou `estadual` |
+| `ano` | integer | Exercício |
+| `percentual_mde` | double | % das receitas de impostos e transferências aplicado em MDE (indicador 1.1) |
+| `cumpre_minimo_mde` | boolean | `percentual_mde >= 25` (art. 212 da Constituição) |
+| `percentual_fundeb_remuneracao` | double | % do Fundeb na remuneração dos profissionais (1.2; mínimo 70%) |
+| `percentual_educacao_despesa_total` | double | Despesa em educação ÷ despesa de todas as áreas (2.8) |
+| `investimento_por_aluno_educacao_basica` | decimal(18,2) | Investimento por aluno da educação básica, R$ (4.8) |
+| `investimento_por_aluno` | decimal(18,2) | Investimento por aluno, todas as etapas, R$ (4.9) |
+| `valor_exigido_mde` | decimal(18,2) | Mínimo a aplicar em MDE, R$ (8.1) |
+| `valor_aplicado_mde` | decimal(18,2) | Valor aplicado em MDE com receita de impostos, R$ (8.2) |
